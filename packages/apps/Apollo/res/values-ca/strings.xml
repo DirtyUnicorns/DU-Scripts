@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Andrew Neal
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Música</string>
+    <string name="page_recent">Recent</string>
+    <string name="page_artists">Artistes</string>
+    <string name="page_albums">Àlbums</string>
+    <string name="page_songs">Cancions</string>
+    <string name="page_playlists">Llistes</string>
+    <string name="page_genres">Gèneres</string>
+    <string name="menu_settings">Ajustos</string>
+    <string name="menu_search">Cercar</string>
+    <string name="menu_shuffle">Reproducció aleatòria</string>
+    <string name="menu_play_all">Reproduir tot</string>
+    <string name="menu_sort_by">Ordenar per</string>
+    <string name="menu_shop">Descarregar temes</string>
+    <string name="menu_clear_recents">Esborrar recents</string>
+    <string name="menu_clear_queue">Esborrar cua</string>
+    <string name="menu_save_queue">Guardar cua</string>
+    <string name="menu_share">Compartir</string>
+    <string name="menu_add_to_homescreen">Afegir a l\'escriptori</string>
+    <string name="menu_equalizer">Equalitzador</string>
+    <string name="menu_simple">Simple</string>
+    <string name="menu_detailed">Detallat</string>
+    <string name="menu_grid">Mosaic</string>
+    <string name="menu_view_as">Disseny</string>
+    <string name="add_to_playlist">Afegir a la llista</string>
+    <string name="add_to_favorites">Afegir a favorits</string>
+    <string name="add_to_queue">Afegir a la cua</string>
+    <string name="remove_from_favorites">Treure de favorits</string>
+    <string name="remove_from_recent">Treure de recents</string>
+    <string name="remove_from_queue">Treure de la cua</string>
+    <string name="sort_order_entry_az">A-Z</string>
+    <string name="sort_order_entry_za">Z-A</string>
+    <string name="sort_order_entry_artist">Artista</string>
+    <string name="sort_order_entry_album">Àlbum</string>
+    <string name="sort_order_entry_year">Any</string>
+    <string name="sort_order_entry_duration">Duració</string>
+    <string name="sort_order_entry_date_added">Data</string>
+    <string name="sort_order_entry_track_list">Número de pista</string>
+    <string name="sort_order_entry_number_of_songs">Número de cancions</string>
+    <string name="sort_order_entry_number_of_albums">Número d\'àlbums</string>
+    <string name="playlist_favorite">Favorit</string>
+    <string name="playlist_favorites">Favorits</string>
+    <string name="playlist_last_added">Recents</string>
+    <string name="new_playlist">Nova llista</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="overwrite">Reemplaçar</string>
+    <string name="new_playlist_name_template">Llista <xliff:g id="number">%d</xliff:g></string>
+    <string name="create_playlist_prompt">Nom de llista</string>
+    <string name="delete_dialog_title">¿Eliminar <xliff:g id="item" example="album">%s</xliff:g>?</string>
+    <string name="cannot_be_undone">Aquesta operació no es pot desfer</string>
+    <string name="delete_warning">Aquesta operació esborrarà totes les imatges emmagatzemades en memòria caché</string>
+    <string name="new_photo">Triar imatge de la Galeria</string>
+    <string name="google_search">Cercar en Google</string>
+    <string name="use_default">Utilitza la imatge per defecte</string>
+    <string name="old_photo">Utilitza la imatge prèvia</string>
+    <string name="context_menu_play_selection">Reproduir</string>
+    <string name="context_menu_play_next">Següent</string>
+    <string name="context_menu_more_by_artist">Més de l\'artista</string>
+    <string name="context_menu_rename_playlist">Canviar el nom</string>
+    <string name="context_menu_delete">Eliminar</string>
+    <string name="context_menu_fetch_album_art">Obtenir caràtula de l\'àlbum</string>
+    <string name="context_menu_fetch_artist_image">Obtenir foto de l\'artista</string>
+    <string name="context_menu_open_in_play_store">Obrir en Play Store</string>
+    <string name="context_menu_remove_from_recent">Treure de recents</string>
+    <string name="context_menu_use_as_ringtone">Utilitza com a to</string>
+    <string name="accessibility_play">Reproduir</string>
+    <string name="accessibility_pause">Pausar</string>
+    <string name="accessibility_next">Següent</string>
+    <string name="accessibility_prev">Anterior</string>
+    <string name="accessibility_shuffle">Barrejar</string>
+    <string name="accessibility_shuffle_all">Barrejar totes</string>
+    <string name="accessibility_repeat">Repetir</string>
+    <string name="accessibility_repeat_all">Repetir totes</string>
+    <string name="accessibility_repeat_one">Repetir una</string>
+    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> afegida a l\'escriptori</string>
+    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> no ha pogut ser afegida a l\'escriptori</string>
+    <string name="set_as_ringtone">\u00AB<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\u00BB establerta com a to de trucada</string>
+    <string name="playlist_renamed">Llista renombrada</string>
+    <string name="theme_set"><xliff:g id="name">%s</xliff:g> establert com a tema</string>
+    <string name="settings_ui_category">Aparença</string>
+    <string name="settings_storage_category">Emmagatzematge</string>
+    <string name="settings_data_category">Dades</string>
+    <string name="settings_about_category">Sobre</string>
+    <string name="settings_author_title">Autor</string>
+    <string name="settings_about_apollo">Sobre Apollo</string>
+    <string name="settings_special_thanks">Agraïments</string>
+    <string name="settings_lopez_summary">Icones i disseny en Play Store</string>
+    <string name="settings_color_scheme_title">Esquema de color</string>
+    <string name="settings_color_scheme_summary">Escollir un color per al disseny d\'Apollo</string>
+    <string name="settings_theme_chooser_title">Temes</string>
+    <string name="settings_delete_cache_title">Netejar caché</string>
+    <string name="settings_delete_cache_summary">Eliminar totes les imatges emmagatzemades</string>
+    <string name="settings_download_only_on_wifi_title">Descarregar només via Wi-Fi</string>
+    <string name="settings_download_only_on_wifi_summary">No descarregar contingut en xarxes mòbils per reduir les tarifes de dades de l\'operador</string>
+    <string name="settings_download_missing_artwork_title">Obtenir caràtules</string>
+    <string name="settings_download_artist_images_title">Obtenir fotos d\'artistes</string>
+    <string name="settings_open_source_licenses">Llicències de software lliure</string>
+    <string name="settings_version_title">Versió</string>
+    <string name="now_listening_to">#Escoltant <xliff:g id="title">%1$s</xliff:g> de <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
+    <string name="share_track_using">Compartir cançó fent servir:</string>
+    <string name="color_picker_title">Esquema de color</string>
+    <string name="hex">#</string>
+    <string name="current_color">Actual</string>
+    <string name="new_color">Nou</string>
+    <string name="app_widget_small">Apollo: 4x1</string>
+    <string name="app_widget_large">Apollo: 4x2</string>
+    <string name="app_widget_large_alt">Apollo: 4x2 (alt.)</string>
+    <string name="app_widget_recent">Apollo: Recents</string>
+    <string name="app_widget_text_separator">-</string>
+    <string name="no_effects_for_you">El equalitzador no s\'ha pogut obrir.</string>
+    <string name="empty_music">Per copiar música de l\'ordinador al dispositiu, utilitza un cable USB.</string>
+    <string name="empty_last_added">Les cançons que has afegit en l\'últim mes apareixeran aquí.</string>
+    <string name="empty_search">No hi ha resultats per mostrar</string>
+    <string name="empty_favorite">Les cançons que has marcat com a favorites apareixeran aquí.</string>
+    <string name="empty_recent">Els àlbums que has escoltat apareixeran aquí.</string>
+</resources>
