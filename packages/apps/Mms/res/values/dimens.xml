@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc.
+All Rights Reserved. -->
+<resources>
+    <dimen name="message_item_avatar_on_right_text_indent">50dip</dimen>
+    <dimen name="message_bubble_padding_vertical">6dp</dimen>
+    <dimen name="message_bubble_padding_horizontal">10dp</dimen>
+    <dimen name="message_bubble_padding_horizontal_extra">20dp</dimen>
+    <dimen name="message_item_text_padding_left_right">12dip</dimen>
+    <dimen name="message_item_text_padding_top">5dip</dimen>
+
+    <dimen name="avatar_width_height">40dip</dimen>
+
+    <dimen name="input_text_height">48dip</dimen>
+    <dimen name="input_text_height_adjusted">8dip</dimen>
+
+    <dimen name="mms_inline_attachment_min_width">100dip</dimen>
+    <dimen name="mms_inline_attachment_min_height">60dip</dimen>
+    <dimen name="mms_image_corner_radius">1dip</dimen>
+
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_bottom">0dip</dimen>
+
+    <!-- QuickMessage -->
+    <dimen name="qm_message_height">210dp</dimen>
+    <dimen name="qm_dialog_button_bar_height">48dip</dimen>
+
+    <!-- Bammer item spacing -->
+    <dimen name="banner_s_space">4dip</dimen>
+    <dimen name="banner_m_space">8dip</dimen>
+
+    <!-- Floating action button -->
+    <dimen name="floating_action_button_height">56dp</dimen>
+    <dimen name="floating_action_button_width">56dp</dimen>
+    <dimen name="floating_action_button_radius">28dp</dimen>
+    <dimen name="floating_action_button_translation_z">5dp</dimen>
+    <dimen name="floating_action_button_margin_right">16dp</dimen>
+    <dimen name="floating_action_button_margin_bottom">16dp</dimen>
+
+    <dimen name="action_bar_elevation">2dp</dimen>
+
+</resources>

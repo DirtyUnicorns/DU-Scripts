@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="label_shadow">
+        <item name="android:shadowColor">@color/text_shadow_opaque</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="label_bold" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="label_thin" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="label_small" parent="@style/label_shadow">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="alarm_label_thin" parent="@style/label_thin">
+        <item name="android:shadowColor">@color/text_shadow_opaque</item>
+    </style>
+
+    <style name="alarm_label_bold" parent="@style/label_bold">
+        <item name="android:shadowColor">@color/text_shadow_opaque</item>
+    </style>
+
+    <style name="alarm_label_small" parent="@style/label_small">
+        <item name="android:shadowColor">@color/text_shadow_opaque</item>
+    </style>
+
+    <style name="widget_medium_light" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/widget_medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        </style>
+
+    <style name="widget_medium_bold" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/widget_medium_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        </style>
+
+    <style name="widget_big_bold" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="widget_big_thin" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="widget_big_light" parent="@style/label_shadow">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Theme.Main" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <!-- Main theme colors -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <!-- One can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <!-- App behaviour -->
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
+
+    </style>
+
+    <style name="Theme.AlertDialog" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

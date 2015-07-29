@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Crossbones Software
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Dirty Unicorns</string>
+    <string name="about_title">Welcome to </string>
+    <string name="features_title">Features</string>
+    <string name="maintainers_title">Maintainers</string>
+    <string name="maintainers_version_text">This list includes only active maintainers</string>
+    <string name="finish_button_text">Finish</string>
+    <string name="back_button_text">Back</string>
+    <string name="next_button_text">Next</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="features">\n
+-- Customizable Quick Settings\n
+-- Customizable Power Menu\n
+-- Optional DU Blacked Out Keyboard\n
+-- FAB style recents\n
+-- Gesture Anywhere\n
+-- App Circlebar\n
+-- Statusbar Battery Options\n
+-- Statusbar Traffic Indiciator Options\n
+-- Built-in Ad Blocker\n
+-- DSP Manager\n
+-- Media Scanner Options\n
+-- Ability to disable Immersive Message/FC Dialog\n
+-- OmniSwitch\n
+-- Dialer Options\n
+-- App Ops\n
+-- Theme Engine\n
+-- LCD Density\n
+-- Download Center\n\n
+-- Much More, just look in Dirty Tweaks and ENJOY!!!\n</string>
+
+    <string name="about_dirtyunicorns">Dirty Unicorns is a project that started out with no name. It was a project that was first created based off AOKP back in the early days of Jelly Bean because of curiosity. 
+In the early days it was just a one man show on one device, the EVO 3D. Since then many others have joined the project and it has grown a whole lot. We have seen a lot of talent 
+contribute to this project of ours and many of our contributors have gone to help other projects and that is ultimately why we do what we do. Once Jelly Bean was over, we 
+decided in Kitkat to move to a new base which was OmniROM. While AOKP was fun, OmniROM proved to be even more exciting because it challenged us to see what we could do with 
+something different. With Lollipop, we have moved to an AOSP base with a lot of patches from CAF to make our older devices function as they should. That said it has been an 
+awesome learning experience and is still not over! We are still learning every day and continue to move forward. Few more things we will say is that we don\'t accept nor ask for 
+donations. We don\'t believe in that. Everything that is necessary to keep this project going is out of our own pocket. Gerrit, Jenkins, Websites, Devices, etc.....We will never 
+ask for a dime. All we do ask is that you search, read and try to enjoy the process with us!!\n\n---------------------------------------------\n\n
+Devices currently supported:\n\n
+HTC One (m7gsm, m7spr, m7vzw, and m8)\n
+HTC EVO LTE\n\n
+LG G3\n\n
+Moto G 2013 (falcon)\n\n
+Moto RAZR HD\n\n
+Nexus 4\n
+Nexus 5\n
+Nexus 6\n
+Nexus 7 2012 and 2013\n
+Nexus 9\n
+Nexus 10\n\n
+OnePlus One\n
+Oppo Find 7a\n
+Samsung Galaxy Note 3\n
+Samsung Galaxy S4\n\n
+If we don\’t own it, we\’re not going to support it…….don\’t ask!!</string>
+
+    <!-- Tabs -->
+    <string name="about_tab_title">About</string>
+    <string name="features_tab_title">Features</string>
+    <string name="maintainers_tab_title">Maintainers</string>
+    <string name="social_tab_title">Social</string>
+    <string name="du_tab_title">DU Team</string>
+
+    <!-- Social -->
+    <string name="googleplus_url">https://plus.google.com/communities/109738128866939227235</string>
+    <string name="googleplus">Come join our great G+ community!!</string>
+    <string name="twitter_url">https://twitter.com/_DirtyUnicorns_</string>
+    <string name="twitter">Follow us on Twitter!!</string>
+    <string name="github">View our source and Contribute!!</string>
+    <string name="github_url">https://github.com/DirtyUnicorns</string>
+
+    <!-- Maintainers -->
+    <string name="devices_title">DEVICES:</string>
+    <string name="alex_devices">EVO LTE (jewel) / HTC One (m7)</string>
+    <string name="bosko_devices">Xperia Z (yuga) / Oppo Find 7/7a</string>
+    <string name="bret_devices">Nexus 10 (manta) / SGS5 (klte)</string>
+    <string name="edwin_devices">Nexus 7 (grouper) / Nexus 6 (shamu)</string>
+    <string name="jason_devices">Motorola RAZR HD (xt926)</string>
+    <string name="josh1_devices">Nexus 5 (hammerhead) / Nexus 7 (flo) / Nexus 9 (flounder)</string>
+    <string name="josh2_devices">SGS5 (klte)</string>
+    <string name="josh3_devices">SGS4 (jfltetmo)</string>
+    <string name="mark_devices">SGN3 (hlte)</string>
+    <string name="josip_devices">Nexus 4 (mako)</string>
+    <string name="susan_devices">HTC One (m8)</string>
+    <string name="nick_devices">OnePlus One (bacon)</string>
+    <string name="nico_devices">SGS4 LTE-A (ks01lte)</string>
+
+    <!-- DU Team -->
+    <string name="du_title">DU Team</string>
+    <string name="du_version_text">A proud group who came together</string>
+    <string name="du_version_text2">to give back to the Android community!</string>
+    <string name="alex_url">https://plus.google.com/u/0/107557684350196595860</string>
+    <string name="bosko_url">https://plus.google.com/u/0/+BoskoTrkulja</string>
+    <string name="bret_url">https://plus.google.com/u/0/100223633481073439007</string>
+    <string name="dorian_url">https://plus.google.com/100623403211375673099</string>
+    <string name="edwin_url">https://plus.google.com/+EdwinSPACEMANRivera</string>
+    <string name="james_url">https://plus.google.com/u/0/114752542428879077695</string>
+    <string name="jason_url">https://plus.google.com/u/0/101156347109612089689</string>
+    <string name="josh1_url">https://plus.google.com/u/0/+JoshChasky</string>
+    <string name="josh2_url">https://plus.google.com/u/0/+joshcorse</string>
+    <string name="josh3_url">https://plus.google.com/u/0/+JoshCorrell</string>
+    <string name="josip_url">https://plus.google.com/+JosipLazic</string>
+    <string name="mark_url">https://plus.google.com/u/0/104191856656335658539</string>
+    <string name="susan_url">https://plus.google.com/u/0/101878948250763375899</string>
+    <string name="nick_url">https://plus.google.com/u/0/113817322230271521424</string>
+    <string name="nico_url">https://plus.google.com/u/0/+NicolasDhouailly</string>
+
+</resources>

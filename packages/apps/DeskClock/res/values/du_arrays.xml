@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2014 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="snooze_count_entries" translatable="false">
+        <item>@string/entry_zero_count</item>
+        <item>@string/entry_one_count</item>
+        <item>@string/entry_three_count</item>
+        <item>@string/entry_five_count</item>
+        <item>@string/entry_ten_count</item>
+    </string-array>
+    <string-array name="snooze_count_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="alarm_type_entries" translatable="false">
+        <item>@string/alarmType</item>
+        <item>@string/ringtoneType</item>
+        <item>@string/mediaType</item>
+        <item>@string/folderType</item>
+        <!--<item>@string/playlistType</item>-->
+    </string-array>
+    <string-array name="prealarm_type_entries" translatable="false">
+        <item>@string/alarmType</item>
+        <item>@string/ringtoneType</item>
+        <item>@string/mediaType</item>
+        <item>@string/folderType</item>
+        <!--<item>@string/playlistType</item>-->
+    </string-array>
+    <string-array name="volume_increase_speed_entries" translatable="false">
+        <item>@string/entry_five_secs</item>
+        <item>@string/entry_ten_secs</item>
+        <item>@string/entry_fifteen_secs</item>
+        <item>@string/entry_thirty_secs</item>
+    </string-array>
+    <string-array name="volume_increase_speed_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="snooze_duration_entries" translatable="false">
+        <item>@string/entry_one_minute</item>
+        <item>@string/entry_three_minute</item>
+        <item>@string/entry_five_minute</item>
+        <item>@string/entry_ten_minute</item>
+        <item>@string/entry_fifteen_minute</item>
+        <item>@string/entry_thirty_minute</item>
+    </string-array>
+    <string-array name="snooze_duration_values" translatable="false">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="pre_alarm_times_entries" translatable="false">
+        <item>@string/entry_one_minute</item>
+        <item>@string/entry_three_minute</item>
+        <item>@string/entry_five_minute</item>
+        <item>@string/entry_ten_minute</item>
+        <item>@string/entry_fifteen_minute</item>
+        <item>@string/entry_thirty_minute</item>
+    </string-array>
+    <string-array name="pre_alarm_times_values" translatable="false">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+    <array name="background_color_by_hour">
+        <item>@color/hour_00</item>
+        <item>@color/hour_01</item>
+        <item>@color/hour_02</item>
+        <item>@color/hour_03</item>
+        <item>@color/hour_04</item>
+        <item>@color/hour_05</item>
+        <item>@color/hour_06</item>
+        <item>@color/hour_07</item>
+        <item>@color/hour_08</item>
+        <item>@color/hour_09</item>
+        <item>@color/hour_10</item>
+        <item>@color/hour_11</item>
+        <item>@color/hour_12</item>
+        <item>@color/hour_13</item>
+        <item>@color/hour_14</item>
+        <item>@color/hour_15</item>
+        <item>@color/hour_16</item>
+        <item>@color/hour_17</item>
+        <item>@color/hour_18</item>
+        <item>@color/hour_19</item>
+        <item>@color/hour_20</item>
+        <item>@color/hour_21</item>
+        <item>@color/hour_22</item>
+        <item>@color/hour_23</item>
+    </array>
+</resources>

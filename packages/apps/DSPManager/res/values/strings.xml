@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Per article 5 of the Apache 2.0 License, some modifications to this code
+were made by the OmniROM Project.
+
+Modifications Copyright (C) 2013 The OmniROM Project
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 3
+of the License, or (at your option) any later version.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+<resources>
+    <string name="app_name">DSP Manager</string>
+    <string name="select_configuration_title">Select configuration to edit</string>
+    <string name="headset_title">Headset</string>
+    <string name="speaker_title">Speaker</string>
+    <string name="bluetooth_title">Bluetooth</string>
+    <string name="usb_title">USB/Dock</string>
+    <string name="audio_effects">Audio effects</string>
+    <string name="pref_unavailable">Functionality is not available on your device</string>
+    <string name="dsp_settings_headset">DSP settings - Headset</string>
+    <string name="dsp_settings_speaker">DSP settings - Phone speaker</string>
+    <string name="dsp_settings_bluetooth">DSP settings - Bluetooth device</string>
+    <string name="dsp_settings_usb">DSP settings - USB device</string>
+    <string name="dsp_settings_wm8994">DSP settings - WM8994</string>
+    <string name="pref_dsp_title">Dynamic range compression</string>
+    <string name="pref_dsp_summary_on">Compression is enabled</string>
+    <string name="pref_dsp_summary_off">Compression is disabled</string>
+    <string name="pref_dsp_enable">Enable</string>
+    <string name="pref_effect_title">Select effect strength</string>
+    <string name="pref_effect_freq_title">Select effect center frequency</string>
+    <string name="dialog_effect">Effect strength</string>
+    <string name="pref_equalizer_title">Equalizer</string>
+    <string name="pref_equalizer_summary_on">Equalizer is enabled</string>
+    <string name="pref_equalizer_summary_off">Equalizer is disabled</string>
+    <string name="pref_equalizer_enable">Enable</string>
+    <string name="pref_equalizer_preset_title">Select preset</string>
+    <string name="pref_equalizer_loudness_title">Loudness compensation</string>
+    <string name="pref_bassboost_title">Bass boost</string>
+    <string name="pref_bassboost_summary_on">Bass boost is enabled</string>
+    <string name="pref_bassboost_summary_off">Bass boost is disabled</string>
+    <string name="pref_bassboost_enable">Enable</string>
+    <string name="pref_headset_virtual_title">Headset Virtual Room Effect</string>
+    <string name="pref_headset_virtual_summary_on">Headset virtual room is enabled</string>
+    <string name="pref_headset_virtual_summary_off">Headset virtual room is disabled</string>
+    <string name="pref_headset_virtual_enable">Enable</string>
+    <string name="pref_room_title">Select room type</string>
+    <string name="dialog_room">Room type</string>
+    <string name="menu_reset">Reset</string>
+    <string name="pref_headset_stereowide_title">Stereo widener</string>
+    <string name="pref_headset_stereowide_summary_on">Stereo widener is enabled</string>
+    <string name="pref_headset_stereowide_summary_off">Stereo widener is disabled</string>
+    <string name="pref_headset_stereowide_enable">Enable</string>
+    <string name="dialog_stereo">Stereo widener</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+    <string name="eq_preset_bass_booster">Bass booster</string>
+    <string name="eq_preset_bass_reducer">Bass reducer</string>
+    <string name="eq_preset_classical">Classical</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Flat</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Small speakers</string>
+    <string name="eq_preset_treble_booster">Treble booster</string>
+    <string name="eq_preset_treble_reducer">Treble reducer</string>
+    <string name="eq_preset_vocal_booster">Vocal booster</string>
+    <string name="eq_preset_custom">Custom</string>
+
+    <!-- WM8994 -->
+    <!-- Categories -->
+    <string name="category_wm8994_internal_speaker">Speaker</string>
+    <string name="category_wm8994_signal_processing">Signal processing</string>
+    <string name="category_wm8994_headphone_amp">Headset</string>
+    <string name="category_wm8994_codec_optimization">Codec optimization</string>
+    <string name="category_wm8994_dac_config">Digital/Analog converter settings</string>
+    <string name="category_wm8994_analog_path">Analog path configuration</string>
+    <string name="category_wm8994_mic_settings">Microphone settings</string>
+    <string name="category_wm8994_microphone_recording">Microphone</string>
+
+    <!-- Titles/Summaries -->
+    <string name="wm8994_settings_title_head">Sound settings</string>
+    <string name="wm8994_settings_title_subhead">Sound settings</string>
+    <string name="wm8994_settings_summary_head">Advanced control of the WM8994 sound processor</string>
+    <string name="pref_wm8994_microphone_recording_title">Recording preset</string>
+    <string name="pref_wm8994_headphone_amp_title">Amplifier level</string>
+    <string name="pref_wm8994_headphone_amp_summary">Customize the analog gain</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Headset amplifier level</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Analog gain</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Bass boost</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Advanced controls for bass boost</string>
+    <string name="pref_wm8994_bass_boost_title">Bass boost range</string>
+    <string name="pref_wm8994_bass_boost_summary">Advanced dynamic range management</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Bass boost preset</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Bass boost</string>
+    <string name="pref_wm8994_bass_boost_gain_dlg_desc">Gain</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Bass boost range</string>
+    <string name="pref_wm8994_control_enable_title">Enable WM8994 Control</string>
+    <string name="pref_wm8994_control_enable_summary">Advanced controls for the WM8994 sound processor</string>
+    <string name="pref_wm8994_speaker_tuning_title">Tune for music</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Reconfigures the hardware EQ for more bass and balanced sound</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>
+    <string name="pref_wm8994_mono_downmix_summary">Downmix stereo sound to mono (for stereo outputs, such as headphones)</string>
+    <string name="pref_wm8994_stereo_expansion_title">Stereo expansion</string>
+    <string name="pref_wm8994_stereo_expansion_summary">\'Expand\' stereo sound via digital signal processing</string>
+    <string name="pref_wm8994_dac_direct_title">D/AC direct</string>
+    <string name="pref_wm8994_dac_direct_summary">Access digital/analog converter directly, bypassing the channel mixer. Produces cleaner audio (higher signal-to-noise ratio)</string>
+    <string name="pref_wm8994_dac_osr128_title">Hi-fi playback</string>
+    <string name="pref_wm8994_dac_osr128_summary">Digital-to-analog converter 128x oversampling &#8212; cleaner sound when playing music</string>
+    <string name="pref_wm8994_adc_osr128_title">Hi-fi recording</string>
+    <string name="pref_wm8994_adc_osr128_summary">Analog-to-digital converter 128x oversampling &#8212; increases quality of recordings</string>
+    <string name="pref_wm8994_fll_tuning_title">Tuned audio clock</string>
+    <string name="pref_wm8994_fll_tuning_summary">Use tuned WM8994 audio clock source &#8212; improves quality of sound</string>
+
+    <string name="save_preset">Save preset</string>
+    <string name="load_preset">Load preset</string>
+    <string name="new_preset">New preset...</string>
+
+    <string name="help_title">Help</string>
+    <string name="help_text"><b>What is DSP Manager?</b>
+\n\n
+DSP Manager is a per-output audio adjustment app. <i>DSP</i> stands for
+Digital signal processing, and the <i>Manager</i> part refers to the fact that the
+DSP is actually not run inside the app itself; the manager can only
+enable it for apps which are compliant with Android\'s audio effect
+specification, i.e. most music players.
+\n\n\n
+<b>Philosophy</b>
+\n\n
+CyanogenMod\'s audio processing supports four different output categories:
+wired headset, USB audio, phone speaker and bluetooth headset. There is a separate
+configuration panel for each output category. DSP Manager\'s philosophy is to
+correct each audio output\'s particular deficiencies in order to reach the most
+optimal listening experience with each.
+\n\n
+Unlike with AOSP audio effects, there are no per-app settings. This is
+a deliberate design choice: it is the output we care about, not which
+app generates the audio for DSP Manager to work with.
+\n\n\n
+<b>Features</b>
+\n\n
+1. <b>Dynamic range compression (DRC)</b>
+\n\n
+This effect estimates the loudness of the audio as perceived by an average
+listener and drives a gain control based on this estimate. The primary use case
+is with noisy environments such as in cars or on street, where quiet parts of
+music are in risk of being drowned out by background noise.
+\n\n
+The sole tunable determines how hard DSP Manager will try to maintain audio
+loudness at the target level. There is no AOSP equivalent for this DSP effect.
+\n\n\n
+2. <b>Bass boost</b>
+\n\n
+The bass boost is a simple lowpass filter which can be used to add an emphasis
+at 55 Hz and lower frequencies. The boost is around 6 dB, and modified by the
+\'strength\' parameter, which adds filter resonance at the 55 Hz band, giving
+that frequency extra emphasis. The effect is designed to combat loss of bass
+frequency common with small speakers and supra-aural headsets which do not
+couple tightly with user\'s ear canal.
+\n\n\n
+3. <b>Equalizer</b>
+\n\n
+This is a 6-band equalizer with bands at 16, 64, 250, 1000, 4000 and 16000 Hz.
+Some common presets are provided, and the frequency response can also be
+customized by tapping on the equalizer graph. The effect should be used to tune
+the frequency response to user\'s personal taste, or to the particular
+capabilities of the available headset or speakers.
+\n\n
+Equalizer also contains a loudness compensation filter, which equalizes the
+changes in ear frequency response based on the sound pressure level which
+reaches the user\'s ear. Use of a wired headset is required, and the strength
+parameter value must be tuned correctly before the effect will work as
+designed.
+\n\n
+To select the right value for the compensation strength, use the quietest music
+volume, and choose some wide-spectrum noisy music such as rock or metal. Try
+to find a setting where the bass is boosted back into audibility and seems
+balanced with the rest of the material. After the compensation has been
+correctly configured, bass should remain at the same level relative to the
+other instruments regardless of the listening level. On the other hand, if
+music starts to sound bass heavy at higher listening levels, the compensation
+is probably set too strong, and should be reduced.
+\n\n
+The compensation is added to the user\'s chosen adjustments. If only compensation
+is desired, the equalizer should be left in the \'Flat\' setting.
+\n\n\n
+4. <b>Headset Filter</b>
+\n\n
+The headset filter is a crossfeed design inspired by the famous bs2b analog
+circuit. The effect passes mono sound unchanged, and adjusts the difference
+signal through a lowpass filter which approximates both head shadow and
+interaural delay at once, giving right kind of psychoacoustic clues for user\'s
+ears. The intention is to prevent listener fatigue arising from the
+implausible stereo separation inherent with all headsets. The effect should be
+enabled whenever using stereo headsets.
+\n\n
+Because the mixing reduces the stereo separation somewhat, there is a
+Haas effect reverb, which can be used to increase the perceived stereo image
+width. This is controlled by the \'Room type\' control.</string>
+
+    <!-- Sound Control -->
+    <string name="soundcontrol_title">Sound Control</string>
+
+    <!-- Preferences -->
+    <string name="pref_soundcontrol_presets_title">Sound Control Presets</string>
+    <string name="pref_soundcontrol_headphone_gain_title">Headphone Gain</string>
+    <string name="pref_soundcontrol_headphone_poweramp_gain_title">Headphone PowerAmp Gain</string>
+    <string name="pref_soundcontrol_microphone_gain_title">Microphone Gain</string>
+    <string name="pref_soundcontrol_speaker_gain_title">Speaker Gain</string>
+    <string name="pref_soundcontrol_headphone_gain_left">Headphone (Left)</string>
+    <string name="pref_soundcontrol_headphone_gain_right">Headphone (Right)</string>
+    <string name="pref_soundcontrol_headphone_poweramp_gain_left">Headphone PowerAmp (Left)</string>
+    <string name="pref_soundcontrol_headphone_poweramp_gain_right">Headphone PowerAmp (Right)</string>
+    <string name="pref_soundcontrol_microphone_handset_gain_title">Handset Microphone</string>
+    <string name="pref_soundcontrol_microphone_camcorder_gain_title">Camcorder Microphone</string>
+
+    <string name="sc_version_title">Sound Control</string>
+    <string name="sc_preset_summary">Choose a preset to load</string>
+    <string name="sc_preset_loaded">Preset \"%s\" loaded!</string>
+    <string name="sc_preset_custom">Custom</string>
+    <string name="sc_preset_quality">Quality</string>
+    <string name="sc_preset_loudness">Loudness</string>
+    <string name="sc_preset_quiet">Quiet</string>
+    <string name="sc_preset_stock">Stock</string>
+    <string name="sc_value_changed">Please stop and resume your music to apply the values!</string>
+
+    <!-- Drawer -->
+    <string name="navigation_drawer_toggle">Toggle Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_toggle_drawer">Switch to Drawer</string>
+    <string name="navigation_toggle_tabbed">Switch to Tabbed</string>
+
+    <!-- Boeffla Sound Control -->
+    <string name="boeffla_sound_control">Boeffla sound control</string>
+    <string name="boeffla_sound_title">Boeffla sound</string>
+    <string name="boeffla_sound_summary">Enable boeffla sound</string>
+    <string name="bass_freq_tuning">Bass frequency tuning</string>
+    <string name="dac_direct_summary">Bypass the analog channel</string>
+    <string name="dac_direct_title">DAC direct</string>
+    <string name="dac_oversampling_summary">128x oversampling</string>
+    <string name="dac_oversampling_title">DAC oversampling</string>
+    <string name="fll_tuning_summary">Tune the chip clock for better quality</string>
+    <string name="fll_tuning_title">FLL tuning</string>
+    <string name="general_title">General</string>
+    <string name="headphone_title">Headphone</string>
+    <string name="mic_title">Microphone</string>
+    <string name="mic_call">In call volume</string>
+    <string name="mic_general">General volume</string>
+    <string name="mono_downmix_summary">Convert stereo into mono</string>
+    <string name="mono_downmix_title">Mono downmix</string>
+    <string name="over_saturation_suppress">Over saturation suppress</string>
+    <string name="privacy_mode_summary">Mute the phone speaker while headphones are plugged in</string>
+    <string name="privacy_mode_title">Privacy mode</string>
+    <string name="speaker_tuning_summary">Tune the phone speaker for better bass</string>
+    <string name="speaker_tuning_title">Speaker tuning</string>
+    <string name="speaker_volume_title">Speaker volume</string>
+    <string name="stereo_expansion_summary">Improve sound deepness and clarity</string>
+    <string name="stereo_expansion_title">Stereo expansion</string>
+    <string name="volumes_title">Volumes</string>
+</resources>

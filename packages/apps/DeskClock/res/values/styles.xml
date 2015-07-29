@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <style name="clock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="DeskClockParentTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:buttonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="android:dialogTheme">@style/DialogTheme</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:colorPrimary">@color/hot_blue</item>
+        <item name="android:colorPrimaryDark">@color/hot_blue_dark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorControlActivated">@color/hot_blue</item>
+        <item name="android:textColor">@color/text_color_light</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:timePickerStyle">@style/TimePickerStyle</item>
+        <item name="android:colorAccent">@color/hot_blue</item>
+    </style>
+
+    <style name="TimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerTimeTextAppearance">@style/TimeLabelTextAppearance</item>
+        <item name="android:headerAmPmTextAppearance">@style/AmPmTextAppearance</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/TimePickerTheme">
+    </style>
+
+    <style name="TimeLabelTextAppearance" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="AmPmTextAppearance" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DeskClock" parent="@style/DeskClockParentTheme">
+        <item name="android:dropDownListViewStyle">@style/DeskClockDropDownListView</item>
+        <item name="android:actionBarPopupTheme">@style/PopupMenu</item>
+    </style>
+
+    <style name="DeskClockDropDownListView"
+           parent="@android:style/Widget.Material.Light.ListView.DropDown" />
+
+    <style name="SettingsTheme" parent="@android:style/Theme.Material.Settings">
+        <item name="android:colorAccent">@color/hot_blue</item>
+        <item name="android:dialogTheme">@style/DialogTheme</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:colorPrimary">@color/hot_blue</item>
+        <item name="android:colorPrimaryDark">@color/hot_blue_dark</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Theme.Material.Light">
+    </style>
+
+    <style name="CitiesTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorAccent">@color/hot_blue</item>
+        <item name="android:colorPrimary">@color/hot_blue</item>
+        <item name="android:colorPrimaryDark">@color/hot_blue_dark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:actionBarPopupTheme">@style/PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dialogTheme">@style/DialogTheme</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <!-- NOTE: This must be a fullscreen theme, or else the fullscreen alarm will
+         be unable to turn the screen on. -->
+    <style name="AlarmAlertFullScreenTheme"
+           parent="@android:style/Theme.Material.Wallpaper.NoTitleBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="TimerAlertFullScreenTheme"
+           parent="@android:style/Theme.Material.Wallpaper.NoTitleBar">
+        <item name="android:statusBarColor">@color/status_bar</item>
+    </style>
+
+    <style name="ScreensaverActivityTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <!-- Hide navigation bar when Dream is started from within the Clock app -->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="ScreensaverSettingsActivityTheme" parent="@android:style/Theme.Material" />
+
+    <style name="alarm_list_left_column">
+        <item name="android:layout_width">68dip</item>
+        <item name="android:layout_height">68dip</item>
+    </style>
+
+    <style name="small_bold">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="small_thin">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="small_light">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="no_alarms">
+        <item name="android:textSize">@dimen/alarm_info_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="timer_setup_digit">
+        <item name="android:textSize">@dimen/timer_setup_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="timer_setup_label">
+        <item name="android:textSize">@dimen/timer_setup_label_size</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="widget_medium_thin">
+        <item name="android:textSize">@dimen/widget_medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+    </style>
+
+    <style name="label_not_caps" parent="label">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="widget_label" parent="label">
+        <item name="android:textSize">@dimen/widget_label_font_size</item>
+    </style>
+
+    <style name="header">
+        <item name="android:textSize">@dimen/header_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="header_not_caps" parent ="header">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="big_thin">
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="big_light">
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="alarm_lockscreen_thin">
+        <item name="android:textSize">@dimen/alarm_info_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="widget_big_thin" parent="big_thin">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+    </style>
+
+    <style name="alarm_label">
+        <item name="android:textSize">@dimen/alarm_label_size</item>
+    </style>
+
+    <style name="alarm_label_not_caps" parent="alarm_label">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="alarm_label_bold" parent="alarm_label">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">@dimen/body_font_size</item>
+    </style>
+
+    <style name="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="PrimaryLabelTextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="SecondaryLabelTextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <!-- Status Bar Styles -->
+    <style name="TextAppearance.StatusBar">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!-- Notification content styles -->
+    <style name="TextAppearance.StatusBar.EventContent">
+        <item name="android:textSize">@dimen/notification_text_size</item>
+        <item name="android:textColor">@color/black_54p</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Title">
+        <item name="android:textSize">@dimen/notification_title_text_size</item>
+        <item name="android:textColor">@color/black_87p</item>
+    </style>
+    <style name="ToastBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/panel_undo_holo</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:alpha">0</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

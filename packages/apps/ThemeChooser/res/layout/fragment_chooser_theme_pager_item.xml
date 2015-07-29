@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2014 The CyanogenMod Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:themes="http://schemas.android.com/apk/res/org.cyanogenmod.theme.chooser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <org.cyanogenmod.theme.util.ChooserDetailScrollView
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/apply"
+        android:layout_gravity="bottom"
+        android:scrollbars="none"
+        android:clickable="false">
+
+        <!-- Note: Do not change the child order
+            without reviewing ChooserDetailLinearLayout -->
+        <org.cyanogenmod.theme.util.ChooserDetailLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- The viewpager cannot be parallax scrolled directly (weird things happen)
+                 so we wrap it in this frame layout -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <org.cyanogenmod.theme.util.ClickableViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <!-- Drawer Handle -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/detailedview_pager_background"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="6dp"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="-2dp"
+                    android:text="@string/unknown_author"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/designed_for"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="-2dp"
+                    android:text="@string/designed_for_cm11"
+                    android:textSize="12sp"
+                    android:textColor="@color/designed_for_color"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <!-- Drawer Contents -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp"
+                android:paddingBottom="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/detailedview_pager_background">
+
+                <LinearLayout
+                    android:id="@+id/details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/title_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="@string/available"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_overlays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/style" />
+
+                    <CheckBox
+                        android:id="@+id/chk_status_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_bar"/>
+
+                    <CheckBox
+                        android:id="@+id/chk_nav_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_bar"/>
+
+                    <CheckBox
+                        android:id="@+id/chk_wallpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallpapers" />
+
+                    <CheckBox
+                        android:id="@+id/chk_lockscreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lock_screen" />
+
+                    <CheckBox
+                        android:id="@+id/chk_fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fonts" />
+
+                    <CheckBox
+                        android:id="@+id/chk_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icons" />
+
+                    <CheckBox
+                        android:id="@+id/chk_boot_anims"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boot_anims" />
+
+                    <CheckBox
+                        android:id="@+id/chk_ringtones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ringtones" />
+
+                    <CheckBox
+                        android:id="@+id/chk_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notifications" />
+
+                    <CheckBox
+                        android:id="@+id/chk_alarms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alarms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/details_applied"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:id="@+id/title_applied"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="@string/applied"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/titles"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+        </org.cyanogenmod.theme.util.ChooserDetailLinearLayout>
+    </org.cyanogenmod.theme.util.ChooserDetailScrollView>
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:background="@drawable/apply_button_bg"
+        android:text="@string/apply"
+        android:textColor="@drawable/apply_button_text"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

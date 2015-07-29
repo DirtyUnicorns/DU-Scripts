@@ -1,0 +1,189 @@
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<resources>
+    <!-- Background color corresponding to the holo list 9-patch. -->
+    <color name="holo_list_background_color">#eeeeee</color>
+
+    <color name="focus_color">#44ff0000</color>
+
+    <!-- Color of ripples used for views with dark backgrounds -->
+    <color name="ripple_material_dark">#a0ffffff</color>
+
+    <!-- Divider color for header separator -->
+    <color name="primary_text_color">#363636</color>
+
+    <color name="secondary_text_color">@color/dialtacts_secondary_text_color</color>
+
+    <!-- Text color for section header. -->
+    <color name="section_header_text_color">#888888</color>
+
+    <!-- Divider color for header separator -->
+    <color name="main_header_separator_color">#AAAAAA</color>
+
+    <!-- Divider color for header separator -->
+    <color name="secondary_header_separator_color">#D0D0D0</color>
+
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#363636</color>
+
+    <!-- Color of the theme of the Dialer app -->
+    <color name="dialtacts_theme_color">#0288d1</color>
+
+    <!-- Color of image view placeholder. -->
+    <color name="image_placeholder">#DDDDDD</color>
+
+    <!-- Primary text color in the Phone app -->
+    <color name="dialtacts_primary_text_color">#333333</color>
+
+    <!-- Secondary text color in the Phone app -->
+    <color name="dialtacts_secondary_text_color">#737373</color>
+
+    <!--  Color of the semi-transparent shadow box on contact tiles -->
+    <color name="contact_tile_shadow_box_color">#7F000000</color>
+
+    <!--  Color of the status message for starred contacts in the People app -->
+    <color name="people_contact_tile_status_color">#CCCCCC</color>
+
+    <color name="shortcut_overlay_text_background">#7f000000</color>
+
+    <color name="textColorIconOverlay">#fff</color>
+    <color name="textColorIconOverlayShadow">#000</color>
+
+    <!-- Background colors for LetterTileDrawables. This set of colors is a subset of
+        https://spec.googleplex.com/quantumpalette#extended which passes Google Accessibility
+        Requirements for the color in question on white with >= 3.0 contrast. We used
+        http://leaverou.github.io/contrast-ratio/#white-on-%23db4437 to double-check the contrast.
+
+        These colors are also used by MaterialColorMapUtils to generate primary activity colors.
+    -->
+    <array name="letter_tile_colors">
+        <item>@color/letter_tile_red_color</item>
+        <item>@color/letter_tile_pink_color</item>
+        <item>@color/letter_tile_purple_color</item>
+        <item>@color/letter_tile_deep_purple_color</item>
+        <item>@color/letter_tile_indigo_color</item>
+        <item>@color/letter_tile_blue_color</item>
+        <item>@color/letter_tile_light_blue_color</item>
+        <item>@color/letter_tile_cyan_color</item>
+        <item>@color/letter_tile_teal_color</item>
+        <item>@color/letter_tile_green_color</item>
+        <item>@color/letter_tile_light_green_color</item>
+        <item>@color/letter_tile_orange_color</item>
+        <item>@color/letter_tile_deep_orange_color</item>
+        <item>@color/letter_tile_grey_color</item>
+    </array>
+
+    <!-- Darker versions of letter_tile_colors, two shades darker. These colors are used
+        for settings secondary activity colors. -->
+    <array name="letter_tile_colors_dark">
+        <item>@color/letter_tile_red_color_dark</item>
+        <item>@color/letter_tile_pink_color_dark</item>
+        <item>@color/letter_tile_purple_color_dark</item>
+        <item>@color/letter_tile_deep_purple_color_dark</item>
+        <item>@color/letter_tile_indigo_color_dark</item>
+        <item>@color/letter_tile_blue_color_dark</item>
+        <item>@color/letter_tile_light_blue_color_dark</item>
+        <item>@color/letter_tile_cyan_color_dark</item>
+        <item>@color/letter_tile_teal_color_dark</item>
+        <item>@color/letter_tile_green_color_dark</item>
+        <item>@color/letter_tile_light_green_color_dark</item>
+        <item>@color/letter_tile_orange_color_dark</item>
+        <item>@color/letter_tile_deep_orange_color_dark</item>
+        <item>@color/letter_tile_grey_color_dark</item>
+    </array>
+
+
+    <!-- The default color used for tinting photos when no color can be extracted via Palette,
+            this is Blue Grey 500 -->
+    <color name="quickcontact_default_photo_tint_color">#607D8B</color>
+    <!-- The default secondary color when no color can be extracted via Palette,
+            this is Blue Grey 700 -->
+    <color name="quickcontact_default_photo_tint_color_dark">#455A64</color>
+
+
+    <color name="letter_tile_default_color">#cccccc</color>
+
+    <color name="letter_tile_font_color">#ffffff</color>
+
+    <!-- Background color of action bars. Ensure this stays in sync with packages/Telephony
+         actionbar_background_color. -->
+    <color name="actionbar_background_color">#0fc6dc</color>
+    <!-- Color for icons in the actionbar -->
+    <color name="actionbar_icon_color">#ffffff</color>
+    <!-- Darker version of the actionbar color. Used for the status bar and navigation bar colors. -->
+    <color name="actionbar_background_color_dark">#008aa1</color>
+
+    <color name="tab_ripple_color">@color/tab_accent_color</color>
+    <color name="tab_accent_color">#ffffff</color>
+    <color name="tab_selected_underline_color">@color/tab_accent_color</color>
+
+    <!-- Color of the title to the Frequently Contacted section -->
+    <color name="frequently_contacted_title_color">@color/actionbar_background_color</color>
+
+    <!-- Color of action bar text. Ensure this stays in sync with packages/Telephony
+    phone_settings_actionbar_text_color-->
+    <color name="actionbar_text_color">#ffffff</color>
+    <color name="actionbar_unselected_text_color">#a6ffffff</color>
+
+    <!-- Text color of the search box text as entered by user  -->
+    <color name="searchbox_text_color">#000000</color>
+    <!-- Background color of the search box -->
+    <color name="searchbox_background_color">#ffffff</color>
+
+    <color name="searchbox_hint_text_color">#737373</color>
+    <color name="searchbox_icon_tint">@color/searchbox_hint_text_color</color>
+
+    <color name="search_shortcut_background_color">#b6b6b6</color>
+    <color name="search_shortcut_icon_color">#f8f8f8</color>
+
+    <!-- Color of the background of the contact detail and editor pages -->
+    <color name="background_primary">#f9f9f9</color>
+    <color name="contact_all_list_background_color">#FFFFFF</color>
+
+    <color name="contact_tile_text_color">#ff202020</color>
+    <color name="frequent_contact_text_color">#ff000000</color>
+
+   <!-- Background colors for LetterTileDrawables definitions. -->
+    <color name="letter_tile_red_color">#DB4437</color>
+    <color name="letter_tile_pink_color">#E91E63</color>
+    <color name="letter_tile_purple_color">#9C27B0</color>
+    <color name="letter_tile_deep_purple_color">#673AB7</color>
+    <color name="letter_tile_indigo_color">#3F51B5</color>
+    <color name="letter_tile_blue_color">#4285F4</color>
+    <color name="letter_tile_light_blue_color">#039BE5</color>
+    <color name="letter_tile_cyan_color">#0097A7</color>
+    <color name="letter_tile_teal_color">#009688</color>
+    <color name="letter_tile_green_color">#0F9D58</color>
+    <color name="letter_tile_light_green_color">#689F38</color>
+    <color name="letter_tile_orange_color">#EF6C00</color>
+    <color name="letter_tile_deep_orange_color">#FF5722</color>
+    <color name="letter_tile_grey_color">#757575</color>
+    <color name="letter_tile_red_color_dark">#C53929</color>
+    <color name="letter_tile_pink_color_dark">#C2185B</color>
+    <color name="letter_tile_purple_color_dark">#7B1FA2</color>
+    <color name="letter_tile_deep_purple_color_dark">#512DA8</color>
+    <color name="letter_tile_indigo_color_dark">#303F9F</color>
+    <color name="letter_tile_blue_color_dark">#3367D6</color>
+    <color name="letter_tile_light_blue_color_dark">#0277BD</color>
+    <color name="letter_tile_cyan_color_dark">#006064</color>
+    <color name="letter_tile_teal_color_dark">#00796B</color>
+    <color name="letter_tile_green_color_dark">#0B8043</color>
+    <color name="letter_tile_light_green_color_dark">#33691E</color>
+    <color name="letter_tile_orange_color_dark">#E65100</color>
+    <color name="letter_tile_deep_orange_color_dark">#E64A19</color>
+    <color name="letter_tile_grey_color_dark">#424242</color>
+</resources>

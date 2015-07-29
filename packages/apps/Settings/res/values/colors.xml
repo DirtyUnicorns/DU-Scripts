@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="black">#000</color>
+    <color name="red">#F00</color>
+
+    <color name="material_empty_color_light">#FFCED7DB</color>
+
+    <color name="memory_used">#F00</color>
+    <color name="memory_avail">@color/material_empty_color_light</color>
+    <color name="memory_apps_usage">#00796B</color>
+    <color name="memory_downloads">#3367D6</color>
+    <color name="memory_dcim">#0097A7</color>
+    <color name="memory_music">#689F38</color>
+    <color name="memory_cache">#283593</color>
+    <color name="memory_misc">#7B1FA2</color>
+    <color name="memory_user_light">#479392</color>
+    <color name="memory_user_dark">#316665</color>
+
+    <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
+    <color name="crypt_keeper_clock_foreground">#ff666666</color>
+    <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
+    <color name="crypt_keeper_password_background">#70606060</color>
+
+    <color name="divider_color">#20ffffff</color>
+    <color name="title_color">@android:color/holo_blue_light</color>
+    <color name="setup_divider_color_dark">#33ffffff</color>
+    <color name="setup_divider_color_light">#33000000</color>
+    <color name="setup_lock_pattern_view_regular_color_dark">#ffbdbdbd</color>
+    <color name="setup_lock_pattern_view_regular_color_light">@color/lock_pattern_view_regular_color</color>
+    <color name="setup_lock_pattern_view_success_color_dark">#ff84ffff</color>
+    <color name="setup_lock_pattern_view_success_color_light">@color/setup_wizard_color_accent_light</color>
+    <color name="setup_lock_pattern_view_error_color_dark">#fff44336</color>
+    <color name="setup_lock_pattern_view_error_color_light">@color/lock_pattern_view_error_color</color>
+    <color name="setup_wizard_color_accent_dark">#ff00e4ff</color>
+    <color name="setup_wizard_color_accent_light">#ff00828e</color>
+    <color name="setup_wizard_wifi_color_dark">#ff00e4ff</color>
+    <color name="setup_wizard_wifi_color_light">#ff0096a6</color>
+
+    <color name="circle_avatar_frame_color">#ffffffff</color>
+    <color name="circle_avatar_frame_shadow_color">#80000000</color>
+    <color name="circle_avatar_frame_pressed_color">#ffffffff</color>
+
+    <color name="lock_pattern_background">#00000000</color>
+    <color name="lock_pattern_view_regular_color">#ff37474f</color>
+    <color name="lock_pattern_view_success_color">@color/theme_accent</color>
+    <color name="lock_pattern_view_error_color">#fff4511e</color>
+
+    <color name="unlock_pattern_view_regular_color">@android:color/white</color>
+    <color name="unlock_pattern_view_success_color">@color/theme_accent</color>
+    <color name="unlock_pattern_view_error_color">#fff4511e</color>
+
+    <color name="running_processes_system_ram">#ff384248</color>
+    <color name="running_processes_apps_ram">#ff009587</color>
+    <color name="running_processes_free_ram">#ffced7db</color>
+
+    <!-- Palette colors referenced by top-level themes. -->
+    <color name="theme_primary">#ff263238</color>
+    <color name="theme_primary_dark">#ff21272b</color>
+    <color name="theme_accent">#ff009688</color>
+
+    <color name="dashboard_background_color">#ffe1e1e0</color>
+    <color name="switchbar_background_color">#ff37474f</color>
+    <color name="switch_accent_color">#ff7fcac3</color>
+
+    <color name="wifi_divider">#ffe0e0e0</color>
+    <color name="sim_noitification">@*android:color/material_deep_teal_500</color>
+
+    <!-- Hard coded background and text colors exposed for better theme support -->
+    <color name="background_color_darker_gray">@android:color/darker_gray</color>
+    <color name="background_color_gray">#ddd</color>
+    <color name="background_color_holo_blue_light">@android:color/holo_blue_light</color>
+    <color name="background_color_transparent">@android:color/transparent</color>
+    <color name="background_color_white">@android:color/white</color>
+    <color name="text_color_black">@android:color/black</color>
+    <color name="text_color_darker_gray">@android:color/darker_gray</color>
+    <color name="text_color_holo_blue_light">@android:color/holo_blue_light</color>
+    <color name="text_color_secondary_text_material_light">
+        @*android:color/secondary_text_material_light
+    </color>
+    <color name="text_color_translucent_white">#B3FFFFFF</color>
+    <color name="text_color_white">@android:color/white</color>
+    <!-- Dashboard background color -->
+    <color name="dashboard_category_background_color">@android:color/white</color>
+    <!-- Data usage chart color -->
+    <color name="data_usage_stroke_color">#00000000</color>
+    <color name="data_usage_fill_color">#ff009688</color>
+    <color name="data_usage_secondary_fill_color">#ff80cbc4</color>
+    <color name="data_usage_label_color">#ff37474f</color>
+    <color name="data_usage_secondary_label_color">#fff4511e</color>
+    <!-- Lockscreen shortcuts -->
+    <color name="lockscreen_shortcuts_text_color">#424242</color>
+    <color name="lockscreen_shortcuts_tint_color">#333333</color>
+    <!-- Owner info -->
+    <color name="ownerinfo_divider_color">#ff404040</color>
+    <!-- Installed app details -->
+    <color name="security_settings_billing_desc_color">#ffffb060</color>
+    <!-- Switch Bar Text Color -->
+    <color name="switchbar_text_color">#ffffffff</color>
+
+    <!-- DU Extra info -->
+    <color name="extrainfo_separator">#ffffffff</color>
+    <color name="extrainfo_cat_background">#ff263238</color>
+    <color name="extrainfo_cat_text">#ffffffff</color>
+    <color name="extrainfo_value_text">#ff263238</color>
+
+</resources>

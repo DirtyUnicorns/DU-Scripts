@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The CyanogenMod Project (DvTonder)
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/QuickMessageContentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical" >
+
+    <!-- message information section incl sender name, badge and timestamp -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:layout_gravity="left" >
+
+        <android.widget.QuickContactBadge
+            android:id="@+id/contactBadge"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_contact_picture"
+            android:clickable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_contact_picture" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical"
+            android:paddingLeft="4dp" >
+
+            <TextView
+                android:id="@+id/fromTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorLink="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/timestampTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorTertiary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Blue divider line below sender info -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/holo_blue_light"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" />
+
+    <!-- Message body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:minHeight="72dp"
+        android:background="@color/quickmessage_body_dark_bg"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" >
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="72dp"
+            android:autoLink="all"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorLink="?android:attr/textColorPrimary" />
+    </ScrollView>
+
+    <!-- 'Tap to reply' editor, character counter and send button -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quickmessage_body_dark_bg"
+        android:paddingTop="4dp"
+        android:paddingLeft="6dp"
+        android:paddingBottom="2dp" >
+
+        <ImageButton
+            android:id="@+id/templates_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_templates_holo_dark"
+            android:drawablePadding="0dip"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginBottom="2dip"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/button_templates"
+            android:nextFocusRight="@+id/embedded_text_editor" />
+
+        <EditText
+            android:id="@+id/embedded_text_editor"
+            android:layout_width="0dip"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:autoText="true"
+            android:textSize="16sp"
+            android:capitalize="sentences"
+            android:nextFocusRight="@+id/send_button"
+            android:hint="@string/type_to_reply_text_enter_to_send"
+            android:minHeight="@dimen/input_text_height"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorTertiary"
+            android:textCursorDrawable = "@null"
+            android:maxLines="@integer/qm_message_response_max_lines"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:maxLength="2000" />
+
+        <LinearLayout
+            android:id="@+id/button_with_counter"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorTertiary"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingBottom="4dip"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/send_button_sms"
+                style="?android:attr/borderlessButtonStyle"
+                android:src="@drawable/send_button_selector_dark"
+                android:drawablePadding="0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:contentDescription="@string/send"
+                android:nextFocusLeft="@+id/embedded_text_editor" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

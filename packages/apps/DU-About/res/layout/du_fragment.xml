@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Crossbones Software
+     This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:textSize="20sp"
+                android:text="@string/du_title" />
+
+            <TextView android:id="@+id/du_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:text="@string/du_version_text" />
+
+            <TextView android:id="@+id/du_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:text="@string/du_version_text2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/alex"
+                android:onClick="launchAlex" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/bosko"
+                android:onClick="launchBosko" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/bret"
+                android:onClick="launchBret" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/dorian"
+                android:onClick="launchDorian" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/edwin"
+                android:onClick="launchEdwin" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/james"
+                android:onClick="launchJames" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/jason"
+                android:onClick="launchJason" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/josh1"
+                android:onClick="launchJosh1" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/josh2"
+                android:onClick="launchJosh2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/josh3"
+                android:onClick="launchJosh3" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/josip"
+                android:onClick="launchJosip" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/mark"
+                android:onClick="launchMark" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/susan"
+                android:onClick="launchSusan" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/nick"
+                android:onClick="launchNick" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10sp"
+                android:src="@drawable/nico"
+                android:onClick="launchNico" />
+
+            <TextView android:id="@+id/du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2013 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="app_name">OmniSwitch</string>
+	<string name="package_stop_task_title">Stop</string>
+	<string name="package_inspect_item_title">App info</string>
+	<string name="recents_settings_title">OmniSwitch</string>
+	<string name="start_on_boot_title">Start on boot</string>
+	<string name="start_on_boot_summary">Start and enable on device boot</string>
+	<string name="opacity_title">Opacity</string>
+	<string name="opacity_summary">Background opacity of overlay view</string>
+	<string name="animate_title">Animate</string>
+	<string name="animate_title_summary">Animate show and hide of overlay view</string>
+	<string name="adjust_handle_title">Position and size</string>
+	<string name="adjust_handle_help">Move and resize drag handle.\nPress button to switch between left and right side of the display.</string>
+	<string name="sc_drag_handle_title">Drag handle</string>
+	<string name="sc_drag_handle_body">\nSwipe horizontally to open\n\nPress button or outside to close\n\nLong press to open quick switcher</string>
+	<string name="sc_favorite_title">Favorite apps</string>
+	<string name="sc_favorite_body">\nOpen favorite apps view.</string>
+        <string name="icon_size_normal">Normal</string>
+        <string name="icon_size_small">Small</string>
+        <string name="icon_size_large">Large</string>
+	<string name="icon_size_title">Icon size</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="drag_handle_color_title">Color</string>
+	<string name="drag_handle_color_dialog_title">Color</string>
+	<string name="service_background_processes"><xliff:g id="memory">%1$s</xliff:g> free</string>
+	<string name="service_foreground_processes"><xliff:g id="memory">%1$s</xliff:g> used</string>
+	<string name="show_rambar_title">Show memory usage</string>
+	<string name="show_rambar_summary">Display amount of free and used memory</string>
+	<string name="show_app_labels">Show app name</string>
+	<string name="show_app_labels_summary">Application name will be displayed with the icon</string>
+	<string name="category_overlay_title">Overlay</string>
+	<string name="category_drag_handle_title">Drag handle</string>
+	<string name="category_favorite_title">Favorites</string>
+	<string name="favorite_apps_config_title">Manage favorites</string>
+	<string name="favorite_apps_config_summary">Define apps shown in favorites view</string>
+	<string name="favorite_apps_add_dialog_title">Add apps</string>
+	<string name="favorite_add">Add\u2026</string>
+	<string name="location_left">Left</string>
+	<string name="location_right">Right</string>
+	<string name="reset">Default</string>
+	<string name="toggle_last_app">Last app</string>
+	<string name="toggle_last_app_help">Switch to last app</string>
+	<string name="kill_all_apps_help">Kill all apps</string>
+	<string name="kill_other_apps_help">Kill other apps</string>
+	<string name="settings_help">Settings</string>
+	<string name="home_help">Home</string>
+	<string name="kill_all_apps">Kill all</string>
+	<string name="kill_other_apps">Kill other</string>
+	<string name="settings">Settings</string>
+	<string name="home">Home</string>
+	<string name="buttons_title">Buttons</string>
+	<string name="buttons_summary">Configure action buttons in overlay view</string>
+	<string name="auto_hide_handle">Auto-hide</string>
+	<string name="auto_hide_handle_summary">Two swipes to show overlay view</string>
+	<string name="no_recent_apps_title">No recent apps</string>
+	<string name="drag_handle_opacity_title">Opacity</string>
+	<string name="drag_handle_enable_title">Enable</string>
+	<string name="drag_handle_enable_summary">Disable only if you use another activation method</string>
+	<string name="allapps_help">App drawer</string>
+	<string name="allapps">Apps</string>
+	<string name="dim_behind_title">Dim background</string>
+	<string name="dim_behind_summary">Apply opacity to complete screen</string>
+	<string name="gravity_title">Horizontal gravity</string>
+	<string name="gravity_center">Center</string>
+	<string name="gravity_drag">Drag handle side</string>
+	<string name="dialog_pick_iconpack_title">Pick icon pack</string>
+	<string name="default_iconpack_title">Default icons</string>
+	<string name="icon_packs_title">Icon packs</string>
+	<string name="no_iconpacks_summary">No icon packs installed</string>
+	<string name="icon_pack_title">Icon pack</string>
+	<string name="icon_pack_summary">Use icon pack for app icons</string>
+	<string name="category_speed_switcher_title">Quick Switcher</string>
+	<string name="speed_switcher_enable_summary">Long press drag handle to activate</string>
+	<string name="speed_switcher_enable_title">Enable</string>
+	<string name="back">Back</string>
+	<string name="back_help">Back</string>
+	<string name="kill_current">Kill current</string>
+	<string name="kill_current_help">Kill current app</string>
+	<string name="speed_switch_color_summary">Blue -recent apps. Green - favorites. Red - actions</string>
+	<string name="speed_switch_color">Level background colors</string>
+	<string name="speed_switch_limit_summary">Limit area for level changes</string>
+	<string name="speed_switch_limit">Level change area</string>
+	<string name="speed_switch_button_title">Buttons</string>
+	<string name="speed_switch_button_summary">Configure action buttons in quick switcher view</string>
+	<string name="speed_switch_items_summary">Maximum number of level items</string>
+	<string name="speed_switch_item">Level item limit</string>
+	<string name="sc_quick_switcher_title">Quick switcher</string>
+	<string name="sc_quick_switcher_body">\nMoving up and down to switch between levels.\n\nMoving left and right to switch between level items.</string>
+	<string name="sc_quick_switcher_empty_body">\nNo recent apps or favorites.\n\nMoving up and down to switch between levels.\n\nMoving left and right to switch between level items.</string>
+	<string name="immersive_mode">Immersive mode</string>
+	<string name="immersive_mode_help">Toggle immersive mode</string>
+	<string name="package_add_favorite_title">Add to favorites</string>
+	<string name="package_remove_favorite_title">Remove from favorites</string>
+	<string name="open_favorite_help">Open/close favorites view</string>
+	<string name="button_pos_title">Button position</string>
+	<string name="button_pos_top">Top/Left</string>
+	<string name="button_pos_bottom">Bottom/Right</string>
+	<string name="bg_style_solid">Solid</string>
+	<string name="bg_style_transparent">Transparent</string>
+	<string name="bg_style_title">Background style</string>
+	<string name="lock_to_app">Pin app</string>
+	<string name="lock_app_help">Pin app</string>
+	<string name="app_filter_category_title">App filter</string>
+	<string name="app_filter_boot_title">Active since boot</string>
+	<string name="layout_style_title">Style</string>
+	<string name="layout_style_1">Horizontal</string>
+	<string name="layout_style_2">Vertical</string>
+	<string name="no_limit">No limit</string>
+	<string name="one_hour">1 hour</string>
+	<string name="three_hours">3 hours</string>
+	<string name="six_hours">6 hours</string>
+	<string name="twelve_hours">12 hours</string>
+	<string name="one_day">1 day</string>
+	<string name="two_days">2 days</string>
+	<string name="one_week">1 week</string>
+	<string name="app_filter_time_title">Active since</string>
+	<string name="close_help">Close overlay</string>
+	<string name="close">Close</string>
+	<string name="thumb_size_title">Thumbnail size</string>
+        <string name="thumb_size_normal">Normal</string>
+        <string name="thumb_size_small">Small</string>
+        <string name="thumb_size_medium">Medium</string>
+</resources>

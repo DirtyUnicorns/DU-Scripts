@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="header_icon_width">28dp</dimen>
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
+
+    <dimen name="qs_tile_max_size">120dp</dimen>
+    <dimen name="qs_tile_max_padding">10dp</dimen>
+    <dimen name="qs_tile_dragged_z">10dp</dimen>
+
+    <dimen name="lockscreen_icon_side_padding">10dp</dimen>
+    <dimen name="lockscreen_icon_size">35dp</dimen>
+    <dimen name="phone_side_padding">10dp</dimen>
+    <dimen name="phone_bottom_padding">40dp</dimen>
+
+    <dimen name="phone_width">320dp</dimen>
+    <dimen name="phone_height">420dp</dimen>
+
+    <!-- Navbar -->
+    <dimen name="navigation_bar_48">48dp</dimen>
+    <dimen name="navigation_bar_44">44dp</dimen>
+    <dimen name="navigation_bar_42">42dp</dimen>
+    <dimen name="navigation_bar_40">40dp</dimen>
+    <dimen name="navigation_bar_36">36dp</dimen>
+    <dimen name="navigation_bar_30">30dp</dimen>
+    <dimen name="navigation_bar_24">24dp</dimen>
+    <dimen name="navigation_bar_0">0dp</dimen>
+
+    <!-- Expanded Desktop -->
+    <dimen name="fab_line_width">2dp</dimen>
+
+</resources>

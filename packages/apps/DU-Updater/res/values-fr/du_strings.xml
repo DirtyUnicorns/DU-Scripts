@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by mazwoz on 03.03.15.-->
+<!--  Copyright (C) 2015 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">DU Updater</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="start_download">Téléchargement en cours</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="title_activity_download_intent">Télécharger la mise à jour</string>
+    <string name="large_text">Texte Large</string>
+    <string name="update_schedule">Planification des mises à jour</string>
+    <string name="schedule_update_checks">État du contrôle</string>
+    <string name="checking_on">Mises à jour vérifiées</string>
+    <string name="checking_off">Mises à jour non vérifiées</string>
+    <string name="title_interval">Fréquence</string>
+    <string name="interval_summary">Définir la fréquence de vérification des mises à jour</string>
+
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    android:id="@+id/alarm_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    android:background="@color/view_background"
+    android:elevation="@dimen/item_elevation" >
+    <!-- TODO~: flatten this layout using gridLayout which supports layout_weight as of 21 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/alarm_side_padding"
+        android:paddingEnd="@dimen/alarm_side_padding" >
+
+        <com.android.deskclock.widget.TextTime
+            android:id="@+id/digital_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/alarm_time_font_size"
+            dc:format12Hour="@string/alarm_time_12_hours_format"
+            dc:format24Hour="@string/clock_24_hours_format" />
+
+        <Space
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/expand_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/collapse_expand_height"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingStart="@dimen/alarm_side_padding"
+            android:paddingEnd="@dimen/alarm_side_padding" >
+
+            <CheckBox
+                android:id="@+id/repeat_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="28dip"
+                android:layout_gravity="center_vertical|start"
+                android:text="@string/alarm_repeat"
+                android:textSize="16sp"
+                android:paddingStart="12dip" />
+
+            <LinearLayout
+                android:id="@+id/repeat_days"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!-- Day buttons are put here programatically -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dip"
+                android:orientation="horizontal" >
+                <CheckBox
+                    android:id="@+id/alarm_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:text="@string/alarm_title"
+                    android:paddingStart="12dip"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/choose_ringtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_ringtone_black"
+                    android:ellipsize="start"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dip"
+                android:orientation="horizontal" >
+                <CheckBox
+                    android:id="@+id/pre_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:text="@string/prealarm_title"
+                    android:paddingStart="12dip"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/prealarm_choose_ringtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_ringtone_black"
+                    android:ellipsize="start"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/vibrate_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="28dip"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:text="@string/alarm_vibrate"
+                android:paddingStart="12dip"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collapse_expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/collapse_alarm"
+            android:paddingStart="@dimen/alarm_side_delete_padding"
+            android:paddingEnd="@dimen/alarm_side_padding"
+            android:background="@color/hot_blue" >
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete_alarm"
+                android:src="@drawable/ic_delete_small" />
+
+            <com.android.deskclock.widget.EllipsizeLayout
+                android:id="@+id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless" >
+
+                <TextView
+                    android:id="@+id/edit_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingEnd="8dip"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical|start" />
+
+                <TextView
+                    android:id="@+id/daysOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tomorrowLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical" />
+
+            </com.android.deskclock.widget.EllipsizeLayout>
+
+            <ImageButton
+                android:id="@+id/arrow"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/expand_alarm"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_expand_down"
+                android:scaleType="center" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
