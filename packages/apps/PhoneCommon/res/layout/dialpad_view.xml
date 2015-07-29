@@ -24,6 +24,42 @@
     android:background="@color/background_dialpad"
     android:clickable="true" >
 
+    <!-- Text field where call rate is displayed for ILD calls. -->
+    <LinearLayout
+        android:id="@+id/rate_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ild_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ild_margin_height"
+            android:layout_marginBottom="@dimen/ild_margin_height">
+
+            <TextView android:id="@+id/ild_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView android:id="@+id/ild_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3" />
+
+    </LinearLayout>
+
     <!-- Text field and possibly soft menu button above the keypad where
      the digits are displayed. -->
     <LinearLayout
@@ -77,23 +113,6 @@
             android:state_enabled="false"
             android:contentDescription="@string/description_delete_button"
             android:src="@drawable/ic_dialpad_delete" />
-
-      <EditText
-        android:id="@+id/recipients"
-        android:layout_width="0dip"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginLeft="8dip"
-        android:layout_weight="1"
-        android:autoText="true"
-        android:background="@android:color/transparent"
-        android:hint="@string/to_hint"
-        android:maxLength="2000"
-        android:maxLines="3"
-        android:minHeight="48dip"
-        android:textColor="@color/dialpad_digits_text_color"
-        android:textSize="16sp"
-        android:visibility="gone"/>
     </LinearLayout>
 
     <View

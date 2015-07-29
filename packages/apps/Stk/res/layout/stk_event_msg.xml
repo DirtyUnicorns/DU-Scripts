@@ -22,7 +22,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layoutDirection="ltr"
     android:background="@android:drawable/toast_frame">
 
     <ImageView android:id="@android:id/icon"

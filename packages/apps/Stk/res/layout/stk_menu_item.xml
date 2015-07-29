@@ -19,7 +19,6 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:gravity="center"
-    android:layoutDirection="ltr"
 	android:orientation="horizontal">
 
 	<ImageView
@@ -28,7 +27,7 @@
         android:layout_width="@android:dimen/app_icon_size"
         android:layout_height="@android:dimen/app_icon_size"
         android:layout_gravity="center_vertical"
-        android:layout_marginStart="5dip"
+        android:layout_marginLeft="5dip"
     />
 
 	<TextView
@@ -39,7 +38,7 @@
         android:minHeight="?android:attr/listPreferredItemHeight"
 	    android:textAppearance="?android:attr/textAppearanceLarge"
 	    android:gravity="center_vertical"
-	    android:layout_marginStart="9dip"
+	    android:layout_marginLeft="9dip"
 	/>
 
 </LinearLayout>
