@@ -137,6 +137,9 @@
     <dimen name="dashboard_tile_image_margin_start">16dp</dimen>
     <dimen name="dashboard_tile_image_margin_end">32dp</dimen>
 
+    <!-- Dashboard Category Margin Bottom -->
+    <dimen name="dashboard_category_margin_bottom">8dip</dimen>
+
     <!-- SwitchBar margin start / end -->
     <dimen name="switchbar_margin_start">16dp</dimen>
     <dimen name="switchbar_margin_end">16dp</dimen>
