@@ -43,6 +43,6 @@
     <color name="hour_23">#272430</color>
 
     <!--- Color to modify the numpad color in timer -->
-    <color name="numpad_color">#ffffff</color>
+    <color name="numpad_color">#333333</color>
 
 </resources>
