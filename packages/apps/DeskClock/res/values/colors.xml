@@ -55,4 +55,5 @@
     <color name="analog_color_light">#de000000</color>
     <color name="tab_indicator">#ffffff</color>
     <color name="no_alarms_text_color">#aaaaaa</color>
+    <color name="notify_action_color">#ff5a595b</color> <!-- button_material_dark" -->
 </resources>

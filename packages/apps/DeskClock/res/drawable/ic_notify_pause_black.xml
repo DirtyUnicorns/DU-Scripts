@@ -15,7 +15,7 @@
 -->
 
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/ic_fab_pause"
-    android:tint="@color/icon_color_light" />
+    android:src="@drawable/ic_notify_pause"
+    android:tint="@color/notify_action_color" />
 
 
