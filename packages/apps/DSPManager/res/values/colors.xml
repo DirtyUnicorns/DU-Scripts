@@ -34,6 +34,6 @@
     <!-- Material -->
     <color name="primary">#4CAF50</color>
     <color name="primary_dark">#388E3C</color>
-    <color name="accent">#8BC34A</color>
-    <color name="navigation_drawer">#fff</color>
+    <color name="accent">#2d7d30</color>
+    <color name="navigation_drawer">#4CAF50</color>
 </resources>

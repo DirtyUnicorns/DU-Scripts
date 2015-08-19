@@ -36,7 +36,7 @@
         android:id="@+id/drawer_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#111"
+        android:textColor="@color/white"
         android:textSize="15sp"
         android:background="?android:attr/activatedBackgroundIndicator"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"

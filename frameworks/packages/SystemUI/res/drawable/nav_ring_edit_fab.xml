@@ -14,15 +14,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Button xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/segmented_button_spacing"
-    android:layout_weight="1"
-    android:gravity="center_horizontal|top"
-    android:textColor="@color/segmented_button_text_selector"
-    android:background="?android:attr/actionBarItemBackground"
-    android:textAppearance="@style/TextAppearance.QS.SegmentedButton"
-    android:minHeight="64dp"
-    android:paddingTop="11dp"
-    android:drawablePadding="6dp" />
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/navring_edit_tint">
+    <item android:drawable="@drawable/navring_edit_circle" />
+</ripple>

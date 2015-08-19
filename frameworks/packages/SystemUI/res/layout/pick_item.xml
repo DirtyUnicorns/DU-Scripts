@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2014 The Android Open Source Project
+<!-- Copyright (C) 2015 The CyanogenMod Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +13,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Button xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="0dp"
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/segmented_button_spacing"
-    android:layout_weight="1"
-    android:gravity="center_horizontal|top"
-    android:textColor="@color/segmented_button_text_selector"
-    android:background="?android:attr/actionBarItemBackground"
-    android:textAppearance="@style/TextAppearance.QS.SegmentedButton"
-    android:minHeight="64dp"
-    android:paddingTop="11dp"
-    android:drawablePadding="6dp" />
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:gravity="center_vertical"
+    android:drawablePadding="8dip"
+    android:paddingStart="11dip"
+    android:paddingEnd="11dip" />
