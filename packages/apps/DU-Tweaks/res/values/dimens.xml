@@ -33,16 +33,11 @@
     <dimen name="phone_height">420dp</dimen>
 
     <!-- Navbar -->
-    <dimen name="navigation_bar_48">48dp</dimen>
-    <dimen name="navigation_bar_44">44dp</dimen>
-    <dimen name="navigation_bar_42">42dp</dimen>
-    <dimen name="navigation_bar_40">40dp</dimen>
-    <dimen name="navigation_bar_36">36dp</dimen>
-    <dimen name="navigation_bar_30">30dp</dimen>
-    <dimen name="navigation_bar_24">24dp</dimen>
-    <dimen name="navigation_bar_0">0dp</dimen>
+    <integer name="navigation_bar_height_min_percent">35</integer>
+    <integer name="navigation_bar_height_max_percent">135</integer>
+    <integer name="navigation_bar_width_min_percent">35</integer>
+    <integer name="navigation_bar_width_max_percent">135</integer>
 
     <!-- Expanded Desktop -->
     <dimen name="fab_line_width">2dp</dimen>
-
 </resources>
