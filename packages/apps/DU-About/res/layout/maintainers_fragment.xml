@@ -231,7 +231,6 @@
                 android:textSize="15sp"
                 android:text="@string/mark_devices" />
 
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -252,6 +251,48 @@
                 android:paddingBottom="5sp"
                 android:textSize="15sp"
                 android:text="@string/josip_devices" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:src="@drawable/nick"
+                android:onClick="launchNick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingBottom="5sp"
+                android:text="@string/devices_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:textSize="15sp"
+                android:text="@string/nick_devices" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:src="@drawable/nico"
+                android:onClick="launchNico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingBottom="5sp"
+                android:text="@string/devices_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:textSize="15sp"
+                android:text="@string/nico_devices" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -278,8 +319,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:src="@drawable/nick"
-                android:onClick="launchNick" />
+                android:src="@drawable/tony"
+                android:onClick="launchTony" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -293,28 +334,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
                 android:textSize="15sp"
-                android:text="@string/nick_devices" />
-
-	    <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/nico"
-                android:onClick="launchNico" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:paddingBottom="5sp"
-                android:text="@string/devices_title" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:textSize="15sp"
-                android:text="@string/nico_devices" />
+                android:text="@string/tony_devices" />
 
             <TextView android:id="@+id/maintainers"
                 android:layout_width="wrap_content"

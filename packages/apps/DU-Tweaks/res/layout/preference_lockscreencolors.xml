@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The Dirty Unicorns Project
+<!-- Copyright (C) 2014 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@
         android:layout_marginEnd="6dip"
         android:layout_height="wrap_content">
         <ImageView
-            android:src="@drawable/ic_settings_slim_sizer"
+            android:src="@drawable/ic_lockscreen_colors"
             android:tint="@color/icon_tint_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,3 +65,9 @@
     </RelativeLayout>
 
 </LinearLayout>
+
+
+
+
+
+

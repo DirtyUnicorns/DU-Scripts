@@ -35,9 +35,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"
-            android:layout_marginStart="@android:dimen/notification_large_icon_width"
+            android:layout_marginStart="@dimen/notification_icon_size"
             android:gravity="center"
-            android:minHeight="@android:dimen/notification_large_icon_width"
+            android:minHeight="@dimen/notification_icon_size"
             android:orientation="vertical"
             android:paddingBottom="2dp"
             android:paddingEnd="8dp"
@@ -47,6 +47,7 @@
                 android:id="@+id/line1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:orientation="horizontal" >
 
                 <Chronometer
@@ -62,6 +63,7 @@
                 android:id="@+id/swn_expanded_laps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:ellipsize="marquee"
                 android:fadingEdge="horizontal"
                 android:singleLine="true"
@@ -74,7 +76,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dip"
         android:background="@color/black_16p"
-        android:layout_marginStart="@android:dimen/notification_large_icon_width"
         android:contentDescription="@null" />
 
     <FrameLayout
@@ -84,8 +85,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@android:dimen/notification_large_icon_width"
-            android:orientation="horizontal" >
+            android:layout_marginStart="@dimen/notification_icon_size"
+            android:divider="@drawable/divider"
+            android:dividerPadding="12dp"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
 
             <TextView
                 android:id="@+id/swn_left_button"
@@ -96,6 +100,7 @@
                 android:drawablePadding="8dp"
                 android:ellipsize="end"
                 android:gravity="start|center_vertical"
+                android:paddingStart="8dp"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.StatusBar.EventContent" />
 
@@ -108,6 +113,7 @@
                 android:drawablePadding="8dp"
                 android:ellipsize="end"
                 android:gravity="start|center_vertical"
+                android:paddingStart="8dp"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.StatusBar.EventContent" />
         </LinearLayout>
