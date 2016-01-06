@@ -107,6 +107,7 @@ cd packages
 delete_useless ${packages[@]}
 cd SystemUI
 delete_useless ${common[@]}
+rm -rf docs
 cd res
 delete_useless ${res[@]}
 cd values
