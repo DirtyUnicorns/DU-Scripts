@@ -38,8 +38,7 @@
     android:background="@color/button_background_color"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:animateLayoutChanges="true"
-    android:visibility="invisible" >
+    android:animateLayoutChanges="true" >
 
     <LinearLayout
         android:orientation="horizontal"
@@ -70,13 +69,6 @@
             android:background="@drawable/btn_compound_audio"
             android:contentDescription="@string/audio_mode_speaker" />
 
-        <!-- "Change to audio call" for video calls. -->
-        <ImageButton android:id="@+id/changeToVoiceButton"
-            style="@style/InCallButton"
-            android:background="@drawable/btn_change_to_voice"
-            android:contentDescription="@string/onscreenChangeToVoiceText"
-            android:visibility="gone" />
-
         <!-- MIDDLE LEFT SLOT ================================================================== -->
 
         <!-- "Mute" -->
@@ -102,7 +94,7 @@
         <ToggleButton android:id="@+id/holdButton"
             style="@style/InCallCompoundButton"
             android:background="@drawable/btn_compound_hold"
-            android:contentDescription="@string/onscreenHoldText" />
+            android:contentDescription="@string/onscreenHoldText_unselected" />
 
         <!-- "Swap" (or "Manage calls" in some CDMA states) -->
         <ImageButton android:id="@+id/swapButton"
@@ -130,6 +122,13 @@
         <!-- This slot is either "Add" or "Merge", depending on the state of the call.  One or the
              other of these must always be set to GONE. -->
 
+        <!-- "Turn off camera" for video calls. -->
+        <ToggleButton android:id="@+id/pauseVideoButton"
+            style="@style/InCallCompoundButton"
+            android:background="@drawable/btn_compound_video_off"
+            android:contentDescription="@string/onscreenPauseVideoText"
+            android:visibility="gone" />
+
         <!-- "Add Call" -->
         <ImageButton android:id="@+id/addButton"
             style="@style/InCallButton"
@@ -146,18 +145,18 @@
             android:contentDescription="@string/onscreenMergeCallsText"
             android:visibility="gone" />
 
-        <!-- "Switch camera" for video calls. -->
-        <ToggleButton android:id="@+id/pauseVideoButton"
-            style="@style/InCallCompoundButton"
-            android:background="@drawable/btn_compound_video_off"
-            android:contentDescription="@string/onscreenPauseVideoText"
-            android:visibility="gone" />
-
         <!-- "Overflow" -->
         <ImageButton android:id="@+id/overflowButton"
             style="@style/InCallButton"
             android:background="@drawable/btn_overflow"
             android:contentDescription="@string/onscreenOverflowText"
+            android:visibility="gone" />
+
+        <!-- "Manage conference button (Video Call) " -->
+        <ImageButton android:id="@+id/manageVideoCallConferenceButton"
+            style="@style/InCallButton"
+            android:background="@drawable/ic_group_white_24dp"
+            android:contentDescription="@string/onscreenManageConferenceText"
             android:visibility="gone" />
 
     </LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The Android Open Source Project
+<!-- Copyright (C) 2015 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@
         android:elevation="2dp">
 
     <com.android.systemui.qs.QSPanel
-        android:id="@+id/quick_settings_panel"
-        android:background="@color/qs_panel_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:id="@+id/quick_settings_panel"
+            android:background="@color/quick_settings_panel_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <LinearLayout
+<LinearLayout
         android:id="@+id/task_manager_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,3 +46,4 @@
             android:orientation="vertical" />
     </LinearLayout>
 </com.android.systemui.qs.QSContainer>
+

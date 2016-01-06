@@ -49,114 +49,162 @@
                 android:text="@string/du_version_text2" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/alex"
                 android:onClick="launchAlex" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/bosko"
                 android:onClick="launchBosko" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/bret"
                 android:onClick="launchBret" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/dorian"
                 android:onClick="launchDorian" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/edwin"
                 android:onClick="launchEdwin" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/james"
                 android:onClick="launchJames" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/jason"
                 android:onClick="launchJason" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/josh1"
                 android:onClick="launchJosh1" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/josh2"
                 android:onClick="launchJosh2" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/josh3"
                 android:onClick="launchJosh3" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/josip"
                 android:onClick="launchJosip" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/mark"
                 android:onClick="launchMark" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/nick"
                 android:onClick="launchNick" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/nico"
                 android:onClick="launchNico" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/susan"
                 android:onClick="launchSusan" />
 
             <ImageView
+                android:padding="40dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="10sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:src="@drawable/tony"
                 android:onClick="launchTony" />
 

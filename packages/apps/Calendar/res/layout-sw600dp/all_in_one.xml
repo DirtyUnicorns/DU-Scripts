@@ -72,6 +72,7 @@
                 layout="@layout/floating_action_button" />
 
         </RelativeLayout>
+
         <FrameLayout
             android:id="@+id/secondary_pane"
             android:visibility="gone"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-** Copyright 2012, The Android Open Source Project
+** Copyright 2015, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License"); 
 ** you may not use this file except in compliance with the License. 
@@ -86,13 +86,27 @@
             >
             <include layout="@layout/system_icons" />
         </FrameLayout>
-        <com.android.systemui.BatteryLevelTextView android:id="@+id/battery_level_text"
+        <com.android.systemui.BatteryLevelTextView
+            android:id="@+id/battery_level_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/header_battery_margin_expanded"
             android:paddingEnd="@dimen/battery_level_padding_end"
-            android:textColor="@color/status_bar_battery_level_text_color"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="@dimen/battery_level_text_size"
+            android:importantForAccessibility="noHideDescendants"/>
+
+        <com.android.systemui.BatteryLevelTextView
+            android:id="@+id/battery_level_text_expanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/header_battery_margin_expanded"
+            android:paddingEnd="@dimen/battery_level_padding_end"
+            android:textColor="#ffffff"
+            android:visibility="gone"
             android:textSize="@dimen/battery_level_text_size"
             android:importantForAccessibility="noHideDescendants"/>
     </LinearLayout>
@@ -152,7 +166,7 @@
                 />
     </FrameLayout>
 
-    <TextView android:id="@+id/alarm_status"
+    <com.android.systemui.statusbar.AlphaOptimizedButton android:id="@+id/alarm_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -160,13 +174,13 @@
         android:layout_marginBottom="4dp"
         android:drawablePadding="6dp"
         android:drawableStart="@drawable/ic_access_alarms_small"
-        android:textColor="@color/status_bar_alarm_status_text_color"
+        android:textColor="#64ffffff"
         android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date"
         android:paddingEnd="6dp"
         android:paddingStart="6dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:background="@drawable/ripple_drawable"
+        android:background="?android:attr/selectableItemBackground"
         android:visibility="gone"
         />
 
@@ -184,17 +198,19 @@
             android:id="@+id/weather_line_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingEnd="@dimen/status_bar_weather_padding_end"
+            android:paddingEnd="16dp"
             android:gravity="right"
-            android:textAppearance="@style/TextAppearance.StatusBar.Expanded.WeatherTemp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/weather_text_size"
             android:importantForAccessibility="noHideDescendants"/>
     <TextView
             android:id="@+id/weather_line_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingEnd="@dimen/status_bar_weather_padding_end"
+            android:paddingEnd="16dp"
             android:gravity="right"
-            android:textAppearance="@style/TextAppearance.StatusBar.Expanded.WeatherLocation"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/weather_text_size"
             android:importantForAccessibility="noHideDescendants"/>
     </LinearLayout>
 
@@ -214,6 +230,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        systemui:hasOverlappingRendering="false"
         />
 
     <TextView
@@ -225,7 +242,7 @@
         android:fontFamily="sans-serif-condensed"
         android:textSize="11dp"
         android:textStyle="bold"
-        android:textColor="#00A040"
+        android:textColor="@color/header_debug_info_text_color"
         android:padding="2dp"
         />
 

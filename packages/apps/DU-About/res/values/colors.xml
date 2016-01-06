@@ -15,10 +15,14 @@
  -->
 <resources>
 
-    <color name="primary">#ffD32F2F</color>
-    <color name="primary_dark">#ffC62828</color>
-    <color name="primary_light">#ffE53935</color>
+    <color name="primary">#ffa61919</color>
+    <color name="primary_dark">#ff911111</color>
+    <color name="primary_light">#ffa61919</color>
     <color name="accent">#ffffffff</color>
+    <color name="dark_grey">#4d4d4d</color>
+    <color name="secondary">#009688</color>
+    <color name="cardsbg">#ffffff</color>
+    <color name="light_bg">#fafafa</color>
 
 </resources>
 

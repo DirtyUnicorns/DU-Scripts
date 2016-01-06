@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The Android Open Source Project
+<!-- Copyright (C) 2015 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Toolbar
+        <com.android.documentsui.DocumentsToolBar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
@@ -39,7 +39,7 @@
                 android:layout_marginStart="4dp"
                 android:overlapAnchor="true" />
 
-        </Toolbar>
+        </com.android.documentsui.DocumentsToolBar>
 
         <com.android.documentsui.DirectoryContainerView
             android:id="@+id/container_directory"

@@ -36,7 +36,8 @@
             android:gravity="left|bottom"
             android:paddingLeft="10dp"
             android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmallInverse" />
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
         <TextView
             android:id="@+id/backgroundText"
             android:layout_width="0px"
@@ -47,6 +48,7 @@
             android:gravity="right|bottom"
             android:paddingRight="10dp"
             android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmallInverse" />
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </view>
 </LinearLayout>

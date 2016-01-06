@@ -46,5 +46,5 @@
         android:focusable="false"
         android:singleLine="true"
         android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceListItem" />
 </GridLayout>

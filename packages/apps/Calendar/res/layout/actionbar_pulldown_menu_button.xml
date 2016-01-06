@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:textColor="@color/calendar_view_switch_menu_text_color"
+        android:textColor="@color/calendar_view_md_switch_menu_text_color"
         android:layout_weight="1" />
 
     <TextView android:id="@+id/button_date"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dip"
         android:layout_marginRight="16dip"
-        android:textColor="@color/calendar_view_switch_menu_text_color_light"
+        android:textColor="@color/calendar_view_md_switch_menu_text_color_light"
         android:textSize="14sp" />
 </LinearLayout>
 

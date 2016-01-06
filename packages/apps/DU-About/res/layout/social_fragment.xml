@@ -30,12 +30,14 @@
             android:gravity="center_horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:padding="10dp"
+                android:padding="40dp"
                 android:src="@drawable/googleplus"                
-                android:onClick="launchGoogleplus" />
+                android:onClick="launchGoogleplus"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -45,12 +47,14 @@
                 android:text="@string/googleplus" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:padding="10dp"
-                android:src="@drawable/twitter"                
-                android:onClick="launchTwitter" />
+                android:padding="40dp"
+                android:src="@drawable/twitter"
+                android:onClick="launchTwitter"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,12 +64,14 @@
                 android:text="@string/twitter" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:padding="10dp"
-                android:src="@drawable/github"                
-                android:onClick="launchGithub" />
+                android:padding="40dp"
+                android:src="@drawable/github"
+                android:onClick="launchGithub"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"

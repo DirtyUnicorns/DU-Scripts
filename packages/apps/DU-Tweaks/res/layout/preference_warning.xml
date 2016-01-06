@@ -28,7 +28,6 @@
         android:layout_height="fill_parent">
         <ImageView
             android:src="@drawable/ic_warning"
-            android:tint="@color/icon_tint_color"
             android:gravity="center_vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />

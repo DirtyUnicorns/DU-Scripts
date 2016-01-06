@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dip"
             android:paddingRight="10dip"
-            android:text="@string/navigation_bar_height_title" />
+            android:text="@string/portrait_title" />
 
         <TextView
             android:id="@+id/value"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dip"
             android:paddingRight="10dip"
-            android:text="@string/navigation_bar_width_title" />
+            android:text="@string/land_vert_title" />
 
         <TextView
             android:id="@+id/value"
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dip"
             android:paddingRight="10dip"
-            android:text="@string/navigation_bar_height_landscape_title" />
+            android:text="@string/land_hor_title" />
 
         <TextView
             android:id="@+id/value"

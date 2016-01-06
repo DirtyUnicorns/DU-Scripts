@@ -93,6 +93,10 @@
     <dimen name="switcher_size">72dp</dimen>
     <dimen name="face_circle_stroke">1dip</dimen>
     <dimen name="focus_debug_stroke">1dip</dimen>
+    <dimen name="focus_circle_stroke">1.25dp</dimen>
+    <dimen name="focus_circle_min_size">24dp</dimen>
+    <dimen name="focus_circle_max_size">96dp</dimen>
+    <dimen name="focus_circle_initial_size">48dp</dimen>
     <dimen name="shutter_offset">-22dp</dimen>
     <dimen name="size_thumbnail">200dip</dimen>
     <dimen name="size_preview">400dip</dimen>
@@ -199,11 +203,17 @@
     <dimen name="mode_options_toggle_padding">12dp</dimen>
     <dimen name="mode_options_buttons_anim_delta_x">20dp</dimen>
 
-    <dimen name="video_hint_arrow_size">118dp</dimen>
-    <dimen name="video_hint_phone_graphic_height">66dp</dimen>
-    <dimen name="video_hint_phone_graphic_width">36dp</dimen>
     <dimen name="default_cling_width">120dp</dimen>
     <dimen name="settings_cling_width">160dp</dimen>
     <dimen name="settings_cling_triangle_height">15dp</dimen>
     <dimen name="settings_cling_triangle_width">20dp</dimen>
+
+    <dimen name="rounded_thumbnail_padding">12dp</dimen>
+    <dimen name="rounded_thumbnail_diameter_normal">48dp</dimen>
+    <dimen name="rounded_thumbnail_diameter_min">24dp</dimen>
+    <dimen name="rounded_thumbnail_diameter_max">54dp</dimen>
+    <dimen name="rounded_thumbnail_ripple_ring_diameter_min">40dp</dimen>
+    <dimen name="rounded_thumbnail_ripple_ring_diameter_max">70dp</dimen>
+    <dimen name="rounded_thumbnail_ripple_ring_thick_max">5dp</dimen>
+    <dimen name="rounded_thumbnail_ripple_ring_thick_min">1dp</dimen>
 </resources>

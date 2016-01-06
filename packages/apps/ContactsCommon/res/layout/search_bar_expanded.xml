@@ -30,7 +30,7 @@
         android:src="@drawable/ic_back_arrow"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:contentDescription="@string/action_menu_back_from_search"
-        android:tint="@color/actionbar_background_color" />
+        android:tint="@color/back_arrow_icon_tint_color" />
 
     <EditText
         android:id="@+id/search_view"
@@ -52,7 +52,7 @@
         android:id="@+id/search_close_button"
         android:layout_height="@dimen/search_box_close_icon_size"
         android:layout_width="@dimen/search_box_close_icon_size"
-        android:layout_margin="@dimen/search_box_close_icon_margin"
+        android:padding="@dimen/search_box_close_icon_padding"
         android:src="@drawable/ic_close_dk"
         android:clickable="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"

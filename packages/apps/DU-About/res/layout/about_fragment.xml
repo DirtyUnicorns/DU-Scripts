@@ -1,52 +1,152 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 Crossbones Software
-     This code has been modified.  Portions copyright (C) 2013, Dirty Unicorns Project.
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_bg">
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-  
-          http://www.apache.org/licenses/LICENSE-2.0
-  
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent" 
-        android:layout_height="fill_parent" >
+    <ScrollView
+        android:id="@+id/aboutdu_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal" >
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView android:id="@+id/about_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="@string/about_title" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:src="@drawable/dirtyunicorns_logo"/>
-
-            <TextView android:id="@+id/about"
+            <android.support.v7.widget.CardView
+                android:id="@+id/aboutdu"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center" />
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <LinearLayout
+                        android:id="@+id/aboutdu_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10sp"
+                            android:src="@drawable/dirtyunicorns_logo" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/aboutdu_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/aboutdu_title"
+                        android:layout_alignStart="@+id/aboutdu_title"
+                        android:layout_below="@id/aboutdu_title"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/aboutdu_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/aboutdu_text"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/about_dirtyunicorns"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/aboutdu_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/aboutdu_text2"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/about_dirtyunicorns2"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_small" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/aboutdu2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <LinearLayout
+                        android:id="@+id/aboutdu2_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/aboutdu2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/aboutdu2_title"
+                        android:layout_alignStart="@+id/aboutdu2_title"
+                        android:layout_below="@id/aboutdu2_title"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/aboutdu2_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/aboutdu2_text"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:text="@string/about_dirtyunicorns3"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_small" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
-    </RelativeLayout>
+    </ScrollView>
 
-</ScrollView>
+</RelativeLayout>

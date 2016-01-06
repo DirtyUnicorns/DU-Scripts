@@ -65,8 +65,6 @@
 
     <style name="SettingsTheme" parent="@android:style/Theme.Material.Settings">
         <item name="android:colorAccent">@color/hot_blue</item>
-        <item name="android:dialogTheme">@style/DialogTheme</item>
-        <item name="android:alertDialogTheme">@style/DialogTheme</item>
         <item name="android:colorPrimary">@color/hot_blue</item>
         <item name="android:colorPrimaryDark">@color/hot_blue_dark</item>
     </style>

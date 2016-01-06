@@ -90,15 +90,14 @@
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
 		android:elevation="@dimen/button_elevation"
-		android:visibility="gone"
-		android:layout_marginStart="3dp" >
+		android:visibility="gone" >
 
 		<ScrollView
 			android:id="@+id/button_list_bottom"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_gravity="bottom" >
-
+			android:layout_gravity="bottom"
+		    android:layout_marginStart="3dp" >
 			<LinearLayout
 				android:id="@+id/button_list_items_bottom"
 				android:layout_width="wrap_content"

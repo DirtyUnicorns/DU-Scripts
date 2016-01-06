@@ -19,7 +19,7 @@
     <!-- Initial height of transparent space above QuickContacts -->
     <dimen name="quickcontact_starting_empty_height">150dp</dimen>
     <!-- Initial size of QuickContact's title size -->
-    <dimen name="quickcontact_maximum_title_size">36dp</dimen>
+    <dimen name="quickcontact_maximum_title_size">30dp</dimen>
     <!-- When QC is uncollapsed, the title has this much margin on its left, right and bottom -->
     <dimen name="quickcontact_title_initial_margin">16dp</dimen>
     <!-- The ratio of width:height for the contact's photo in landscape -->
@@ -33,14 +33,18 @@
         snaps to the top of the window. -->
     <dimen name="quickcontact_snap_to_top_slop_height">33dp</dimen>
 
+    <!-- The ratio of width:height (360:184) for the compact editor contact photo in portrait -->
+    <item name="editor_portrait_photo_ratio" type="dimen" format="float">1.96</item>
+
     <!-- Padding of the rounded plus/minus/expand/collapse buttons in the editor  -->
     <dimen name="editor_round_button_padding_left">16dip</dimen>
     <dimen name="editor_round_button_padding_right">16dip</dimen>
     <dimen name="editor_round_button_padding_top">16dip</dimen>
     <dimen name="editor_round_button_padding_bottom">16dip</dimen>
 
-    <!-- Minimum height of a row in the Editor -->
-    <dimen name="editor_min_line_item_height">48dip</dimen>
+    <!-- Minimum height of a row in the Editor. This is the target height for editor "rows",
+        including the "More fields" button/row. -->
+    <dimen name="editor_min_line_item_height">54dp</dimen>
 
     <!-- Width of the delete button (X) in the raw contact editor -->
     <dimen name="editor_delete_button_width">48dp</dimen>
@@ -69,21 +73,21 @@
     <dimen name="editor_kind_icon_total_width">68dp</dimen>
 
     <!-- Padding below every editor view, such as LabeledEditorView. This value is chosen
-        to give 32dp of apparent padding between EditText's in the Raw Contact Editor. -->
-    <dimen name="editor_padding_between_editor_views">15dp</dimen>
+        to give 19dp of apparent padding between EditText's in the Raw Contact Editor. -->
+    <dimen name="editor_padding_between_editor_views">2dp</dimen>
 
-    <!-- Padding below every readonly editor view. This value is chosen to give 32dp of apparent padding
-        between TextView's in the readonly Raw Contact Editor. -->
-    <dimen name="editor_padding_between_read_only_editor_views">25dp</dimen>
+    <!-- Padding below every readonly editor view. This value is chosen to give 19dp of apparent
+        padding between TextView's in the readonly Raw Contact Editor. -->
+    <dimen name="editor_padding_between_read_only_editor_views">9dp</dimen>
 
-    <!-- Padding above and below the photo editor. This value is chosen to give 32dp of apparent
+    <!-- Padding above and below the photo editor. This value is chosen to give 19dp of apparent
         padding between TextView's and the photo's ImageView. -->
-    <dimen name="editor_padding_around_read_only_photo_editor">28dp</dimen>
+    <dimen name="editor_padding_around_read_only_photo_editor">15dp</dimen>
 
     <!-- Padding below the photo editor. This value is larger than
         editor_padding_between_editor_views, since ImageView's don't have space between the bottom
         of their visual bottom, like an EditText does. -->
-    <dimen name="editor_padding_below_photo">21dp</dimen>
+    <dimen name="editor_padding_below_photo">9dp</dimen>
 
     <!-- Width of the Type-Label in the Editor -->
     <dimen name="editor_type_label_width">150dip</dimen>
@@ -93,6 +97,9 @@
 
     <!-- Left padding of the label in the add field button for the contact editor -->
     <dimen name="editor_add_field_label_left_padding">16dip</dimen>
+
+    <!-- Top margin for the first field of the compact contact editor -->
+    <dimen name="editor_compact_first_field_padding">10dp</dimen>
 
     <!-- Width and height of the expanded contact photo on the contact detail page -->
     <dimen name="detail_contact_photo_expanded_size">400dip</dimen>

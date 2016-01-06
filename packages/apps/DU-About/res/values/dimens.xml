@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cards -->
+    <dimen name="cards_padding">16dp</dimen>
+    <dimen name="cards_elevation">3dp</dimen>
+    <dimen name="cards_margin">8dp</dimen>
+    <dimen name="finalcard_margin">10dp</dimen>
+    <dimen name="cards_text_margin">5dp</dimen>
+    <dimen name="mini_margin">2dp</dimen>
+    <dimen name="card_corner_radius">4dp</dimen>
+    <dimen name="text_big">20sp</dimen>
+    <dimen name="text_med">18sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_ultrasmall">14sp</dimen>
+    <dimen name="no_width">0dp</dimen>
+
+</resources>

@@ -17,3 +17,4 @@
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/ic_lock_power_screenrecord_alpha"
     android:tint="?attr/colorControlNormal" />
+

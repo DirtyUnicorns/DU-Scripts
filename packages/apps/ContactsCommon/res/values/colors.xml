@@ -106,7 +106,6 @@
         <item>@color/letter_tile_grey_color_dark</item>
     </array>
 
-
     <!-- The default color used for tinting photos when no color can be extracted via Palette,
             this is Blue Grey 500 -->
     <color name="quickcontact_default_photo_tint_color">#607D8B</color>
@@ -147,43 +146,24 @@
     <color name="searchbox_hint_text_color">#737373</color>
     <color name="searchbox_icon_tint">@color/searchbox_hint_text_color</color>
 
-    <color name="search_shortcut_background_color">#b6b6b6</color>
-    <color name="search_shortcut_icon_color">#f8f8f8</color>
+    <color name="search_shortcut_icon_color">@color/dialtacts_theme_color</color>
 
     <!-- Color of the background of the contact detail and editor pages -->
     <color name="background_primary">#f9f9f9</color>
     <color name="contact_all_list_background_color">#FFFFFF</color>
 
-    <color name="contact_tile_text_color">#ff202020</color>
-    <color name="frequent_contact_text_color">#ff000000</color>
+    <!-- Text color used for character counter when the max limit has been exceeded -->
+    <color name="call_subject_limit_exceeded">#d1041c</color>
 
-   <!-- Background colors for LetterTileDrawables definitions. -->
-    <color name="letter_tile_red_color">#DB4437</color>
-    <color name="letter_tile_pink_color">#E91E63</color>
-    <color name="letter_tile_purple_color">#9C27B0</color>
-    <color name="letter_tile_deep_purple_color">#673AB7</color>
-    <color name="letter_tile_indigo_color">#3F51B5</color>
-    <color name="letter_tile_blue_color">#4285F4</color>
-    <color name="letter_tile_light_blue_color">#039BE5</color>
-    <color name="letter_tile_cyan_color">#0097A7</color>
-    <color name="letter_tile_teal_color">#009688</color>
-    <color name="letter_tile_green_color">#0F9D58</color>
-    <color name="letter_tile_light_green_color">#689F38</color>
-    <color name="letter_tile_orange_color">#EF6C00</color>
-    <color name="letter_tile_deep_orange_color">#FF5722</color>
-    <color name="letter_tile_grey_color">#757575</color>
-    <color name="letter_tile_red_color_dark">#C53929</color>
-    <color name="letter_tile_pink_color_dark">#C2185B</color>
-    <color name="letter_tile_purple_color_dark">#7B1FA2</color>
-    <color name="letter_tile_deep_purple_color_dark">#512DA8</color>
-    <color name="letter_tile_indigo_color_dark">#303F9F</color>
-    <color name="letter_tile_blue_color_dark">#3367D6</color>
-    <color name="letter_tile_light_blue_color_dark">#0277BD</color>
-    <color name="letter_tile_cyan_color_dark">#006064</color>
-    <color name="letter_tile_teal_color_dark">#00796B</color>
-    <color name="letter_tile_green_color_dark">#0B8043</color>
-    <color name="letter_tile_light_green_color_dark">#33691E</color>
-    <color name="letter_tile_orange_color_dark">#E65100</color>
-    <color name="letter_tile_deep_orange_color_dark">#E64A19</color>
-    <color name="letter_tile_grey_color_dark">#424242</color>
+    <!-- Tint color for the call subhect history icon. -->
+    <color name="call_subject_history_icon">#000000</color>
+
+    <!-- Divider line on the call subhect dialog. -->
+    <color name="call_subject_divider">#d8d8d8</color>
+
+    <!-- Text color for the SEND & CALL button on the call subject dialog. -->
+    <color name="call_subject_button">#00c853</color>
+
+    <!-- Background color for the call subject history view. -->
+    <color name="call_subject_history_background">#ffffff</color>
 </resources>

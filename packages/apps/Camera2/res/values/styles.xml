@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Camera resources below -->
     <style name="Theme.ProxyLauncher" parent="@android:Theme.Translucent.NoTitleBar">
     </style>
@@ -24,10 +24,14 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowTitleSize">0dp</item>
         <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@android:color/black</item>
-        <item name="android:colorBackground">@android:color/black</item>
-        <item name="android:colorBackgroundCacheHint">@android:color/black</item>
+        <item name="android:windowBackground">@color/camera_gray_background</item>
+        <item name="android:colorBackground">@color/camera_gray_background</item>
+        <item name="android:colorBackgroundCacheHint">@color/camera_gray_background</item>
         <item name="android:actionBarStyle">@style/Camera.ActionBar</item>
+    </style>
+
+    <style name="Theme.SecureCamera" parent="@style/Theme.Camera">
+        <item name="android:windowBackground">@drawable/cover</item>
     </style>
 
     <style name="Camera.ActionBar" parent="android:Widget.Holo.Light.ActionBar">
@@ -229,5 +233,14 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textColor">@color/blue_button_text_color</item>
         <item name="android:padding">12dp</item>
+    </style>
+    <style name="DialogCheckBox">
+        <item name="android:textColor">@color/dialog_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">1.9sp</item>
+        <!-- In v21 Material, can handle black button with a tint property; for
+             earlier versions we must fully replace the drawable which we do
+             here with a Material-style black asset -->
+        <item name="android:button">@drawable/checkbox_material_black</item>
     </style>
 </resources>

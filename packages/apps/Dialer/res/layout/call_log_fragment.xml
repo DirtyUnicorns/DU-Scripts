@@ -15,72 +15,23 @@
 -->
 
 <!-- Layout parameters are set programmatically. -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:divider="?android:attr/dividerHorizontal"
-    android:showDividers="end"
-    android:background="@color/background_dialer_list_items">
+    android:background="@color/background_dialer_call_log">
 
-    <FrameLayout
-        android:id="@+id/voicemail_status"
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_dialer_call_log"
+        android:paddingStart="@dimen/call_log_horizontal_margin"
+        android:paddingEnd="@dimen/call_log_horizontal_margin" />
+
+    <com.android.dialer.widget.EmptyContentView
+        android:id="@+id/empty_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone">
-        <include layout="@layout/call_log_voicemail_status"
-    />
-    </FrameLayout>
+        android:layout_gravity="center"
+        android:visibility="gone" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/filter_status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/ContactListSeparatorTextViewStyle"
-            android:layout_marginStart="@dimen/call_log_outer_margin"
-            android:layout_marginEnd="@dimen/call_log_outer_margin"
-            android:paddingTop="@dimen/call_log_inner_margin"
-            android:paddingBottom="@dimen/call_log_inner_margin"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:visibility="gone"
-            />
-        <View
-            android:id="@+id/call_log_divider"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginStart="@dimen/call_log_outer_margin"
-            android:layout_marginEnd="@dimen/call_log_outer_margin"
-            android:layout_gravity="bottom"
-            android:background="#55ffffff"
-            />
-    </FrameLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!-- clipChildren=false is required to ensure shadows drawn
-            within list items aren't clipped by the list item bounds. -->
-        <ListView android:id="@android:id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fadingEdge="none"
-            android:scrollbarStyle="outsideOverlay"
-            android:background="@color/background_dialer_list_items"
-            android:divider="@null"
-            android:nestedScrollingEnabled="true"
-            android:clipChildren="false"
-        />
-
-        <include
-            android:id="@+id/empty_list_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/empty_list_view"
-            android:visibility="gone"/>
-
-    </FrameLayout>
-
-</LinearLayout>
+</FrameLayout>

@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (C) 2012 The Android Open Source Project
+  ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@
     <color name="dialpad_primary_text_color">@color/dialer_theme_color</color>
     <color name="dialpad_secondary_text_color">#737373</color>
     <color name="dialpad_digits_text_color">#333</color>
-    <color name="dialpad_separator_line_color">#dadada</color>
+    <color name="dialpad_separator_line_color">#e3e3e3</color>
     <color name="dialpad_icon_tint">#b3b3b3</color>
     <color name="dialpad_voicemail_tint">#919191</color>
 </resources>

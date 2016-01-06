@@ -41,7 +41,7 @@
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:ellipsize="marquee"
-                android:text="@string/wakelock_blocker_title"
+                android:text="@string/wakelockblocker_category"
                 android:padding="6dp"
                 android:fadingEdge="horizontal" />
 
