@@ -13,13 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=$1
-
-if [ $# -ne 1 ] || [ ! -d $WORKING_DIR ]; then
-    echo "usage: ./update-themes.sh ABSOLUTE_PATH_TO_REPO"
-    echo "example: ./update-themes.sh /home/user/repo"
-    exit 1
-fi
+WORKING_DIR=/home/mazda/mm-du
 
 function delete_useless () {
   declare -a array=($@)
@@ -66,7 +60,7 @@ function copy_all () {
 declare -a root=('Theme-Resources' 'abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
                  'sdk' 'system' 'tools' 'vendor')
 
-declare -a frameworks=('api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
+declare -a frameworks=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
                        'telephony' 'test-runner' 'tests' 'tools' 'wifi')
 
 declare -a common=('.classpath' '.git' '.gitignore' '.idea' '.project' 'assets' 'build.gradle' 'src' 'tests' 'Android.mk' 'AndroidManifest.xml' 'CleanSpec.mk' 'lint.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'preloaded-classes'
@@ -77,9 +71,9 @@ declare -a common=('.classpath' '.git' '.gitignore' '.idea' '.project' 'assets' 
 declare -a packages=('BackupRestoreConfirmation' 'CaptivePortalLogin' 'DefaultContainerService' 'ExternalStorageProvider' 'FakeOemFeatures' 'FusedLocation' 'InputDevices' 'Keyguard' 'PrintSpooler' 'SettingsProvider'
                      'SharedStorageBackup' 'Shell' 'VpnDialogs' 'WAPPushManager' 'WAPPushManager' 'WallpaperCropper' 'services')
 
-declare -a res=('assets' 'menu*' 'values-*' 'xml*' 'interpolator' 'raw*' 'anim' 'animator' 'transition' 'MakeJavaSymbols.sed')
+declare -a res=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'assets' 'menu*' 'values-*' 'xml*' 'interpolator' 'raw*' 'anim' 'animator' 'transition' 'MakeJavaSymbols.sed')
 
-declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'attrs.xml' 'attrs_manifest.xml' 'bookmarks_icons.xml' 'bools.xml' 'config.xml' 'defaults.xml' 'donottranslate.xml' 'donottranslate_config.xml'
+declare -a values=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'attrs.xml' 'attrs_manifest.xml' 'bookmarks_icons.xml' 'bools.xml' 'config.xml' 'defaults.xml' 'donottranslate.xml' 'donottranslate_config.xml'
                    'aliases.xml' 'crop_colors.xml' 'dslv_attrs.xml' 'animation_constants.xml' 'donottranslate-cldr.xml' 'donottranslate-maps.xml' 'donottranslate-names.xml' 'donottranslate_material.xml'
                    'donottranslate-search_engines.xml' 'du_arrays.xml' 'du_strings.xml' 'du_symbols.xml' 'fractions.xml' 'ids.xml' 'integers.xml' 'internal.xml' 'keys.xml' 'lland_config.xml' 'lland_strings.xml' 'plurals.xml'
                    'public.xml' 'strings.xml' 'symbols.xml' 'vpi_attrs.xml' 'vpi_defaults.xml' 'cm_arrays.xml' 'cm_plurals.xml' 'cm_strings.xml' 'custom_strings.xml' 'custom_arrays.xml' 'vpi__defaults.xml' 'vpi__attrs.xml'
@@ -87,8 +81,8 @@ declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'at
 
 declare -a core=('java' 'jni' 'tests')
 
-declare -a theme_packages=('Apollo' 'Browser' 'Calculator' 'Calendar' 'CalendarWidget' 'Camera2' 'Contacts' 'ContactsCommon' 'DSPManager' 'DU-About' 'DU-Tweaks' 'DU-Updater' 'DeskClock' 'Dialer' 'Email' 'Gallery2' 'InCallUI'
-                           'Launcher3' 'LockClock' 'Mms' 'OnniSwitch' 'PhoneCommon' 'Settings' 'Stk' 'ThemeChooser')
+declare -a theme_packages=('Calculator' 'Calendar' 'CalendarWidget' 'Camera2' 'Contacts' 'ContactsCommon' 'DU-About' 'DU-Tweaks' 'DU-Updater' 'DeskClock' 'Dialer' 'Email' 'Gallery2' 'InCallUI'
+                           'Launcher3' 'LockClock' 'Messaging' 'OmniSwitch' 'PhoneCommon' 'Settings' 'Stk' 'ThemeChooser')
 
 cd $WORKING_DIR
 echo "Removing files so we can clean sync"
@@ -136,3 +130,4 @@ mkdir Theme-Resources/frameworks
 echo "Copying all files to $WORKING_DIR/Theme-Resources"
 copy_all ${theme_packages[@]}
 cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/Theme-Resources/frameworks
+cd /home/mazda/mm-du/Theme-Resources
