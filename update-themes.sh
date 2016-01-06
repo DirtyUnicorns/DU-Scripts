@@ -60,20 +60,20 @@ function copy_all () {
 declare -a root=('Theme-Resources' 'abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
                  'sdk' 'system' 'tools' 'vendor')
 
-declare -a frameworks=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
+declare -a frameworks=('api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
                        'telephony' 'test-runner' 'tests' 'tools' 'wifi')
 
-declare -a common=('.classpath' '.git' '.gitignore' '.idea' '.project' 'assets' 'build.gradle' 'src' 'tests' 'Android.mk' 'AndroidManifest.xml' 'CleanSpec.mk' 'lint.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'preloaded-classes'
+declare -a common=('common.mk' '.classpath' '.git' '.gitignore' '.idea' '.project' 'assets' 'build.gradle' 'src' 'tests' 'Android.mk' 'AndroidManifest.xml' 'CleanSpec.mk' 'lint.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'preloaded-classes'
                    'proguard.cfg' 'proguard.flags' 'proguard-test.flags' 'wrap_alpha.py' 'tools' 'tests' 'extensions_src' 'mkprojectfile' 'project.properties' 'hero.png' 'LICENSE' 'README.md' 'script' 'jni' 'res_p' 'sounds'
                    'src_pd' 'src_pd_gcam' 'tests_camera' 'version.mk' 'COPYING' 'ReadMe.md' 'WallpaperPicker' 'protos' 'util' 'fill_screens.py' 'print_db.py' 'update_gallery_files.py' 'update_system_wallpaper_cropper.py'
                    'cyanoden-dsp' 'emailcommon' 'transition' 'TestCommon' 'provider_src' 'gallerycommon' 'jni_jpegstream' 'apptests')
 
-declare -a packages=('BackupRestoreConfirmation' 'CaptivePortalLogin' 'DefaultContainerService' 'ExternalStorageProvider' 'FakeOemFeatures' 'FusedLocation' 'InputDevices' 'Keyguard' 'PrintSpooler' 'SettingsProvider'
+declare -a packages=('StatementService' 'BackupRestoreConfirmation' 'CaptivePortalLogin' 'DefaultContainerService' 'ExternalStorageProvider' 'FakeOemFeatures' 'FusedLocation' 'InputDevices' 'Keyguard' 'PrintSpooler' 'SettingsProvider'
                      'SharedStorageBackup' 'Shell' 'VpnDialogs' 'WAPPushManager' 'WAPPushManager' 'WallpaperCropper' 'services')
 
 declare -a res=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'assets' 'menu*' 'values-*' 'xml*' 'interpolator' 'raw*' 'anim' 'animator' 'transition' 'MakeJavaSymbols.sed')
 
-declare -a values=('Android.mk' 'AndroidManifest.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'lint.xml' 'all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'attrs.xml' 'attrs_manifest.xml' 'bookmarks_icons.xml' 'bools.xml' 'config.xml' 'defaults.xml' 'donottranslate.xml' 'donottranslate_config.xml'
+declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'attrs.xml' 'attrs_manifest.xml' 'bookmarks_icons.xml' 'bools.xml' 'config.xml' 'defaults.xml' 'donottranslate.xml' 'donottranslate_config.xml'
                    'aliases.xml' 'crop_colors.xml' 'dslv_attrs.xml' 'animation_constants.xml' 'donottranslate-cldr.xml' 'donottranslate-maps.xml' 'donottranslate-names.xml' 'donottranslate_material.xml'
                    'donottranslate-search_engines.xml' 'du_arrays.xml' 'du_strings.xml' 'du_symbols.xml' 'fractions.xml' 'ids.xml' 'integers.xml' 'internal.xml' 'keys.xml' 'lland_config.xml' 'lland_strings.xml' 'plurals.xml'
                    'public.xml' 'strings.xml' 'symbols.xml' 'vpi_attrs.xml' 'vpi_defaults.xml' 'cm_arrays.xml' 'cm_plurals.xml' 'cm_strings.xml' 'custom_strings.xml' 'custom_arrays.xml' 'vpi__defaults.xml' 'vpi__attrs.xml'
@@ -106,6 +106,18 @@ delete_useless ${frameworks[@]}
 cd packages
 delete_useless ${packages[@]}
 cd SystemUI
+delete_useless ${common[@]}
+cd res
+delete_useless ${res[@]}
+cd values
+delete_useless ${values[@]}
+cd ../../../SettingsLib
+delete_useless ${common[@]}
+cd res
+delete_useless ${res[@]}
+cd values
+delete_useless ${values[@]}
+cd ../../../DocumentsUI
 delete_useless ${common[@]}
 cd res
 delete_useless ${res[@]}
