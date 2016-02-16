@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2013 The OmniROM Project
+  Copyright (C) 2013-2016 The OmniROM Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -54,7 +54,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="vertical"
-			android:paddingBottom="8dip" >
+			android:paddingBottom="4dip" >
 
 			<org.omnirom.omniswitch.ui.HorizontalListView
 				android:id="@+id/recent_list_horizontal"
@@ -104,20 +104,6 @@
 		android:elevation="@dimen/button_elevation"
 		android:orientation="vertical"
 		android:visibility="gone" >
-
-		<HorizontalScrollView
-			android:id="@+id/button_list_bottom"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal" >
-
-			<LinearLayout
-				android:id="@+id/button_list_items_bottom"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal" >
-			</LinearLayout>
-		</HorizontalScrollView>
 	</LinearLayout>
 
 </LinearLayout>

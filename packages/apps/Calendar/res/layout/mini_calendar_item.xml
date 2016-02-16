@@ -45,6 +45,7 @@
         android:ellipsize="marquee"
         style="@style/TextAppearance.SelectCalendar_Name"
         android:duplicateParentState="true"
+        android:textSize="16sp"
     />
 
     <TextView

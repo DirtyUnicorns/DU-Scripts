@@ -20,13 +20,13 @@
     android:layout_width="match_parent">
 
     <TextView android:id="@+id/calendar_name"
-        style="?android:attr/spinnerItemStyle"
+        style="@style/TextAppearance.SelectCalendar_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:ellipsize="end"
         android:textColor="#FFFFFFFF"
-        android:textSize="18sp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/account_name"
@@ -36,9 +36,8 @@
         android:layout_alignLeft="@id/calendar_name"
         android:ellipsize="marquee"
         android:singleLine="true"
-        style="?android:attr/spinnerItemStyle"
         android:textColor="#FFFFFFFF"
-        android:textSize="14sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
     />
 
 </LinearLayout>

@@ -2,15 +2,15 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="horizontal"
 	android:layout_width="fill_parent"
-	android:layout_height="wrap_content" 
+    android:layout_height="96dp"
 	android:clickable="true"
 	android:focusable="true"
 	android:background="@drawable/action_item_btn">
         	
 	<ImageView
 		android:id="@+id/iv_icon" 
-		android:layout_width="30dp" 
-		android:layout_height="30dp"
+		android:layout_width="32dp" 
+		android:layout_height="32dp"
 		android:scaleType="center" />
 
 	<TextView 
@@ -18,10 +18,9 @@
 		android:layout_width="fill_parent" 
 		android:layout_height="fill_parent" 
 		android:gravity="center_vertical"
-		android:paddingLeft="5dip"
-		android:paddingRight="10dip"
-		android:layout_marginBottom="5dp"
-		android:layout_marginTop="3dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="10dp"
+		android:textSize="18dp"
 		android:textColor="@color/smartbar_editor_popup_text"/>
 									         
 </LinearLayout>         

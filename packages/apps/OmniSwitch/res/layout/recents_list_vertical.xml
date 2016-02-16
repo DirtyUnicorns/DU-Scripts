@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2013 The OmniROM Project
+  Copyright (C) 2013-2016 The OmniROM Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -91,20 +91,6 @@
 		android:layout_height="match_parent"
 		android:elevation="@dimen/button_elevation"
 		android:visibility="gone" >
-
-		<ScrollView
-			android:id="@+id/button_list_bottom"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="bottom"
-		    android:layout_marginStart="3dp" >
-			<LinearLayout
-				android:id="@+id/button_list_items_bottom"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:orientation="vertical" >
-			</LinearLayout>
-		</ScrollView>
 	</LinearLayout>
 
 </LinearLayout>

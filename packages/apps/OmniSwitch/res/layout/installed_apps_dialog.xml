@@ -24,5 +24,6 @@
         android:id="@+id/installed_apps"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false" />
+        android:dividerHeight="1dp"
+        android:divider="@drawable/list_divider_material" />
 </RelativeLayout>

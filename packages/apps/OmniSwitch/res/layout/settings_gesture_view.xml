@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2013 The OmniROM Project
+  Copyright (C) 2013-2016 The OmniROM Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -56,11 +56,29 @@
                 android:layout_height="wrap_content"
                 android:text="@string/adjust_handle_help"
                 android:paddingBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adjust_handle_width"/>
+            <SeekBar
+                android:id="@+id/drag_handle_width"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:max="100"
+                android:progress="50" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adjust_handle_position"
+                android:paddingBottom="8dp"/>
             <Button
                 android:id="@+id/location_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/location_left"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
             <Button
                 android:id="@+id/reset_button"
                 android:layout_width="match_parent"

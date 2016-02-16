@@ -91,9 +91,9 @@
     <color name="task_item_text">#ffffffff</color>
 
     <!-- PopupWindows -->
-    <color name="smartbar_editor_popup_background">#ffffffff</color>
-    <color name="smartbar_editor_popup_text">@android:color/holo_blue_light</color>
-    <color name="smartbar_editor_popup_icon_fill">@android:color/holo_blue_light</color>
-    <color name="smartbar_editor_popup_horiz_separator">@android:color/holo_blue_light</color>
+    <color name="smartbar_editor_popup_background">@android:color/white</color>
+    <color name="smartbar_editor_popup_text">@android:color/black</color>
+    <color name="smartbar_editor_popup_icon_fill">@*android:color/material_deep_teal_500</color>
+    <color name="smartbar_editor_popup_horiz_separator">@*android:color/material_deep_teal_500</color>
 
 </resources>

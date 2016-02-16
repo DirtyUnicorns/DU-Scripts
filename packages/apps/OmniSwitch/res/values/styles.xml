@@ -16,12 +16,21 @@
  -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="PopupMenuLight" parent="@android:style/Theme.Material.Light">
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearancePopupMenuCondensed</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/TextAppearancePopupMenuCondensed</item>
     </style>
     <style name="PopupMenuDark" parent="@android:style/Theme.Material">
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearancePopupMenuCondensed</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/TextAppearancePopupMenuCondensed</item>
     </style>
     <style name="SettingsTheme" parent="@android:style/Theme.Material.Settings">
         <item name="android:colorAccent">@color/colorAccent</item>
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+    </style>
+    <style name="TextAppearancePopupMenuCondensed" parent="@android:style/TextAppearance.Material.Menu" >
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 </resources>

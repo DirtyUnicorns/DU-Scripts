@@ -1,0 +1,16 @@
+<!-- define how a tab looks -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TabIndicator"
+    android:id="@+id/toolbar_tab_txtCaption"
+    android:background="?android:selectableItemBackground"
+    android:layout_width="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/text_size_small"
+    android:textAllCaps="true"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp" />
