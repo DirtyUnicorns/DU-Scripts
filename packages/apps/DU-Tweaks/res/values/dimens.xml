@@ -31,4 +31,7 @@
 	<integer name="navigation_bar_width_min_percent">65</integer>
 	<integer name="navigation_bar_width_max_percent">120</integer>
 
+    <!-- Icon pack picker -->
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+
 </resources>

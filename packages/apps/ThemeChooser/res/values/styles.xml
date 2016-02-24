@@ -24,6 +24,11 @@
         <item name="android:statusBarColor">@color/primary_dark</item>
         <item name="android:textColorPrimary">@color/primary_text_color</item>
         <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflow</item>
+    </style>
+
+    <style name="ActionBarOverflow" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
     </style>
 
     <style name="AppTheme.Chooser">
