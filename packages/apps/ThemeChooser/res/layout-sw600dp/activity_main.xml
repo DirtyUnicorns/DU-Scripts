@@ -14,41 +14,51 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 -->
-<LinearLayout
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:elevation="2dp"
-        style="@style/ChooserToolbarStyle"
-        />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/layout_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ListView
-            android:id="@+id/left_drawer"
-            android:layout_width="304dp"
-            android:layout_height="match_parent"
-            android:divider="@null"
-            android:dividerHeight="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:id="@+id/toolbar"
             android:elevation="2dp"
-            android:background="@color/drawer_item_default"/>
+            style="@style/ChooserToolbarStyle"
+            />
 
         <!-- The main content view -->
         <FrameLayout
             android:id="@+id/content"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clipToPadding="false"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
-</LinearLayout>
+    <!-- The navigation drawer -->
+    <RelativeLayout
+        android:id="@+id/left_drawer_container"
+        android:layout_width="304dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:divider="@null"
+        android:dividerHeight="15dp"
+        android:elevation="2dp"
+        android:background="@color/drawer_item_default">
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

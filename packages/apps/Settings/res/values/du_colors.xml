@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -29,6 +29,7 @@
     <drawable name="expanded_item_bg">@android:color/background_light</drawable>
     <color name="expanded_button_color_normal">#4CAF50</color>
     <color name="expanded_button_color_close">#F44336</color>
+    <color name="floating_action_button_touch_tint">#80ffffff</color>
     <color name="qs_tile_tint_color">#FF009587</color>
 
     <!-- Hard coded background and text colors exposed for better theme support -->
@@ -78,10 +79,16 @@
     <color name="nfc_how_it_works_content_text_color">#FF263238</color>
     <color name="nfc_how_it_works_footer_background">#FFB2DFDB</color>
     <color name="nfc_how_it_works_got_it_text_color">#263238</color>
+
     <!-- Permission Settings Hard colors-->
     <color name="security_settings_billing_desc_text_color">#ffffb060</color>
+
     <!-- Storage Summary Hard colors-->
     <color name="storage_summary_text_color">#ff607d8b</color>
     <color name="storage_summary_used_text_color">#8a000000</color>
+
+    <!-- BlackList colors -->
+    <color name="blacklist_enabled">#DD2C00</color>
+    <color name="blacklist_disabled">#D7D7D7</color>
 
 </resources>

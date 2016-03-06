@@ -190,6 +190,89 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/andrzej"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation"
+                android:onClick="launchAndrzej">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/toolbar_elevation"
+                        tools:ignore="UnusedAttribute">
+
+                        <ImageView
+                            android:id="@+id/andrzejcover"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/andrzejbackground"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:id="@+id/andrzejcardFrame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.dirtyunicorns.about.RoundedImageView
+                                android:id="@+id/andrzejimage"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/andrzej"
+                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_width="4dp"
+                                app:riv_oval="true"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/andrzejtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/content_inset_half"
+                                android:fontFamily="sans-serif"
+                                android:paddingLeft="@dimen/content_inset"
+                                android:paddingRight="@dimen/content_inset"
+                                android:textColor="?android:textColorPrimary"
+                                android:textSize="@dimen/header_text_size"
+                                android:text="@string/andrzejressel" />
+
+                            <TextView
+                                android:id="@+id/andrzejdescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingMultiplier="1.1"
+                                android:paddingLeft="@dimen/content_inset"
+                                android:paddingRight="@dimen/content_inset"
+                                android:textColor="?android:textColorSecondary"
+                                android:textSize="@dimen/content_text_size"
+                                android:text="@string/developer" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
                 android:id="@+id/bosko"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
