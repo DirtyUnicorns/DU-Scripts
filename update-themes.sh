@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/home/mazda/mm-du
+WORKING_DIR=/home/mazda/du-mm
 
 function delete_useless () {
   declare -a array=($@)
@@ -53,11 +53,11 @@ function copy_all () {
   for i in `seq 0 $(( ${#array[@]} - 1 ))`
   do
     cd $WORKING_DIR/packages/apps
-    cp -r ${array[i]} $WORKING_DIR/Theme-Resources/packages/apps/
+    cp -r ${array[i]} $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/
   done
 }
 
-declare -a root=('Theme-Resources' 'abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
+declare -a root=('DU-Scripts' 'abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
                  'sdk' 'system' 'tools' 'vendor')
 
 declare -a frameworks=('api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
@@ -99,7 +99,7 @@ else
   exit 1
 fi
 echo "Cloning Theme Resources repo"
-git clone https://github.com/DirtyUnicorns/Theme-Resources.git
+git clone https://github.com/DirtyUnicorns/DU-Scripts.git
 echo "Removing unneeded files"
 cd frameworks/base
 delete_useless ${frameworks[@]}
@@ -132,15 +132,15 @@ cd res
 delete_useless ${res[@]}
 cd values
 delete_useless ${values[@]}
-rm -rf  $WORKING_DIR/Theme-Resources/frameworks
+rm -rf  $WORKING_DIR/DU-Scripts/themes-resources/frameworks
 cd $WORKING_DIR
 process_all ${theme_packages[@]}
 echo "Cleaning target folders"
-rm -rf Theme-Resources/packages
-mkdir Theme-Resources/packages
-mkdir Theme-Resources/packages/apps
-mkdir Theme-Resources/frameworks
-echo "Copying all files to $WORKING_DIR/Theme-Resources"
+rm -rf DU-Scripts/themes-resources/packages
+mkdir DU-Scripts/themes-resources/packages
+mkdir DU-Scripts/themes-resources/packages/apps
+mkdir DU-Scripts/themes-resources/frameworks
+echo "Copying all files to $WORKING_DIR/DU-Scripts/themes-resources"
 copy_all ${theme_packages[@]}
-cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/Theme-Resources/frameworks
-cd /home/mazda/mm-du/Theme-Resources
+cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/DU-Scripts/themes-resources/frameworks
+cd /home/mazda/du-mm/DU-Scripts/themes-resources
