@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:background="@color/hot_blue" >
+        android:background="@color/main_clock_frame_bg" >
         <TextView android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

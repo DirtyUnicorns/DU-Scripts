@@ -169,7 +169,7 @@
             android:contentDescription="@string/collapse_alarm"
             android:paddingStart="@dimen/alarm_side_delete_padding"
             android:paddingEnd="@dimen/alarm_side_padding"
-            android:background="@color/hot_blue" >
+            android:background="@color/alarm_time_collapse_expand" >
 
             <ImageButton
                 android:id="@+id/delete"

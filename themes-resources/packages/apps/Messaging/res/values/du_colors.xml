@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- New text colors from layouts to make theme chooser apk easier to theme -->
+    <color name="compose_message_edit_text">#000000</color>
+    <color name="compose_message_text_counter">#cc333333</color>
+    <color name="compose_message_text_color">#ff000000</color>
+    <color name="compose_message_sent_bubble_color">#e4e7e8</color>
+    <color name="actionbar_text">#ccffffff</color>
+    <color name="delete_thread_dialog">#000000</color>
+    <color name="delivery_report_header">#ffffff</color>
+    <color name="delivery_report_recipient">#000000</color>
+    <color name="delivery_report_status">#000000</color>
+    <color name="delivery_report_date">#000000</color>
+    <color name="button_text">#000000</color>
+    <color name="message_recieved">#000000</color>
+    <color name="message_sent">#000000</color>
+    <color name="widget_unread_text">#777777</color>
+    <color name="widget_loading">#000000</color>
+
+    <!-- New Background colors from layouts to make theme chooser apk easier to theme -->
+    <color name="background">#ffffff</color>
+    <color name="darkgray_backgrounds">#888888</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="banner_item_transparent">#00000000</color>
+    <color name="banner_item_activated">#670099cc</color>
+    <color name="banner_item_selected">#cc0099cc</color>
+    <color name="banner_item_pressed">#6733b5e5</color>
+
+    <color name="action_mode_background_color">#424F53</color>
+
+    <color name="qm_background">#fff3f3f3</color>
+    <color name="qm_fading_edge_color">#eeeeee</color>
+    <color name="qm_from_text_color">#2f2f2f</color>
+    <color name="qm_recv_timestamp_text_color">#a79f9c</color>
+    <color name="qm_dialog_text_color">@*android:color/material_deep_teal_500</color>
+    <color name="qm_count_color">#aa000000</color>
+    <color name="qm_compose_send_text_color">@color/compose_send_text_color</color>
+    <color name="outgoing_message_bg">#e4e7e8</color>
+    <color name="qm_reply">#4d4d4d</color>
+
+</resources>

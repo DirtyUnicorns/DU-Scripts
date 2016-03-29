@@ -110,12 +110,12 @@
     <dimen name="image_attachment_fallback_width">240dp</dimen>
     <dimen name="image_attachment_fallback_height">240dp</dimen>
 
-    <dimen name="fab_size">60dp</dimen>
-    <dimen name="fab_padding_bottom">4dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_padding_bottom">0dp</dimen>
     <dimen name="fab_elevation">2dp</dimen>
     <dimen name="fab_elevation_pressed">6dp</dimen>
-    <dimen name="fab_bottom_margin">12dp</dimen>
-    <dimen name="fab_left_right_margin">14dp</dimen>
+    <dimen name="fab_bottom_margin">16dp</dimen>
+    <dimen name="fab_left_right_margin">16dp</dimen>
     <dimen name="message_text_counter_size">12sp</dimen>
 
     <dimen name="vcard_detail_group_indicator_width">40dp</dimen>
@@ -187,5 +187,21 @@
     <dimen name="fastscroll_preview_margin_top">8dp</dimen>
     <dimen name="fastscroll_preview_margin_left_right">8dp</dimen>
     <dimen name="fastscroll_preview_text_size">24sp</dimen>
+
+    <!-- QuickMessage -->
+    <dimen name="qm_dialog_button_bar_height">48dip</dimen>
+    <dimen name="input_text_height">48dip</dimen>
+    <dimen name="material_16dp_keyline">16dp</dimen>
+    <dimen name="qm_message_width">300dp</dimen>
+    <dimen name="qm_dialog_button_bar_height">48dip</dimen>
+    <dimen name="qm_window_elevation">10dp</dimen>
+    <dimen name="qm_received_msg_max_height">75dp</dimen>
+    <dimen name="qm_fading_edge_length">3dp</dimen>
+    <dimen name="qm_received_msg_bubble_start">56dp</dimen>
+    <dimen name="avatar_width_height">36dp</dimen>
+    <dimen name="qm_message_padding_default">8dp</dimen>
+    <dimen name="qm_message_count_height">18dp</dimen>
+    <dimen name="qm_conversation_bubble_width_snap">15dp</dimen>
+    <dimen name="qm_conversation_bubble_padding">5dp</dimen>
 
 </resources>

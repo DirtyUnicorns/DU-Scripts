@@ -2500,6 +2500,21 @@
             </intent-filter>
         </receiver>
 
+        <!-- Heads up settings activity. -->
+        <activity android:name="Settings$HeadsUpSettingsActivity"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:label="@string/category_heads_up"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/dirtytweaks" />
+        </activity>
+
         <!-- Expanded desktop settings activity. -->
         <activity android:name="Settings$ExpandedDesktopSettingsActivity"
                 android:label="@string/expanded_desktop_category"
@@ -2690,6 +2705,17 @@
                 android:theme="@style/Theme.SettingsDialog"
                 android:label="@string/icon_pack_picker_dialog_title"
                 android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Icon picker proxy for gallery -->
+        <activity android:name="com.dirtyunicorns.dutweaks.IconPickerGallery"
+            android:theme="@style/Theme.SettingsDialog"
+            android:label="@string/icon_pack_picker_dialog_title"
+            android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

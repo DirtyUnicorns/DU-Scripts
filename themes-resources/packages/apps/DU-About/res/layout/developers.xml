@@ -67,7 +67,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/alex"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -81,7 +81,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/alexcruz" />
 
@@ -94,7 +94,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -150,7 +150,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/anders"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -164,7 +164,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/andersnielsen" />
 
@@ -177,7 +177,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -233,7 +233,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/andrzej"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -247,7 +247,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/andrzejressel" />
 
@@ -260,7 +260,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -316,7 +316,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/bosko"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -330,7 +330,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/boskotrkulja" />
 
@@ -343,7 +343,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/nexus4maintainer" />
 
@@ -399,7 +399,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/bret"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -413,7 +413,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/bretzamzow" />
 
@@ -426,7 +426,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/nexustenmaintainer" />
 
@@ -482,7 +482,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/chris"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -496,7 +496,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/christophernhesse" />
 
@@ -509,7 +509,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/oppfindsevenmaintainer" />
 
@@ -565,7 +565,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/daniel"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -579,7 +579,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/danieljohansson" />
 
@@ -592,9 +592,92 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/droiddnamaintainer" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.CardView
+                android:id="@+id/dadi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/cards_padding"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardElevation="@dimen/cards_elevation"
+                android:onClick="launchDadi">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/toolbar_elevation"
+                        tools:ignore="UnusedAttribute">
+
+                        <ImageView
+                            android:id="@+id/dadicover"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dadibackground"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:id="@+id/danielcardFrame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.dirtyunicorns.about.RoundedImageView
+                                android:id="@+id/dadiimage"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/dadi"
+                                app:riv_border_color="@color/white"
+                                app:riv_border_width="4dp"
+                                app:riv_oval="true"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/dadititle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/content_inset_half"
+                                android:fontFamily="sans-serif"
+                                android:paddingLeft="@dimen/content_inset"
+                                android:paddingRight="@dimen/content_inset"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/header_text_size"
+                                android:text="@string/danielsikorski" />
+
+                            <TextView
+                                android:id="@+id/dadidescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingMultiplier="1.1"
+                                android:paddingLeft="@dimen/content_inset"
+                                android:paddingRight="@dimen/content_inset"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/content_text_size"
+                                android:text="@string/g3maintainer" />
 
                         </LinearLayout>
 
@@ -648,7 +731,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/dorian"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -662,7 +745,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/doriansnyder" />
 
@@ -675,7 +758,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/inactivedevicemaintainer" />
 
@@ -731,7 +814,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/edwin"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -745,7 +828,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/edwinrivera" />
 
@@ -758,7 +841,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/nexussixmaintainer" />
 
@@ -814,7 +897,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/glen"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -828,7 +911,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/glendsouza" />
 
@@ -841,7 +924,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -897,7 +980,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/james"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -911,7 +994,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/jamestaylor" />
 
@@ -924,7 +1007,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -980,7 +1063,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/josh1"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -994,7 +1077,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/joshchasky" />
 
@@ -1007,7 +1090,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/nexusfivemaintainer" />
 
@@ -1063,7 +1146,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/josh2"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1077,7 +1160,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/joshcorrell" />
 
@@ -1090,7 +1173,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/motoxpuremaintainer" />
 
@@ -1146,7 +1229,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/josh3"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1160,7 +1243,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/joshcorse" />
 
@@ -1173,7 +1256,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1229,7 +1312,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/josip"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1243,7 +1326,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/josiplazic" />
 
@@ -1256,7 +1339,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1312,7 +1395,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/mark"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1326,7 +1409,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/markrhodes" />
 
@@ -1339,7 +1422,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1395,7 +1478,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/michael"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1409,7 +1492,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/michaelbanks" />
 
@@ -1422,7 +1505,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1478,7 +1561,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/nick"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1492,7 +1575,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/nickdoherty" />
 
@@ -1505,7 +1588,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/oneplusonemaintainer" />
 
@@ -1561,7 +1644,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/nico"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1575,7 +1658,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/nicolasdhouailly" />
 
@@ -1588,7 +1671,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1644,7 +1727,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/randall"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1658,7 +1741,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/randallrushing" />
 
@@ -1671,7 +1754,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1727,7 +1810,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/sean"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1741,7 +1824,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/seanhoyt" />
 
@@ -1754,7 +1837,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/developer" />
 
@@ -1810,7 +1893,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/susan"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1824,7 +1907,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/susanmccombs" />
 
@@ -1837,7 +1920,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/htconem8maintainer" />
 
@@ -1893,7 +1976,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/tony"
-                                app:riv_border_color="#FFFFFF"
+                                app:riv_border_color="@color/white"
                                 app:riv_border_width="4dp"
                                 app:riv_oval="true"
                                 tools:ignore="ContentDescription" />
@@ -1907,7 +1990,7 @@
                                 android:fontFamily="sans-serif"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorPrimary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
                                 android:text="@string/tonyross" />
 
@@ -1920,7 +2003,7 @@
                                 android:lineSpacingMultiplier="1.1"
                                 android:paddingLeft="@dimen/content_inset"
                                 android:paddingRight="@dimen/content_inset"
-                                android:textColor="?android:textColorSecondary"
+                                android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
                                 android:text="@string/inactivedevicemaintainer" />
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.cyanogenmod.messaging.ui.QuickMessageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/QuickMessageContentlayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/qm_received_msg_bubble_start"
+        android:layout_marginTop="@dimen/material_16dp_keyline"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/fromTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:layout_marginEnd="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/qm_from_text_color"
+            android:textColorLink="@color/qm_from_text_color" />
+
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/qm_recv_timestamp_text_color" />
+
+    </LinearLayout>
+
+    <com.cyanogenmod.messaging.ui.ConversationQuickMessageView
+        android:id="@+id/conversation_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/material_16dp_keyline"
+        android:paddingRight="@dimen/material_16dp_keyline">
+
+        <com.cyanogenmod.messaging.ui.AttributionContactIconView
+            android:id="@+id/conversation_icon"
+            android:layout_width="@dimen/conversation_message_contact_icon_size"
+            android:layout_height="@dimen/conversation_message_contact_icon_size"
+            app:iconSize="normal"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:importantForAccessibility="no" />
+
+        <com.android.messaging.ui.conversation.ConversationMessageBubbleView
+            android:id="@+id/message_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <com.cyanogenmod.messaging.ui.QMessageBubbleBackground
+                android:id="@+id/message_text_and_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/message_text"
+                    style="@style/QMConversationMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/qm_received_msg_max_height"
+                    android:importantForAccessibility="no" />
+
+            </com.cyanogenmod.messaging.ui.QMessageBubbleBackground>
+
+        </com.android.messaging.ui.conversation.ConversationMessageBubbleView>
+
+    </com.cyanogenmod.messaging.ui.ConversationQuickMessageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qm_message_count_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/material_16dp_keyline"
+        android:paddingRight="@dimen/material_16dp_keyline"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/text_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/qm_count_color"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/message_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/qm_count_color"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <!-- Holds all views that create the actual compose box -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/material_16dp_keyline"
+        android:paddingRight="@dimen/material_16dp_keyline">
+
+
+        <com.android.messaging.ui.PlainTextEditText
+            android:id="@+id/embedded_text_editor"
+            style="@style/QMConversationComposeSendText"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/compose_message_view_hint_text"
+            android:imeOptions="actionSend|flagNoEnterAction|flagNoExtractUi"
+            android:nextFocusRight="@+id/send_button" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" >
+                <com.android.messaging.ui.conversation.SimIconView
+                    android:id="@+id/self_send_icon"
+                    android:layout_width="@dimen/conversation_message_contact_icon_size"
+                    android:layout_height="@dimen/conversation_message_contact_icon_size"
+                    android:importantForAccessibility="no"
+                    app:iconSize="normal"
+                    app:reveal="true"
+                    android:clickable="true" />
+                <ImageButton
+                    android:id="@+id/send_button"
+                    android:layout_width="@dimen/conversation_message_contact_icon_size"
+                    android:layout_height="@dimen/conversation_message_contact_icon_size"
+                    android:src="@drawable/ic_send_light"
+                    android:background="@drawable/send_arrow_background"
+                    android:contentDescription="@string/sendButtonContentDescription"
+                    android:visibility="gone" />
+            </FrameLayout>
+    </LinearLayout>
+</com.cyanogenmod.messaging.ui.QuickMessageView>

@@ -9,10 +9,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BIND_JOB_SERVICE" />
 
-    <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="21" />
-    
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,8 +24,7 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -47,7 +44,17 @@
             android:theme="@style/AppTheme"
             android:label="Settings"
             android:parentActivityName="com.dirtyunicorns.duupdater.MainActivity" >
-
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
     </application>

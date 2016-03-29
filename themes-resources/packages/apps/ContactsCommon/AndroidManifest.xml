@@ -20,6 +20,7 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
 
     <application/>
 </manifest>

@@ -17,7 +17,7 @@
 -->
 
 <!--  navigation bar for sw600dp (small tablets) -->
-<com.android.internal.navigation.fling.FlingView
+<com.android.systemui.navigation.fling.FlingView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android"
     xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
@@ -30,24 +30,7 @@
         android:layout_width="match_parent"
         >
 
-        <RelativeLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="2"
-                android:layout_alignParentTop="true" />
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="3"
-                android:layout_alignParentBottom="true" />
-        </RelativeLayout>
+        <include layout="@layout/battery_bar_rot0" />
 
         <LinearLayout
             android:id="@+id/nav_buttons"
@@ -64,7 +47,7 @@
                 android:layout_weight="1"/>
 
             <!-- navigation controls -->
-            <com.android.internal.navigation.fling.FlingLogoView
+            <com.android.systemui.navigation.fling.FlingLogoView
                 android:id="@+id/fling_console"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -109,24 +92,7 @@
         android:paddingTop="0dp"
         >
 
-        <RelativeLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="2"
-                android:layout_alignParentTop="true" />
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="3"
-                android:layout_alignParentBottom="true" />
-        </RelativeLayout>
+        <include layout="@layout/battery_bar_rot90" />
 
         <LinearLayout
             android:layout_height="match_parent"
@@ -144,7 +110,7 @@
                 android:layout_weight="1"/>
 
             <!-- navigation controls -->
-            <com.android.internal.navigation.fling.FlingLogoView
+            <com.android.systemui.navigation.fling.FlingLogoView
                 android:id="@+id/fling_console"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -184,4 +150,4 @@
                 android:layout_weight="1"/>
         </LinearLayout>
     </FrameLayout>
-</com.android.internal.navigation.fling.FlingView>
+</com.android.systemui.navigation.fling.FlingView>

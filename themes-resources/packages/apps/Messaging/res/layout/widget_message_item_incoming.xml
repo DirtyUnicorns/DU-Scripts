@@ -39,7 +39,7 @@
             android:layout_marginTop="-4dp"
             android:importantForAccessibility="no"
             android:contentDescription="@null" />
-        <ImageView
+        <com.cyanogenmod.messaging.ui.AttributionContactIconView
             android:id="@+id/avatarView"
             style="@style/WidgetConversationItemAvatarIncoming"
             android:layout_width="@dimen/contact_icon_view_normal_size"

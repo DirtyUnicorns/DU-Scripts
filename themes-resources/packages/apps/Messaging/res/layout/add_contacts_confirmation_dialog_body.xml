@@ -23,7 +23,7 @@
     android:layout_gravity="center_vertical"
     android:padding="20dp" >
 
-    <com.android.messaging.ui.ContactIconView
+    <com.cyanogenmod.messaging.ui.AttributionContactIconView
         android:id="@+id/contact_icon"
         android:layout_width="@dimen/conversation_list_contact_icon_size"
         android:layout_height="@dimen/conversation_list_contact_icon_size"

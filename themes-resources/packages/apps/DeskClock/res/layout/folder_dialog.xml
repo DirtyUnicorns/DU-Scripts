@@ -34,7 +34,7 @@
         android:paddingStart="?android:attr/listPreferredItemPaddingStart"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/hot_blue" />
+        android:textColor="@color/folder_dialog_text_color" />
     <View
         android:id="@+id/hairline"
         android:layout_width="match_parent"

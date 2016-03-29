@@ -21,7 +21,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
-    <com.android.messaging.ui.ContactIconView
+    <com.cyanogenmod.messaging.ui.AttributionContactIconView
         android:id="@+id/conversation_icon"
         android:layout_width="@dimen/conversation_message_contact_icon_size"
         android:layout_height="@dimen/conversation_message_contact_icon_size"

@@ -40,7 +40,7 @@
             android:layout_marginTop="-4dp"
             android:importantForAccessibility="no"
             android:contentDescription="@null" />
-        <ImageView
+        <com.android.messaging.ui.AttributtionContactIconView
             android:id="@+id/avatarView"
             android:layout_width="@dimen/contact_icon_view_normal_size"
             android:layout_height="@dimen/contact_icon_view_normal_size"

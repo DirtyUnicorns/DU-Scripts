@@ -28,7 +28,7 @@
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageView
+        <com.cyanogenmod.messaging.ui.AttributionContactIconView
             android:id="@+id/avatarView"
             style="@style/WidgetConversationListItemAvatar"
             android:layout_width="@dimen/contact_icon_view_normal_size"

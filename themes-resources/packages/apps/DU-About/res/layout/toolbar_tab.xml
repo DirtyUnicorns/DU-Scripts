@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:layout_height="48dp"
     android:gravity="center"
-    android:textColor="@android:color/white"
+    android:textColor="@color/white"
     android:textSize="@dimen/text_size_small"
     android:textAllCaps="true"
     android:paddingStart="16dp"

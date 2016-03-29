@@ -43,6 +43,19 @@
     <color name="hairline">#000000</color>
     <color name="bright_foreground_light_disabled">#80000000</color>
 
+    <color name="alarm_activated">@color/hot_blue</color>
+    <color name="alarm_alert_color">@color/hot_blue</color>
+    <color name="alarm_time_collapse_expand">@color/hot_blue</color>
+    <color name="circle_timer_accent">@color/hot_blue</color>
+    <color name="counting_timer_view_pressed">@color/hot_blue</color>
+    <color name="counting_timer_view_accent">@color/hot_blue</color>
+    <color name="delete_button_and_divider">@color/hot_blue</color>
+    <color name="folder_dialog_text_color">@color/hot_blue</color>
+    <color name="main_clock_frame_bg">@color/hot_blue</color>
+    <color name="pressed_color">@color/hot_blue</color>
+    <color name="user_defined_city_fg_color">@color/hot_blue</color>
+    <color name="sliding_tab_bg">@color/hot_blue</color>
+
     <color name="clock_gray">#cccccc</color>
 
     <color name="default_background">#5c6bc0</color>

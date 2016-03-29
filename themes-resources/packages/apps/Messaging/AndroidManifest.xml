@@ -18,7 +18,7 @@
     package="com.android.messaging"
     android:installLocation="internalOnly">
 
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="23" />
+    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="23" />
 
     <!-- Application holds CPU wakelock while working in background -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -427,7 +427,7 @@
         </activity>
 
         <activity android:name=".ui.SmsStorageLowWarningActivity"
-                  android:theme="@style/Invisible"
+                  android:theme="@style/InvisibleNoDisplay"
                   android:configChanges="orientation|screenSize|keyboardHidden" />
 
         <activity android:name=".ui.appsettings.ApnSettingsActivity"
@@ -522,6 +522,25 @@
         </activity>
 
         <service android:name="android.support.v7.mms.MmsService"/>
+
+        <!-- QuickMessage support -->
+        <!-- This is the "QuickMessage" panel, which has special
+             launch behaviour.  We clear its task affinity, so it will not
+             be associated with the main messaging task and if launched
+             from a notification will not bring the rest of the messaging app
+             to the foreground.We exclude from recent apps since this is accessible
+             through a notification when appropriate. -->
+         <activity
+            android:name="com.cyanogenmod.messaging.quickmessage.QuickMessagePopup"
+            android:theme="@style/BugleTheme.QMPopUp"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:exported="true" />
+
+        <receiver android:name="com.cyanogenmod.messaging.quickmessage.ClearAllReceiver" />
+
     </application>
 
 </manifest>

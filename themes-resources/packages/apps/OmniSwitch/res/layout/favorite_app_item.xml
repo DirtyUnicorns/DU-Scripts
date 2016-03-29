@@ -28,8 +28,7 @@
         android:layout_height="48dp"
         android:layout_gravity="center_vertical"
         android:paddingBottom="12dp"
-        android:paddingTop="12dp"
-        android:color="#999999" />
+        android:paddingTop="12dp" />
     <ImageView
         android:id="@+id/app_icon"
         android:layout_width="wrap_content"

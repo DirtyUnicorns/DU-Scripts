@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* apps/common/assets/default/default/skins/StatusBar.xml
 **
-** Copyright 2011, The Android Open Source Project
+** Copyright 2012, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License"); 
 ** you may not use this file except in compliance with the License. 
@@ -15,10 +14,9 @@
 ** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
 ** See the License for the specific language governing permissions and 
 ** limitations under the License.
-*/
 -->
 
-<com.android.internal.navigation.fling.FlingView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.android.systemui.navigation.fling.FlingView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android"
     xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
     android:layout_width="match_parent"
@@ -30,24 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <RelativeLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="2"
-                android:layout_alignParentTop="true" />
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:visibility="gone"
-                systemui:viewLocation="3"
-                android:layout_alignParentBottom="true" />
-        </RelativeLayout>
+        <include layout="@layout/battery_bar_rot0" />
 
         <LinearLayout
             android:id="@+id/nav_buttons"
@@ -65,7 +46,7 @@
                 android:layout_weight="1"
                 android:visibility="invisible" />
 
-            <com.android.internal.navigation.fling.FlingLogoView
+            <com.android.systemui.navigation.fling.FlingLogoView
                 android:id="@+id/fling_console"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -117,28 +98,7 @@
         android:paddingTop="0dp"
         android:visibility="gone" >
 
-        <RelativeLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="gone"
-                android:layout_alignParentLeft="true"
-                systemui:viewLocation="2"
-                android:rotation="180" />
-
-            <com.android.systemui.statusbar.policy.BatteryBarController
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="gone"
-                android:layout_alignParentRight="true"
-                systemui:viewLocation="3"
-                android:rotation="180" />
-        </RelativeLayout>
+        <include layout="@layout/battery_bar_rot90" />
 
         <LinearLayout
             android:id="@+id/nav_buttons"
@@ -156,7 +116,7 @@
                 android:layout_weight="1"
                 android:visibility="invisible" />
 
-            <com.android.internal.navigation.fling.FlingLogoView
+            <com.android.systemui.navigation.fling.FlingLogoView
                 android:id="@+id/fling_console"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,4 +160,4 @@
                 android:visibility="invisible" />
         </LinearLayout>
     </FrameLayout>
-</com.android.internal.navigation.fling.FlingView>
+</com.android.systemui.navigation.fling.FlingView>
