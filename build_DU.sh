@@ -126,7 +126,7 @@ elif [ "$bnow" = "y" ] || [ "$bnow" = "Y" ]; then
     if [ "$ncore" = "all" ]; then
         time mka bacon
     else
-        time make -j$ncore
+        time make -j$ncore bacon
     fi
 fi
 
