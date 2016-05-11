@@ -46,6 +46,7 @@
 	<include layout="@layout/recents_rambar" />
 
 	<LinearLayout
+	    android:id="@+id/recents_or_appdrawer"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" >
 

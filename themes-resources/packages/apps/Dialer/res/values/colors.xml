@@ -39,6 +39,8 @@
     <color name="visual_voicemail_promo_card_background">#673ab7</color>
     <color name="visual_voicemail_promo_card_divider">#7d57c1</color>
     <color name="promo_card_text">#ffffff</color>
+    <color name="promo_card_header_text_color">@color/promo_card_text</color>
+    <color name="promo_card_details_text_color">@color/promo_card_text</color>
 
     <color name="voicemail_icon_tint">@color/call_log_icon_tint</color>
     <color name="voicemail_icon_disabled_tint">#80000000</color>

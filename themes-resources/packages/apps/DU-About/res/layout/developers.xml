@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_bg">
+    xmlns:card_view="http://schemas.android.com/tools">
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fitsSystemWindows="true"/>
+
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/aboutdu_scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +91,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/alexcruz" />
+                                android:text="@string/alexcruz"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/alexdescription"
@@ -96,7 +106,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -118,7 +130,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchAnders">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -166,7 +178,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/andersnielsen" />
+                                android:text="@string/andersnielsen"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/andersdescription"
@@ -179,7 +193,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -201,7 +217,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchAndrzej">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -249,7 +265,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/andrzejressel" />
+                                android:text="@string/andrzejressel"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/andrzejdescription"
@@ -262,7 +280,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -284,7 +304,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchBosko">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -332,7 +352,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/boskotrkulja" />
+                                android:text="@string/boskotrkulja"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/boskodescription"
@@ -345,7 +367,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/nexus4maintainer" />
+                                android:text="@string/nexus4maintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -367,7 +391,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchBret">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -415,7 +439,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/bretzamzow" />
+                                android:text="@string/bretzamzow"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/bretdescription"
@@ -428,7 +454,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/nexustenmaintainer" />
+                                android:text="@string/nexustenmaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -450,7 +478,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchChris">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -498,7 +526,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/christophernhesse" />
+                                android:text="@string/christophernhesse"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/chrisdescription"
@@ -511,7 +541,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/oppfindsevenmaintainer" />
+                                android:text="@string/oppfindsevenmaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -533,7 +565,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchDaniel">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -581,7 +613,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/danieljohansson" />
+                                android:text="@string/danieljohansson"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/danieldescription"
@@ -594,7 +628,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/droiddnamaintainer" />
+                                android:text="@string/droiddnamaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -604,7 +640,7 @@
 
             </android.support.v7.widget.CardView>
 
-<android.support.v7.widget.CardView
+            <android.support.v7.widget.CardView
                 android:id="@+id/dadi"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -616,7 +652,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchDadi">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -636,7 +672,7 @@
                             tools:ignore="ContentDescription" />
 
                         <LinearLayout
-                            android:id="@+id/danielcardFrame"
+                            android:id="@+id/dadicardFrame"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
@@ -664,7 +700,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/danielsikorski" />
+                                android:text="@string/danielsikorski"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/dadidescription"
@@ -677,7 +715,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/g3maintainer" />
+                                android:text="@string/g3maintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -699,7 +739,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchDorian">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -747,7 +787,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/doriansnyder" />
+                                android:text="@string/doriansnyder"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/doriandescription"
@@ -760,7 +802,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/inactivedevicemaintainer" />
+                                android:text="@string/inactivedevicemaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -782,7 +826,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchEdwin">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -830,7 +874,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/edwinrivera" />
+                                android:text="@string/edwinrivera"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/edwindescription"
@@ -843,7 +889,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/nexussixmaintainer" />
+                                android:text="@string/nexussixmaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -865,7 +913,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchGlen">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -913,7 +961,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/glendsouza" />
+                                android:text="@string/glendsouza"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/glendescription"
@@ -926,7 +976,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -948,7 +1000,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchJames">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -996,7 +1048,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/jamestaylor" />
+                                android:text="@string/jamestaylor"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/jamesdescription"
@@ -1009,7 +1063,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1031,7 +1087,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchJosh1">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1079,7 +1135,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/joshchasky" />
+                                android:text="@string/joshchasky"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/josh1description"
@@ -1092,7 +1150,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/nexusfivemaintainer" />
+                                android:text="@string/nexusfivemaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1114,7 +1174,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchJosh2">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1162,7 +1222,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/joshcorrell" />
+                                android:text="@string/joshcorrell"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/josh2description"
@@ -1175,7 +1237,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/motoxpuremaintainer" />
+                                android:text="@string/motoxpuremaintainer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1197,7 +1261,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchJosh3">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1245,7 +1309,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/joshcorse" />
+                                android:text="@string/joshcorse"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/josh3description"
@@ -1258,7 +1324,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1280,7 +1348,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchJosip">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1328,7 +1396,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/josiplazic" />
+                                android:text="@string/josiplazic"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/josipdescription"
@@ -1341,7 +1411,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1363,7 +1435,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchMark">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1411,7 +1483,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/markrhodes" />
+                                android:text="@string/markrhodes"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/markdescription"
@@ -1424,7 +1498,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1446,7 +1522,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchMichael">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1494,7 +1570,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/michaelbanks" />
+                                android:text="@string/michaelbanks"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/michaeldescription"
@@ -1507,7 +1585,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1529,7 +1609,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchNick">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1577,7 +1657,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/nickdoherty" />
+                                android:text="@string/nickdoherty"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/nickdescription"
@@ -1590,7 +1672,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/oneplusonemaintainer" />
+                                android:text="@string/motoxplaymaintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1612,7 +1696,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchNico">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1660,7 +1744,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/nicolasdhouailly" />
+                                android:text="@string/nicolasdhouailly"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/nicodescription"
@@ -1673,7 +1759,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1695,7 +1783,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchRandall">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1743,7 +1831,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/randallrushing" />
+                                android:text="@string/randallrushing"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/randalldescription"
@@ -1756,7 +1846,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1778,7 +1870,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchSean">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1826,7 +1918,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/seanhoyt" />
+                                android:text="@string/seanhoyt"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/seandescription"
@@ -1839,7 +1933,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/developer" />
+                                android:text="@string/developer"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -1861,7 +1957,7 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 android:onClick="launchSusan">
 
-            <RelativeLayout
+                <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/cards_margin">
@@ -1909,7 +2005,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/header_text_size"
-                                android:text="@string/susanmccombs" />
+                                android:text="@string/susanmccombs"
+                                android:paddingStart="@dimen/content_inset"
+                                android:paddingEnd="@dimen/content_inset" />
 
                             <TextView
                                 android:id="@+id/susandescription"
@@ -1922,90 +2020,9 @@
                                 android:paddingRight="@dimen/content_inset"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="@dimen/content_text_size"
-                                android:text="@string/htconem8maintainer" />
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/tony"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/cards_margin"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:padding="@dimen/cards_padding"
-                card_view:cardBackgroundColor="@color/cardsbg"
-                card_view:cardElevation="@dimen/cards_elevation"
-                android:onClick="launchTony">
-
-            <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/cards_margin">
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:elevation="@dimen/toolbar_elevation"
-                        tools:ignore="UnusedAttribute">
-
-                        <ImageView
-                            android:id="@+id/tonycover"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/tonybackground"
-                            tools:ignore="ContentDescription" />
-
-                        <LinearLayout
-                            android:id="@+id/tonycardFrame"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <com.dirtyunicorns.about.RoundedImageView
-                                android:id="@+id/tonyimage"
-                                android:layout_width="90dp"
-                                android:layout_height="90dp"
-                                android:layout_gravity="center_horizontal"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/tony"
-                                app:riv_border_color="@color/white"
-                                app:riv_border_width="4dp"
-                                app:riv_oval="true"
-                                tools:ignore="ContentDescription" />
-
-                            <TextView
-                                android:id="@+id/tonytitle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_marginTop="@dimen/content_inset_half"
-                                android:fontFamily="sans-serif"
-                                android:paddingLeft="@dimen/content_inset"
-                                android:paddingRight="@dimen/content_inset"
-                                android:textColor="@color/dark_grey"
-                                android:textSize="@dimen/header_text_size"
-                                android:text="@string/tonyross" />
-
-                            <TextView
-                                android:id="@+id/tonydescription"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
-                                android:gravity="center_horizontal"
-                                android:lineSpacingMultiplier="1.1"
-                                android:paddingLeft="@dimen/content_inset"
-                                android:paddingRight="@dimen/content_inset"
-                                android:textColor="@color/dark_grey"
-                                android:textSize="@dimen/content_text_size"
-                                android:text="@string/inactivedevicemaintainer" />
+                                android:text="@string/htconem8maintainer"
+                                android:paddingEnd="@dimen/content_inset"
+                                android:paddingStart="@dimen/content_inset" />
 
                         </LinearLayout>
 
@@ -2017,6 +2034,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

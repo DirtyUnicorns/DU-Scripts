@@ -39,5 +39,6 @@
     <color name="dslv_float_cackground_color">#ffe1e1e0</color>
 
     <!-- DPI Alert Dialog Text Colors -->
-    <color name="dpi_text_color">@android:color/black</color>
+    <color name="dpi_text_color">@color/extrainfo_value_text</color>
+
 </resources>

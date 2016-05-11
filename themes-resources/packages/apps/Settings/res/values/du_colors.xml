@@ -111,4 +111,8 @@
     <!-- Text Color for single button panel. See: app storage view -->
     <color name="single_button_panel_button_text_color">@color/text_color_white</color>
 
+    <color name="battery_history_chart_color">?android:attr/colorControlActivated</color>
+
+    <!-- Power Usage Hard colors-->
+    <color name="power_usage_ab_icon_tint">@android:color/white</color>
 </resources>

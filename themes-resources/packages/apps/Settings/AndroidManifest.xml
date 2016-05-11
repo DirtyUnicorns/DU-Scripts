@@ -2515,6 +2515,20 @@
                 android:resource="@id/dirtytweaks" />
         </activity>
 
+        <!-- Ambient Display settings activity. -->
+        <activity android:name="Settings$AmbientDisplaySettingsActivity"
+                android:label="@string/doze_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.du.AmbientSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/dirtytweaks" />
+        </activity>
+
         <!-- Expanded desktop settings activity. -->
         <activity android:name="Settings$ExpandedDesktopSettingsActivity"
                 android:label="@string/expanded_desktop_category"
@@ -2621,10 +2635,16 @@
                 android:value="com.dirtyunicorns.dutweaks.DirtyTweaks" />
         </activity>
 
-        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.MainActivity"
-                  android:label="@string/du_app_name"/>
-        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ListVersions"/>
-        <activity android:name="us.zamzow.mazwoz.dirtyunicornschangelog.ChangeList"/>
+        <activity android:name="com.dirtyunicorns.duchangelog.MainActivity"
+                  android:label="@string/duchangelog_appname"/>
+
+        <activity android:name="com.dirtyunicorns.duchangelog.Weeklies"
+                  android:label="@string/duchangelog_weeklies"
+                  android:parentActivityName="com.dirtyunicorns.duchangelog.MainActivity" />
+
+        <activity android:name="com.dirtyunicorns.duchangelog.Official"
+                  android:label="@string/duchangelog_official"
+                  android:parentActivityName="com.dirtyunicorns.duchangelog.MainActivity" />
 
         <receiver android:name="com.dirtyunicorns.dutweaks.fragments.AdBlocker_IntentReceiver" >
             <intent-filter>

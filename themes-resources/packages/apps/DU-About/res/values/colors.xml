@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#a61919</color>
-    <color name="colorPrimaryDark">#911111</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="primary">#a61919</color>
+    <color name="primaryDark">#911111</color>
+    <color name="accent">#ffffff</color>
+    <color name="window_background">#FFF5F5F5</color>
     <color name="light_bg">#fafafa</color>
     <color name="cardsbg">#ffffff</color>
     <color name="dark_grey">#4d4d4d</color>
-    <color name="sliding_tabs_text_color">#ffffffff</color>
-    <color name="tab_background">@color/colorPrimary</color>
-    <color name="tab_indicator_color">#FFF</color>
     <color name="white">#ffffffff</color>
 
 </resources>

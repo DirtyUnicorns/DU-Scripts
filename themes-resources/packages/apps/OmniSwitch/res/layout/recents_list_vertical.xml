@@ -44,6 +44,7 @@
 	</LinearLayout>
 
 	<LinearLayout
+	    android:id="@+id/recents_or_appdrawer"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent" >
 
