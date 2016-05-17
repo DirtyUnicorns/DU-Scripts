@@ -1,8 +1,11 @@
 # DU Scripts #
 
-### How to use the build_DU script ###
+### Build scripts ###
 
-First, clone the DU-Scripts repository :
+# To use the Nico-Build-Script
+
+git clone this repo
+https://github.com/DirtyUnicorns/DU-Scripts.git
 
 Open up a terminal in a directory where you want to download it and copy/paste this
 
@@ -19,20 +22,25 @@ Open up a terminal or if you have the old terminal still open, in your DU root s
 After, simply respond to what is displayed to compile the build.
 
 
-#### Tip ####
+# To use the Nathan-Build-Script
 
-If you want to launch the script from anywhere :
+git clone this repo
+https://github.com/DirtyUnicorns/DU-Scripts.git
 
-Add the path of your root source at the end of the .bashrc file (e.g.) :
+cd/navigate into build-script and open Nathan-Build-Script.sh either with a text editor or in terminal using nano
+and fill in the following areas
 
-```bash
-export PATH=${PATH}:~/Android/DU
+- SOURCEDIR
+- OUTDIR
+- DESTDIR
 
-```
-Add the path of your root source in the build_DU.sh file below "#!/bin/sh" line (e.g.) :
+# SOURCEDIR: The directory that holds your DU repos (for example, /home/<username>/android/DU)
+# OURDIR: The directory that holds the completed DU zip directly after compilation (automatically <sourcedirectory>/out/target/product/<device>, don't change this)
+# DESTDIR: The directory that will hold your completed DU zip files for ease of access (for example, /home/<username>/completed_zips)
 
-```bash
-#!/bin/sh
+Only fill out these if you want a custom user@host in the kernel version
+export KBUILD_BUILD_USER
+export KBUILD_BUILD_HOST
 
-cd ~/Android/DU
-```
+Only fill this one out if you want something out than Dirty Deeds to show up as your build type
+export DU_BUILD_TYPE
