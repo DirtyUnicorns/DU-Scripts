@@ -31,16 +31,12 @@ cd/navigate into build-script and open Nathan-Build-Script.sh either with a text
 and fill in the following areas
 
 - SOURCEDIR
-- OUTDIR
+- OURDIR
 - DESTDIR
 
-# SOURCEDIR: The directory that holds your DU repos (for example, /home/<username>/android/DU)
-# OURDIR: The directory that holds the completed DU zip directly after compilation (automatically <sourcedirectory>/out/target/product/<device>, don't change this)
-# DESTDIR: The directory that will hold your completed DU zip files for ease of access (for example, /home/<username>/completed_zips)
+<b>Only fill out these if you want a custom user@host in the kernel version</b>
+- export KBUILD_BUILD_USER
+- export KBUILD_BUILD_HOST
 
-Only fill out these if you want a custom user@host in the kernel version
-export KBUILD_BUILD_USER
-export KBUILD_BUILD_HOST
-
-Only fill this one out if you want something out than Dirty Deeds to show up as your build type
-export DU_BUILD_TYPE
+<b>Only fill this one out if you want something out than Dirty Deeds to show up as your build type</b>
+- export DU_BUILD_TYPE
