@@ -66,7 +66,7 @@ declare -a frameworks=('api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'ke
 declare -a common=('common.mk' '.classpath' '.git' '.gitignore' '.idea' '.project' 'assets' 'build.gradle' 'src' 'tests' 'Android.mk' 'CleanSpec.mk' 'lint.xml' 'MODULE_LICENSE_APACHE2' 'NOTICE' 'preloaded-classes'
                    'proguard.cfg' 'proguard.flags' 'proguard-test.flags' 'wrap_alpha.py' 'tools' 'tests' 'extensions_src' 'mkprojectfile' 'project.properties' 'hero.png' 'LICENSE' 'README.md' 'script' 'jni' 'res_p' 'sounds'
                    'src_pd' 'src_pd_gcam' 'tests_camera' 'version.mk' 'COPYING' 'ReadMe.md' 'WallpaperPicker' 'protos' 'util' 'fill_screens.py' 'print_db.py' 'update_gallery_files.py' 'update_system_wallpaper_cropper.py'
-                   'cyanoden-dsp' 'emailcommon' 'transition' 'TestCommon' 'provider_src' 'gallerycommon' 'jni_jpegstream' 'apptests' 'libs' 'info_lookup')
+                   'cyanoden-dsp' 'emailcommon' 'transition' 'TestCommon' 'provider_src' 'gallerycommon' 'jni_jpegstream' 'apptests' 'libs' 'info_lookup' 'src_plugin')
 
 declare -a packages=('StatementService' 'BackupRestoreConfirmation' 'CaptivePortalLogin' 'DefaultContainerService' 'ExternalStorageProvider' 'FakeOemFeatures' 'FusedLocation' 'InputDevices' 'Keyguard' 'PrintSpooler' 'SettingsProvider'
                      'SharedStorageBackup' 'Shell' 'VpnDialogs' 'WAPPushManager' 'WAPPushManager' 'WallpaperCropper' 'services')

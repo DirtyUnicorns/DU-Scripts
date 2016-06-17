@@ -19,61 +19,69 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:divider="?android:dividerVertical"
-              android:showDividers="middle">
+              android:paddingBottom="10dp"
+              android:paddingStart="@dimen/alert_dialog_padding_material"
+              android:paddingEnd="@dimen/alert_dialog_padding_material">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_margin="7dp"
-        android:text="@string/select_output_settings"/>
+        android:text="@string/select_output_settings" />
 
-    <GridLayout
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:alignmentMode="alignBounds"
-        android:useDefaultMargins="true"
-        android:columnOrderPreserved="false"
-        android:columnCount="5">
+        android:paddingTop="8dp">
 
         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/size"
-                android:layout_marginStart="8dp"
                 android:layout_gravity="start|center_vertical"/>
 
         <EditText
                 android:id="@+id/editableWidth"
-                android:layout_gravity="right|center_vertical"
-                android:layout_width="100dp"
-                android:inputType="number"/>
+                android:layout_gravity="end|center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="end" />
 
         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/x"
                 android:layout_gravity="center"/>
 
         <EditText
                 android:id="@+id/editableHeight"
-                android:layout_gravity="left|center_vertical"
-                android:layout_width="100dp"
-                android:inputType="number"/>
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="end" />
 
         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/estimadedSize"
-                android:layout_marginEnd="8dp"
                 android:layout_gravity="end|center_vertical"/>
+    </LinearLayout>
 
-        <LinearLayout
-                android:layout_columnSpan="5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
 
             <TextView
                 android:text="@string/quality"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_margin="8dp" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical" />
 
             <SeekBar
                 android:id="@+id/qualitySeekBar"
@@ -84,42 +92,39 @@
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_columnSpan="3"
                 android:minWidth="250dp" />
 
             <TextView
                 android:id="@+id/qualityTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:layout_gravity="end|center_vertical" />
 
-        </LinearLayout>
-
-
-    </GridLayout>
+    </LinearLayout>
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:gravity="end"
+            android:paddingTop="8dp"
             style="?android:attr/buttonBarStyle">
 
         <Button
                 android:id="@+id/cancel"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/cancel"
-                style="?android:attr/buttonBarButtonStyle" />
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="?android:attr/selectableItemBackground" />
 
         <Button
                 android:id="@+id/done"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/done"
-                style="?android:attr/buttonBarButtonStyle"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="?android:attr/selectableItemBackground"/>
 
     </LinearLayout>
 

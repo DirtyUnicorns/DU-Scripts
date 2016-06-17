@@ -474,5 +474,12 @@
             android:theme="@android:style/Theme.Material.Settings"
             android:exported="true">
         </activity>
+
+        <service
+            android:name=".screenshot.ScreenshotEditor"
+            android:theme="@style/ScreenshotEditorStyle"
+            android:enabled="true"
+            android:exported="true" />
+
     </application>
 </manifest>

@@ -21,7 +21,7 @@
     android:viewportHeight="18">
 
     <path
-        android:fillColor="#fff"
+        android:fillColor="@color/icon_color_menu"
         android:pathData="M1.5055 0.0056781c-1.0322-0.1002-1.8213 1.1022-1.3807 2.004 0.36229 1.0021
 1.7679 1.3027 2.4559 0.501 0.798-0.7014
 0.3928-2.2044-0.6743-2.505l-0.4009-0.0000219zm0 7.5152c-1.0322-0.1002-1.8213

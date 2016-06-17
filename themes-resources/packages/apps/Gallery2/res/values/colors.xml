@@ -19,7 +19,8 @@
     <color name="primary">#D32F2F</color>
     <color name="primary_dark">#C62828</color>
     <color name="accent">#E53935</color>
-    <color name="material_red">#D32F2F</color>
+    <color name="textColor">#ffffff</color>
+
     <!-- configuration for album set page -->
     <color name="albumset_background">#171717</color>
     <color name="albumset_placeholder">#333</color>

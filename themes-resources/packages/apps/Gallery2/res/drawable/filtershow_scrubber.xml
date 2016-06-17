@@ -15,8 +15,24 @@
      limitations under the License.
 -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/filtershow_scrubber_control_disabled" />
-    <item android:state_pressed="true" android:drawable="@drawable/filtershow_scrubber_control_pressed" />
-    <item android:state_selected="true" android:drawable="@drawable/filtershow_scrubber_control_focused" />
-    <item android:drawable="@drawable/filtershow_scrubber_control_normal" />
+    <item android:state_selected="true">
+        <bitmap
+            android:src="@drawable/filtershow_scrubber_control_focused"
+            android:tint="@color/accent" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap
+            android:src="@drawable/filtershow_scrubber_control_disabled"
+            android:tint="@color/accent" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap
+            android:src="@drawable/filtershow_scrubber_control_pressed"
+            android:tint="@color/accent" />
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/filtershow_scrubber_control_normal"
+            android:tint="@color/accent" />
+    </item>
 </selector>

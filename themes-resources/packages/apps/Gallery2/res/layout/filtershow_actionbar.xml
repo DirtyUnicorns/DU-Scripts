@@ -18,9 +18,9 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:id="@+id/filtershow_done"
-    android:textAllCaps="true"
-    android:text="@string/save"
     android:gravity="center_vertical"
     android:textSize="14sp"
     android:drawableStart="@drawable/menu_save_photo"
-    android:drawablePadding="8dip" />
+    android:drawablePadding="8dip"
+    android:textColor="@color/textColor"
+    android:background="?android:attr/selectableItemBackground" />

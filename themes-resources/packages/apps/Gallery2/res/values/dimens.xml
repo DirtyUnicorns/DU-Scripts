@@ -178,4 +178,6 @@
     <dimen name="elevation_high">4dp</dimen>
     <dimen name="add_button_margin">16dp</dimen>
 
+    <dimen name="alert_dialog_padding_material">24dp</dimen>
+
 </resources>

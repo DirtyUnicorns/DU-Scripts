@@ -25,7 +25,7 @@
             android:scaleType="center"
             android:layout_gravity="top|end"
             android:background="@drawable/bg_pressed"
-            android:src="@drawable/ic_menu_done_holo_light" />
+            android:src="@drawable/ic_menu_done" />
 
     <ImageView android:id="@+id/btn_retake"
         style="@style/ReviewControlIcon"
@@ -44,5 +44,5 @@
             android:scaleType="center"
             android:layout_gravity="bottom|end"
             android:background="@drawable/bg_pressed"
-            android:src="@drawable/ic_menu_cancel_holo_light" />
+            android:src="@drawable/ic_menu_cancel" />
 </com.android.camera.ui.RotatableLayout>

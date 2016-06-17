@@ -1,4 +1,5 @@
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
         android:src="@drawable/filtershow_menu_marker"
+        android:tint="#ffffff"
         android:autoMirrored="true">
 </bitmap>

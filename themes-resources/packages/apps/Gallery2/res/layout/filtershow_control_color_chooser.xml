@@ -18,7 +18,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res/com.example.imagefilterharness"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="48dp"
     android:orientation="horizontal" >
     <LinearLayout
             android:id="@+id/listColors"
@@ -67,20 +67,24 @@
                 android:background="@drawable/filtershow_color_picker_circle"
                 android:layout_marginEnd="4dp"/>
 
+7        <Button
+                android:id="@+id/draw_color_button06"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filtershow_color_picker_circle"
+                android:layout_marginEnd="4dp"/>
+
     </LinearLayout>
 
-    <FrameLayout
-            android:background="@color/background_main_toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-    <Button
+    <ImageView
             android:id="@+id/draw_color_popupbutton"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_action_overflow"
+            android:layout_width="@dimen/draw_color_icon_dim"
+            android:layout_height="@dimen/draw_color_icon_dim"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_action_overflow"
+            android:scaleType="center"
+            android:background="?android:attr/selectableItemBackground"
             />
-    </FrameLayout>
 </LinearLayout>
 

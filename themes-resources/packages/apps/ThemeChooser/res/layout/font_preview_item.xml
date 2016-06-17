@@ -19,8 +19,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/offwhite"
-    android:paddingLeft="30dp"
-    android:paddingRight="40dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="40dp"
     android:paddingTop="40dp">
         <org.cyanogenmod.theme.util.FittedTextView
             android:id="@+id/text1"

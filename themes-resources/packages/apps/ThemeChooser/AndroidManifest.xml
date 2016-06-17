@@ -29,7 +29,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme.Chooser" >
+        android:theme="@style/AppTheme.Chooser"
+        android:supportsRtl="true">
         <activity
             android:name="org.cyanogenmod.theme.chooser.ChooserActivity"
             android:label="@string/app_name"

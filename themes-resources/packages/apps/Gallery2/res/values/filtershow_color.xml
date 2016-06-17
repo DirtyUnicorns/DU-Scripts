@@ -37,7 +37,7 @@
     <color name="filtershow_stateview_selected_text">#000000</color>
     <color name="filtershow_categoryview_background">#ff171717</color>
     <color name="filtershow_categoryview_text">#a7a7a7</color>
-    <color name="filtershow_category_selection">#ffffffff</color>
+    <color name="filtershow_category_selection">@color/accent</color>
     <color name="gradcontrol_point_center">#ffffffff</color>
     <color name="gradcontrol_point_edge">#ffffffff</color>
     <color name="gradcontrol_graypoint_center">#888888</color>
@@ -48,6 +48,7 @@
     <color name="gradcontrol_line_shadow">#000000</color>
     <color name="draw_rect_border">#888888</color>
     <color name="color_chooser_unslected_border">#00000000</color>
-    <color name="color_chooser_slected_border">#a7a7a7</color>
-
+    <color name="color_chooser_slected_border">@color/accent</color>
+    <color name="button_selected">@color/accent</color>
+    <color name="button_unselected">#90ffffff</color>
 </resources>

@@ -61,39 +61,39 @@
                     android:layout_width="@dimen/thumbnail_size"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/filtershow_button_background"
+                    android:background="?android:attr/selectableItemBackground"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_photoeditor_effects"/>
+                    android:src="@drawable/ic_photoeditor_effects_new"/>
 
             <ImageButton
                     android:id="@+id/borderButton"
                     android:layout_width="@dimen/thumbnail_size"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/filtershow_button_background"
+                    android:background="?android:attr/selectableItemBackground"
                     android:padding="2dip"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_photoeditor_border"/>
+                    android:src="@drawable/ic_photoeditor_border_new"/>
 
             <ImageButton
                     android:id="@+id/geometryButton"
                     android:layout_width="@dimen/thumbnail_size"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/filtershow_button_background"
+                    android:background="?android:attr/selectableItemBackground"
                     android:padding="2dip"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_photoeditor_fix"/>
+                    android:src="@drawable/ic_photoeditor_fix_new"/>
 
             <ImageButton
                     android:id="@+id/colorsButton"
                     android:layout_width="@dimen/thumbnail_size"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/filtershow_button_background"
+                    android:background="?android:attr/selectableItemBackground"
                     android:padding="2dip"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_photoeditor_color"/>
+                    android:src="@drawable/ic_photoeditor_color_new"/>
 
         </LinearLayout>
 

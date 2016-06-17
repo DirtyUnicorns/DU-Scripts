@@ -18,12 +18,12 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <ImageView
-                android:layout_width="436sp"
-                android:layout_height="200sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:padding="10sp"
                 android:src="@drawable/top_logo"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center"/>
+                android:scaleType="center"
+                android:layout_gravity="center" />
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"

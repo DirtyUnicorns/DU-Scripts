@@ -16,13 +16,14 @@
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
-    android:background="?android:attr/activatedBackgroundIndicator"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="?android:attr/textAppearanceMedium"
     android:gravity="center_vertical"
     android:paddingStart="18dp"
     android:paddingEnd="18dp"
     android:singleLine="true"
-    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    style="@style/ActionBarMenuItem"
+    android:textColor="@color/textColor"
+    android:background="?android:attr/selectableItemBackground"
 />

@@ -22,11 +22,6 @@
     android:orientation="vertical"
     android:visibility="visible" >
 
-    <View
-            android:background="@color/toolbar_separation_line"
-            android:layout_height="1dip"
-            android:layout_width="match_parent"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,17 +30,17 @@
         <LinearLayout
                 android:id="@+id/controlArea"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:orientation="horizontal"
-                android:layout_alignParentBottom="true"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:background="@color/background_main_toolbar">
 
             <SeekBar
                     android:id="@+id/primarySeekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    style="@style/FilterShowSlider"/>
+                    style="@style/FilterShowSlider"
+                    android:layout_gravity="center_vertical" />
 
         </LinearLayout>
 
@@ -62,16 +57,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:background="?android:attr/selectableItemBackground" 
                     android:layout_weight=".1"
                     android:gravity="center"
-                    android:src="@drawable/ic_menu_cancel_holo_light"
-                    android:textSize="18dip"/>
+                    android:src="@drawable/ic_menu_cancel"
+                    android:textSize="14dip" />
 
-            <ImageView
+            <!--<ImageView
                     android:layout_width="2dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/filtershow_vertical_bar"/>
+                    android:src="@drawable/filtershow_vertical_bar"/>-->
 
             <LinearLayout
                     android:id="@+id/panelAccessoryViewList"
@@ -86,19 +81,17 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
-                        android:background="@android:color/transparent"
+                        android:background="?android:attr/selectableItemBackground" 
                         android:text="@string/apply_effect"
-                        android:textSize="18dip"
-                        android:drawableEnd="@drawable/filtershow_menu_marker_rtl"
-                        android:textAllCaps="true"
-                        />
+                        android:textSize="14dip"
+                        android:drawableEnd="@drawable/filtershow_menu_marker_rtl"/>
 
             </LinearLayout>
 
-            <ImageView
+            <!--<ImageView
                     android:layout_width="2dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/filtershow_vertical_bar"/>
+                    android:src="@drawable/filtershow_vertical_bar"/>-->
 
             <ImageButton
                     android:id="@+id/applyFilter"
@@ -106,10 +99,10 @@
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center_vertical"
                     android:layout_weight=".1"
-                    android:background="@android:color/transparent"
+                    android:background="?android:attr/selectableItemBackground" 
                     android:gravity="center"
-                    android:src="@drawable/ic_menu_done_holo_light"
-                    android:textSize="18dip"/>
+                    android:src="@drawable/ic_menu_done"
+                    android:textSize="14dip"/>
         </LinearLayout>
 
         <FrameLayout android:id="@+id/state_panel_container"

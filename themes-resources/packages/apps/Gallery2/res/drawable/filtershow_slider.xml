@@ -22,7 +22,10 @@
                android:drawable="@drawable/filtershow_scrubber_secondary" />
     </item>
     <item android:id="@android:id/progress">
-        <scale android:scaleWidth="100%"
-               android:drawable="@drawable/filtershow_scrubber_primary" />
+        <scale android:scaleWidth="100%">
+            <bitmap
+                android:src="@drawable/filtershow_scrubber_primary"
+                android:tint="@color/accent" />
+        </scale>
     </item>
 </layer-list>

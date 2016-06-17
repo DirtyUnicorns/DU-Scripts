@@ -19,6 +19,7 @@
     <dimen name="button_bar_height">62dip</dimen>
     <dimen name="sliding_up_panel_parallax_distance">150dp</dimen>
     <dimen name="item_browse_height">260dp</dimen>
+    <dimen name="item_browse_width">550dp</dimen>
     <dimen name="drawer_item_height">48dp</dimen>
     <dimen name="drawer_item_label_text_size">14sp</dimen>
     <dimen name="icon_padding">8dp</dimen>

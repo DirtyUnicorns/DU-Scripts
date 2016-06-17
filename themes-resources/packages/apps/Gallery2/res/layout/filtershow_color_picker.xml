@@ -17,73 +17,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/background_main_toolbar">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="vertical"
-                  android:id="@+id/RelativeLayout1"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@color/background_main_toolbar">
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingStart="@dimen/alert_dialog_padding_material"
+              android:paddingEnd="@dimen/alert_dialog_padding_material">
 
         <com.android.gallery3d.filtershow.colorpicker.ColorCompareView
                 android:id="@+id/btnSelect"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="0dp"
                 />
         <com.android.gallery3d.filtershow.colorpicker.ColorSVRectView
                 android:id="@+id/colorRectView"
                 android:layout_width="match_parent"
-                android:layout_height="256dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="1dp"/>
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"/>
 
         <com.android.gallery3d.filtershow.colorpicker.ColorHueView
                 android:id="@+id/ColorHueView"
                 android:layout_width="match_parent"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="20dp"
                 android:layout_height="32dp" />
 
         <com.android.gallery3d.filtershow.colorpicker.ColorOpacityView
                 android:id="@+id/colorOpacityView"
                 android:layout_width="match_parent"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:layout_height="32dp" />
 
-        <LinearLayout android:orientation="horizontal"
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:layout_marginTop="4dp">
-            <ImageButton
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="end"
+                android:paddingTop="8dp"
+                style="?android:attr/buttonBarStyle">
+
+            <Button
                     android:id="@+id/cancelColorPick"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="left|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:layout_weight=".1"
-                    android:gravity="center"
-                    android:src="@drawable/ic_menu_cancel_holo_light"
-                    android:textSize="18dip"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="?android:attr/selectableItemBackground" />
 
-            <ImageView
-                    android:layout_width="2dp"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/filtershow_vertical_bar"/>
-            <ImageButton
+            <Button
                     android:id="@+id/applyColorPick"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="right|center_vertical"
-                    android:layout_weight=".1"
-                    android:background="@android:color/transparent"
-                    android:gravity="center"
-                    android:src="@drawable/ic_menu_done_holo_light"
-                    android:textSize="18dip"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_ok"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="?android:attr/selectableItemBackground"/>
+
         </LinearLayout>
-    </LinearLayout>
 
 </LinearLayout>
