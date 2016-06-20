@@ -7,11 +7,11 @@
 # You will need to manually edit some variables/sections based on your preferences (read the comments throughout the script to understand what is doing on)
 
 # Usage:
-# $ . du.sh <device> <sync|nosync> <clean|noclean>
+# $ . du.sh <device> <sync|nosync> <clean|noclean> <log|nolog>
 
 # Examples:
 # $ . du.sh angler sync clean
-# $ . du.sh hammerhead nosync noclean
+# $ . du.sh hammerhead nosync noclean log
 
 # HINT: You can add the folder this is in to your PATH variable so you can run it from anywhere like so:
 # $ nano ~/.bashrc
@@ -26,6 +26,7 @@
 DEVICE=$1
 SYNC=$2
 CLEAN=$3
+LOG=$4
 
 # Variables:
 # SOURCEDIR: The directory that holds your DU repos (for example, /home/<username>/android/DU)
@@ -86,17 +87,35 @@ else
    make installclean
 fi
 
+# Log the build if requested
+if [ "${LOG}" == "log" ]
+then
+   echo -e ${BLDRED}"SENDING LOG OF BUILD TO 'build-logs'"${RST}
+   echo -e ""
+   mkdir -p build-logs
+fi
+
 # Start building the zip file
-echo -e ${BLDRED}"MAKING ZIP FILE"${RST}
-echo -e ""
-mka bacon
-echo -e ""
+if [ "${LOG}" == "log" ]
+then
+   echo -e ${BLDRED}"MAKING ZIP FILE"${RST}
+   echo -e ""
+   NOW=$(date +"%Y-%m-%d-%S")
+   mka bacon 2>&1 | tee build-logs/du_$DEVICE-$NOW.log
+   echo -e ""
+else
+   echo -e ${BLDRED}"MAKING ZIP FILE"${RST}
+   echo -e ""
+   mka bacon
+   echo -e ""
+fi
 
 # Removing files section: Remove the # symbols for these next four lines if you want the script to remove the previous versions of the ROMs in your DESTDIR (for less clutter)
 # echo -e ${BLDRED}"REMOVING FILES IN ${DESTDIR}"${RST}
 # echo -e ""
 # rm ${DESTDIR}/*_${DEVICE}_*.zip
 # rm ${DESTDIR}/*_${DEVICE}_*.zip.md5sum
+# rm ${SOURCEDIR}/build-logs/*_${DEVICE}*.log
 
 # Copy new files from the OUTDIR to DESTDIR (for easy of access)
 echo -e ${BLDRED}"MOVING FILES FROM ${OUTDIR} TO ${DESTDIR}"${RST}
