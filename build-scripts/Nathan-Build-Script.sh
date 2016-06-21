@@ -110,6 +110,16 @@ else
    echo -e ""
 fi
 
+# Push build + md5sum to remote server via sFTP (if desired, uncomment the lines that follow until the break)
+#echo -e ${BLDRED}"PUSHING FILES TO REMOTE SERVER VIA SFTP"${RST}
+#export SSHPASS=<YOUR-PASSWORD>
+#sshpass -e sftp -oBatchMode=no -b - <USER>@<HOST> << !
+#   cd <YOUR-PUBLIC-WWW-DOWNLOAD-DIRECTORY>
+#   put ${OUTDIR}/DU_${DEVICE}_*.zip
+#   put ${OUTDIR}/DU_${DEVICE}_*.zip.md5sum
+#   bye
+#!
+
 # Removing files section: Remove the # symbols for these next four lines if you want the script to remove the previous versions of the ROMs in your DESTDIR (for less clutter)
 # echo -e ${BLDRED}"REMOVING FILES IN ${DESTDIR}"${RST}
 # echo -e ""
