@@ -80,14 +80,14 @@
 				android:layout_gravity="center"
 				android:scaleType="centerInside" />
 
-			<org.omnirom.omniswitch.ui.HorizontalListView
+			<org.omnirom.omniswitch.ui.FavoriteViewHorizontal
 				android:id="@+id/favorite_list_horizontal"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:layout_gravity="center_horizontal" />
 		</LinearLayout>
 
-		<GridView
+		<org.omnirom.omniswitch.ui.AppDrawerView
 			android:id="@+id/app_drawer"
 			android:layout_width="match_parent"
 			android:layout_height="300dp"

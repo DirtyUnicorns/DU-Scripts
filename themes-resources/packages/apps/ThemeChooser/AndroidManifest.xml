@@ -7,9 +7,9 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_THEME_MANAGER" />
-    <uses-permission android:name="android.permission.READ_THEMES" />
-    <uses-permission android:name="android.permission.WRITE_THEMES" />
+    <uses-permission android:name="cyanogenmod.permission.ACCESS_THEME_MANAGER" />
+    <uses-permission android:name="cyanogenmod.permission.READ_THEMES" />
+    <uses-permission android:name="cyanogenmod.permission.WRITE_THEMES" />
 
     <!-- The following permissions are used to hijack Google Play notifications
          when a theme is installed -->

@@ -52,5 +52,8 @@
     <color name="icon_color_ime_left">@color/icon_color_default</color>
     <color name="icon_color_ime_right">@color/icon_color_default</color>
     <color name="icon_color_ime_up">@color/icon_color_default</color>
+    <color name="icon_color_volume_panel">@color/icon_color_default</color>
+    <color name="icon_color_clear_notifications">@color/icon_color_default</color>
+    <color name="icon_color_editing_smartbar">@color/icon_color_default</color>
 
 </resources>

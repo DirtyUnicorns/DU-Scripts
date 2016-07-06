@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="24dp"
+    android:paddingTop="36dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="@string/welcome_cling_header"
+        android:textColor="#E1000000"
+        android:textSize="30sp" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.3dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="@string/welcome_cling_title"
+        android:textColor="#E1000000"
+        android:textSize="20sp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="@string/welcome_cling_description"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cling_dismiss"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/welcome_cling_dismiss"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

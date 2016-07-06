@@ -68,14 +68,14 @@
 				android:text="@string/no_recent_apps_title"
 				android:textSize="20sp"
 				android:visibility="gone" />
-			<ListView
+			<org.omnirom.omniswitch.ui.FavoriteViewVertical
 				android:id="@+id/favorite_list"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:divider="@null" />
 		</LinearLayout>
 
-		<GridView
+		<org.omnirom.omniswitch.ui.AppDrawerView
 			android:id="@+id/app_drawer"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"

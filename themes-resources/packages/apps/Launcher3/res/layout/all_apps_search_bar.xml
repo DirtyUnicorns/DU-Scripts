@@ -52,8 +52,8 @@
             android:paddingLeft="8dp"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:textColor="#4c4c4c"
-            android:textColorHint="#9c9c9c"
+            android:textColor="@color/all_apps_searchbar_extended_edit_text_color"
+            android:textColorHint="@color/all_apps_searchbar_extended_edit_hint_color"
             android:textSize="16sp" />
     </LinearLayout>
 
