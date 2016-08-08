@@ -58,7 +58,8 @@
 				android:id="@+id/recent_list"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:divider="@null" />
+				android:divider="@null"
+				android:listSelector="@android:color/transparent" />
 			<TextView
 				android:id="@+id/no_recent_apps"
 				android:layout_width="wrap_content"
@@ -72,7 +73,8 @@
 				android:id="@+id/favorite_list"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:divider="@null" />
+				android:divider="@null"
+				android:listSelector="@android:color/transparent"  />
 		</LinearLayout>
 
 		<org.omnirom.omniswitch.ui.AppDrawerView
@@ -83,6 +85,7 @@
 			android:numColumns="auto_fit"
 			android:smoothScrollbar="true"
 			android:stretchMode="spacingWidthUniform"
+			android:listSelector="@android:color/transparent"
 			android:visibility="gone" />
 	</LinearLayout>
 

@@ -36,13 +36,14 @@
             android:id="@+id/group_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:inputType="textCapWords"
+            android:inputType="textCapWords|textNoSuggestions"
             android:imeOptions="flagNoExtractUi|flagNoFullscreen"
             android:hint="@string/group_name_hint"
             android:minHeight="48dip"
             android:paddingLeft="8dip"
-            android:paddingStart="8dip"/>
+            android:paddingStart="8dip"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
 
         <include
             layout="@layout/group_editor_autocomplete_view"

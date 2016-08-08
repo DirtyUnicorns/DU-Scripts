@@ -29,5 +29,5 @@
 	<dimen name="button_elevation">5dp</dimen>
 	<dimen name="fake_shadow_width">2dp</dimen>
 	<dimen name="ram_display_size">40dp</dimen>
-
+	<dimen name="landscape_launcher_width">450dp</dimen>
 </resources>

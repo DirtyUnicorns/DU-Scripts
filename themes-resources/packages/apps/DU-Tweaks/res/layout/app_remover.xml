@@ -1,0 +1,29 @@
+<!--
+*=========================================================================
+*
+*  PROJECT:  SlimRoms
+*            Team Slimroms (http://www.slimroms.net)
+*
+*  COPYRIGHT Copyright (C) 2013 Slimroms http://www.slimroms.net
+*            All rights reserved
+*
+*  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*
+*  AUTHORS:     fronti90
+*  DESCRIPTION: SlimSizer: manage your apps
+*
+*=========================================================================
+*
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@string/listsystem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/floating_action_button"/>
+
+</RelativeLayout>

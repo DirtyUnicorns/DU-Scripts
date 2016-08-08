@@ -28,5 +28,6 @@
             android:layout_height="match_parent"
             android:numColumns="auto_fit"
             android:smoothScrollbar="true"
-            android:stretchMode="spacingWidthUniform"/>
+            android:stretchMode="spacingWidthUniform"
+            android:listSelector="@android:color/transparent" />
 </LinearLayout>

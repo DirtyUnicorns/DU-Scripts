@@ -40,6 +40,16 @@
             android:theme="@style/SettingsTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.omnirom.omniswitch.LauncherActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SettingsTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
