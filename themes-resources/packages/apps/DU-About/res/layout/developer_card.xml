@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cards_margin"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/cards_padding"
+    card_view:cardBackgroundColor="@color/cardsbg"
+    card_view:cardElevation="@dimen/cards_elevation">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cards_margin">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/toolbar_elevation"
+            tools:ignore="UnusedAttribute">
+
+            <ImageView
+                android:id="@+id/backgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/anderscardFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.dirtyunicorns.about.RoundedImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="4dp"
+                    app:riv_oval="true"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/content_inset_half"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="@dimen/content_inset"
+                    android:paddingRight="@dimen/content_inset"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/header_text_size"
+                    android:paddingStart="@dimen/content_inset"
+                    android:paddingEnd="@dimen/content_inset" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingLeft="@dimen/content_inset"
+                    android:paddingRight="@dimen/content_inset"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/content_text_size"
+                    android:paddingStart="@dimen/content_inset"
+                    android:paddingEnd="@dimen/content_inset" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

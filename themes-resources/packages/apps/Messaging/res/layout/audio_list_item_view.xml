@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/transparent_button_background"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_library_music_black_24dp"
+                android:src="@drawable/ic_library_music_black_24px"
                 android:contentDescription="@string/video_thumbnail_view_play_button_content_description"/>
 
     </FrameLayout>

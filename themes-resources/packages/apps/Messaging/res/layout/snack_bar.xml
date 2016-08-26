@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#323232" >
+        android:background="@color/snack_bar_background_color" >
 
         <FrameLayout
             android:id="@+id/snack_bar_message_wrapper"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:textColor="#EEFF41"
+            android:textColor="@color/snack_bar_action_text_color"
             android:textAllCaps="true" />
     </LinearLayout>
 

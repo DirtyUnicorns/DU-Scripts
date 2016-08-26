@@ -163,53 +163,47 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button01"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button02"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button03"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button04"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button05"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
-                <Button
+                <ImageButton
                         android:id="@+id/draw_color_button06"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/filtershow_color_picker_circle"
-                        android:layout_marginEnd="4dp"/>
+                        android:background="@drawable/filtershow_color_picker_circle" />
 
             </LinearLayout>
                 <ImageView

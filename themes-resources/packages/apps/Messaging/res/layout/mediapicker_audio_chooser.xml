@@ -19,7 +19,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/mediapicker_audio_chooser_background_color"
     android:importantForAccessibility="no" >
 
     <FrameLayout
@@ -89,7 +89,7 @@
         android:layout_height="match_parent"
         android:text="@string/enable_permission_procedure"
         android:contentDescription="@string/enable_permission_procedure_description"
-        android:background="@android:color/white"
+        android:background="@color/missing_permission_view_background_color"
         android:gravity="center"
         android:visibility="gone" />
 

@@ -30,7 +30,7 @@
         android:stretchMode="columnWidth"
         android:gravity="center"
         android:clipToPadding="false"
-        android:background="@android:color/white" />
+        android:background="@color/gallery_grid_view_background_color" />
     <!-- This view will hide all other views if the required permission is not granted -->
     <TextView
         android:id="@+id/missing_permission_view"
@@ -38,7 +38,7 @@
         android:layout_height="match_parent"
         android:text="@string/enable_permission_procedure"
         android:contentDescription="@string/enable_permission_procedure_description"
-        android:background="@android:color/white"
+        android:background="@color/missing_permission_view_background_color"
         android:gravity="center"
         android:visibility="gone" />
 </FrameLayout>

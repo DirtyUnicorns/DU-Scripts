@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="6dp"
-    android:background="@android:color/background_light">
+    android:background="@color/sms_storage_low_warning_dialog_background_color">
 
     <ListView android:id="@+id/free_storage_action_list"
         android:layout_width="match_parent"

@@ -112,8 +112,12 @@
     <!-- configuration for legacy album set page -->
     <integer name="albumset_rows_land">2</integer>
     <integer name="albumset_rows_port">3</integer>
-    <integer name="albumset_cols_land">3</integer>
-    <integer name="albumset_cols_port">2</integer>
+
+    <integer name="albumset_cols_land_min">2</integer>
+    <integer name="albumset_cols_land_max">5</integer>
+    <integer name="albumset_cols_port_min">1</integer>
+    <integer name="albumset_cols_port_max">4</integer>
+
     <dimen name="albumset_padding_top">3dp</dimen>
     <dimen name="albumset_padding_bottom">3dp</dimen>
     <dimen name="albumset_padding_left">3dp</dimen>
@@ -132,8 +136,12 @@
     <!-- configuration for album page -->
     <integer name="album_rows_land">3</integer>
     <integer name="album_rows_port">4</integer>
-    <integer name="album_cols_land">6</integer>
-    <integer name="album_cols_port">3</integer>
+
+   <integer name="album_cols_land_min">2</integer>
+   <integer name="album_cols_land_max">6</integer>
+   <integer name="album_cols_port_min">1</integer>
+   <integer name="album_cols_port_max">5</integer>
+
     <dimen name="album_padding_top">3dp</dimen>
     <dimen name="album_padding_bottom">3dp</dimen>
     <dimen name="album_padding_left">3dp</dimen>
@@ -163,14 +171,12 @@
     <dimen name="photoeditor_original_text_size">18dp</dimen>
     <dimen name="photoeditor_original_text_margin">4dp</dimen>
 
-    <dimen name="action_bar_elevation">8dp</dimen>
-
     <!-- FAB -->
     <!-- Floating action button -->
     <dimen name="floating_action_button_height">56dp</dimen>
     <dimen name="floating_action_button_width">56dp</dimen>
     <dimen name="floating_action_button_radius">28dp</dimen>
-    <dimen name="floating_action_button_translation_z">5dp</dimen>	
+    <dimen name="floating_action_button_translation_z">5dp</dimen>
     <dimen name="floating_action_button_margin_left">5dp</dimen>
     <dimen name="floating_action_button_margin_right">5dp</dimen>
     <dimen name="floating_action_button_margin_bottom">16dp</dimen>
@@ -179,5 +185,7 @@
     <dimen name="add_button_margin">16dp</dimen>
 
     <dimen name="alert_dialog_padding_material">24dp</dimen>
-
+    <dimen name="color_rect_width">32dp</dimen>
+    <dimen name="selected_frame_width">2dp</dimen>
+    <dimen name="details_height">175dp</dimen>
 </resources>

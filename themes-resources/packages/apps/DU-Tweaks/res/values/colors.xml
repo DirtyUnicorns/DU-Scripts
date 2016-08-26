@@ -40,5 +40,4 @@
 
     <!-- DPI Alert Dialog Text Colors -->
     <color name="dpi_text_color">@color/extrainfo_value_text</color>
-
 </resources>
