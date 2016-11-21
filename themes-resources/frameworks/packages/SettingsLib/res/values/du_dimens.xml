@@ -15,5 +15,7 @@
      limitations under the License.
 -->
 <resources>
+
     <dimen name="shortcut_picker_left_padding">40dip</dimen>
+
 </resources>

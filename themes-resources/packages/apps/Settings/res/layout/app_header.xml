@@ -36,7 +36,7 @@
         android:layout_alignWithParentIfMissing="true"
         android:layout_centerVertical="true"
         android:textAppearance="@style/TextAppearance.Switch"
-        android:textColor="@color/app_name_text_color"
+        android:textColor="@android:color/white"
         android:textAlignment="viewStart" />
 
     <ImageView
@@ -50,14 +50,9 @@
         android:minWidth="0dp"
         android:contentDescription="@string/notification_app_settings_button"
         android:scaleType="center"
-        android:src="@drawable/ic_info"
+        android:src="@drawable/ic_settings_24dp"
+        android:visibility="gone"
         style="?android:attr/borderlessButtonStyle" />
-
-    <View
-        android:id="@+id/row_divider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/listDivider" />
 
 </RelativeLayout>
 

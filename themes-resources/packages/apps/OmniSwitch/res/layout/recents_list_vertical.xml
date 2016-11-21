@@ -24,7 +24,6 @@
 		android:id="@+id/button_list_container_top"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
-		android:elevation="@dimen/button_elevation"
 		android:visibility="gone"
 		android:layout_marginEnd="3dp" >
 
@@ -38,7 +37,8 @@
 				android:id="@+id/button_list_items_top"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:orientation="vertical" >
+				android:orientation="vertical"
+				android:gravity="center_horizontal" >
 			</LinearLayout>
 		</ScrollView>
 	</LinearLayout>
@@ -74,7 +74,9 @@
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:divider="@null"
-				android:listSelector="@android:color/transparent"  />
+				android:paddingStart="4dp"
+				android:listSelector="@android:color/transparent"
+				android:layout_gravity="center_horizontal" />
 		</LinearLayout>
 
 		<org.omnirom.omniswitch.ui.AppDrawerView
@@ -86,14 +88,14 @@
 			android:smoothScrollbar="true"
 			android:stretchMode="spacingWidthUniform"
 			android:listSelector="@android:color/transparent"
-			android:visibility="gone" />
+			android:visibility="gone"
+			android:gravity="center_horizontal" />
 	</LinearLayout>
 
 	<LinearLayout
 		android:id="@+id/button_list_container_bottom"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
-		android:elevation="@dimen/button_elevation"
 		android:visibility="gone" >
 	</LinearLayout>
 

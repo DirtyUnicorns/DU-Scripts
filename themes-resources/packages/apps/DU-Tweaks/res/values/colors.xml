@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -29,15 +29,5 @@
     <drawable name="expanded_item_bg">@android:color/background_light</drawable>
     <color name="expanded_button_color_normal">#4CAF50</color>
     <color name="expanded_button_color_close">#F44336</color>
-    <color name="text_color_black">@android:color/black</color>
 
-    <!-- Gesture Anywhere -->
-    <color name="ga_gesture_color">@android:color/holo_blue_light</color>
-
-    <!-- DSLV colors -->
-    <color name="dslv_icon_dark">#ff009688</color>
-    <color name="dslv_float_cackground_color">#ffe1e1e0</color>
-
-    <!-- DPI Alert Dialog Text Colors -->
-    <color name="dpi_text_color">@color/extrainfo_value_text</color>
 </resources>

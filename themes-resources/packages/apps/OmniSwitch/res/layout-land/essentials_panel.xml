@@ -51,6 +51,38 @@
                 android:layout_weight="1" />
 
             <ImageView
+                android:id="@+id/assist_button"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:src="@drawable/ic_assist"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+            <Space
+                android:id="@+id/assist_button_space"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/voice_assist_button"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:src="@drawable/ic_voice_assist"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+            <Space
+                android:id="@+id/voice_assist_button_space"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <ImageView
                 android:id="@+id/wallpaper_button"
                 android:layout_height="56dp"
                 android:layout_width="56dp"
@@ -68,19 +100,6 @@
                 android:layout_height="56dp"
                 android:layout_width="56dp"
                 android:src="@drawable/ic_settings"
-                android:scaleType="centerInside"
-                android:padding="10dp" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/omni_settings_button"
-                android:layout_height="56dp"
-                android:layout_width="56dp"
-                android:src="@drawable/settings"
                 android:scaleType="centerInside"
                 android:padding="10dp" />
 </LinearLayout>

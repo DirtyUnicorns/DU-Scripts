@@ -19,4 +19,3 @@
     <item android:id="@android:id/mask"
           android:drawable="@android:color/white" />
 </ripple>
-

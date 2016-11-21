@@ -15,6 +15,8 @@
 -->
 
 <resources>
+    <dimen name="match_parent">-1px</dimen>
+
     <dimen name="device_memory_usage_button_width">16dip</dimen>
     <dimen name="device_memory_usage_button_height">32dip</dimen>
     <dimen name="action_bar_switch_padding">16dip</dimen>
@@ -86,10 +88,6 @@
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
-    <!-- Dashboard margins between each tiles within the layout -->
-    <dimen name="dashboard_cell_gap_x">0dp</dimen>
-    <dimen name="dashboard_cell_gap_y">0dp</dimen>
-
     <!-- Dashboard padding in its container -->
     <dimen name="dashboard_padding_start">0dp</dimen>
     <dimen name="dashboard_padding_end">0dp</dimen>
@@ -101,10 +99,10 @@
     <dimen name="dashboard_category_padding_end">0dp</dimen>
 
     <!-- Dashboard category panel elevation -->
-    <dimen name="dashboard_category_elevation">4dp</dimen>
+    <dimen name="dashboard_category_elevation">2dp</dimen>
 
-    <!-- Dashboard category title layout height -->
-    <dimen name="dashboard_category_title_height">48dp</dimen>
+    <!-- Dashboard category layout height -->
+    <dimen name="dashboard_category_height">48dp</dimen>
 
     <!-- Dashboard category title margin start -->
     <dimen name="dashboard_category_title_margin_start">16dp</dimen>
@@ -118,6 +116,8 @@
     <!-- Dashboard tile image margin start / end -->
     <dimen name="dashboard_tile_image_margin_start">16dp</dimen>
     <dimen name="dashboard_tile_image_margin_end">32dp</dimen>
+
+    <dimen name="suggestion_arrow_margin">16dp</dimen>
 
     <!-- SwitchBar margin start / end -->
     <dimen name="switchbar_margin_start">16dp</dimen>
@@ -193,11 +193,6 @@
 
     <!-- Height of a user icon view -->
     <dimen name="user_icon_view_height">56dp</dimen>
-    <!-- User spinner -->
-    <dimen name="user_spinner_height">72dp</dimen>
-    <dimen name="user_spinner_padding">4dp</dimen>
-    <dimen name="user_spinner_padding_sides">20dp</dimen>
-    <dimen name="user_spinner_item_height">56dp</dimen>
 
     <!-- CheckBoxPreference -->
     <dimen name="checkbox_widget_min_width">58dip</dimen>
@@ -210,7 +205,6 @@
 
     <!-- WiFi Preferences -->
     <dimen name="wifi_divider_height">1px</dimen>
-    <dimen name="wifi_preference_badge_padding">8dip</dimen>
 
     <!-- Color picker -->
     <dimen name="color_swatch_size">16dp</dimen>
@@ -234,20 +228,19 @@
     <dimen name="fingerprint_animation_size">88dp</dimen>
     <dimen name="fingerprint_progress_bar_size">192dp</dimen>
     <dimen name="fingerprint_enrolling_content_margin_top">36dp</dimen>
-    <dimen name="fingerprint_in_app_indicator_size">120dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_size">124dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_min_size">124dp</dimen>
+    <dimen name="fingerprint_in_app_indicator_max_size">264dp</dimen>
 
     <dimen name="setup_fingerprint_ring_radius">80dip</dimen>
     <dimen name="setup_fingerprint_progress_bar_size">168dp</dimen>
 
     <dimen name="confirm_credentials_security_method_margin">48dp</dimen>
-
-    <!-- Floating Action Button Dimensions -->
+    <dimen name="confirm_credentials_layout_width">@dimen/match_parent</dimen>
+    <dimen name="confirm_credentials_top_padding">0dp</dimen>
     <dimen name="fab_size">56dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="fab_icon_size">24dp</dimen>
     <dimen name="fab_elevation">12dp</dimen>
-    <dimen name="fab_elevation_normal">8dp</dimen>
-    <dimen name="fab_elevation_pressed">6dp</dimen>
     <dimen name="fab_press_translation_z">9dp</dimen>
 
     <!-- Delete managed profile dialog -->
@@ -256,11 +249,51 @@
     <dimen name="mdm_app_info_height">72dp</dimen>
     <dimen name="mdm_app_info_padding_top_bottom">8dp</dimen>
     <dimen name="mdm_app_name_padding_left">16dp</dimen>
+    <dimen name="mdm_app_icon_width_height">56dp</dimen>
 
     <dimen name="shortcut_size">40dp</dimen>
     <dimen name="badge_size">10dp</dimen>
 
-    <!-- Dashboard Category Margin Bottom -->
-    <dimen name="dashboard_category_margin_bottom">8dip</dimen>
+    <!-- Admin support contact details dialog. -->
+    <dimen name="admin_details_dialog_padding">24dp</dimen>
+    <dimen name="admin_details_dialog_icon_size">48dp</dimen>
+    <dimen name="admin_details_dialog_link_padding_top">36dp</dimen>
+
+    <!-- Button bar padding for unmount button. -->
+    <dimen name="unmount_button_padding">8dp</dimen>
+
+    <!-- Display, Screen zoom -->
+    <dimen name="screen_zoom_preview_app_icon_width">88dp</dimen>
+    <dimen name="conversation_message_list_padding">10dp</dimen>
+    <dimen name="conversation_message_contact_icon_text_size">32sp</dimen>
+    <dimen name="conversation_message_text_size">16sp</dimen>
+    <dimen name="conversation_status_text_size">12sp</dimen>
+    <dimen name="conversation_bubble_width_snap">20dp</dimen>
+    <dimen name="message_bubble_arrow_width">9dp</dimen>
+    <dimen name="message_padding_default">18dp</dimen>
+    <dimen name="message_text_left_right_padding">14dp</dimen>
+    <dimen name="message_text_top_padding">10dp</dimen>
+    <dimen name="message_text_bottom_padding">12dp</dimen>
+    <dimen name="message_metadata_top_padding">4dp</dimen>
+
+    <!-- Accessibility Settings -->
+    <dimen name="accessibility_layout_margin_start_end">24dp</dimen>
+    <dimen name="accessibility_button_preference_padding_top_bottom">18dp</dimen>
+
+    <!-- Accessibility, Screen magnification. These values are meant to be relative values and the actual layout value will be set programmatically. -->
+    <dimen name="screen_magnification_video_background_width">750dp</dimen>
+    <dimen name="screen_magnification_video_background_height">383dp</dimen>
+    <dimen name="screen_magnification_video_width">170dp</dimen>
+    <dimen name="screen_magnification_video_height">311dp</dimen>
+    <dimen name="screen_magnification_video_margin_top">40dp</dimen>
+
+    <!-- Restricted icon in switch bar -->
+    <dimen name="restricted_icon_margin_end">16dp</dimen>
+
+    <!-- Display Size and Font Size preview screen -->
+    <dimen name="preview_pager_padding">8dp</dimen>
+
+    <!-- Padding between the radio buttons/checkbox and text on the redaction interstitial -->
+    <dimen name="redaction_padding_start">16dp</dimen>
 
 </resources>

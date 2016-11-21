@@ -24,7 +24,6 @@
 		android:id="@+id/button_list_container_top"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:elevation="@dimen/button_elevation"
 		android:orientation="vertical"
 		android:visibility="gone" >
 
@@ -38,7 +37,8 @@
 				android:id="@+id/button_list_items_top"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:orientation="horizontal" >
+				android:orientation="horizontal"
+				android:gravity="center_vertical" >
 			</LinearLayout>
 		</HorizontalScrollView>
 	</LinearLayout>
@@ -102,7 +102,6 @@
 		android:id="@+id/button_list_container_bottom"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:elevation="@dimen/button_elevation"
 		android:orientation="vertical"
 		android:visibility="gone" >
 	</LinearLayout>

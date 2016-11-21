@@ -18,45 +18,15 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-            android:id="@+id/names"
+            android:id="@+id/kind_section_views"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/editor_compact_first_field_padding"
-            android:orientation="vertical"/>
-
-    <LinearLayout
-            android:id="@+id/phonetic_names"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
-
-    <LinearLayout
-            android:id="@+id/nicknames"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
-
-    <LinearLayout
-            android:id="@+id/phone_numbers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
-
-    <LinearLayout
-            android:id="@+id/emails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
-
-    <LinearLayout
-            android:id="@+id/other"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
 
     <LinearLayout
             style="@style/SelectableItem"
             android:id="@+id/more_fields"
+            android:focusable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -72,6 +42,7 @@
                 android:paddingStart="72dp"
                 android:gravity="center_vertical"
                 android:text="@string/compact_editor_more_fields"
+                android:textAlignment="viewStart"
                 android:textColor="?android:attr/colorAccent"
                 android:textSize="@dimen/expanding_entry_card_title_text_size"/>
 

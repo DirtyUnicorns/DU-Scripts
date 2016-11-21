@@ -24,23 +24,23 @@
 
     <original-package android:name="com.android.gallery3d" />
 
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="24" />
 
     <permission android:name="com.android.gallery3d.permission.GALLERY_PROVIDER"
-            android:protectionLevel="signatureOrSystem" />
-
-    <permission android:name="com.android.gallery3d.permission.STORAGE_CHANGE"
             android:protectionLevel="signatureOrSystem" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -169,13 +169,7 @@
                 <data android:scheme="https" />
                 <data android:scheme="content" />
                 <data android:scheme="file" />
-                <data android:mimeType="image/bmp" />
-                <data android:mimeType="image/jpeg" />
-                <data android:mimeType="image/gif" />
-                <data android:mimeType="image/png" />
-                <data android:mimeType="image/webp" />
-                <data android:mimeType="image/x-ms-bmp" />
-                <data android:mimeType="image/vnd.wap.wbmp" />
+                <data android:mimeType="image/*" />
                 <data android:mimeType="application/vnd.google.panorama360+jpg" />
             </intent-filter>
             <intent-filter>
@@ -325,8 +319,8 @@
         <uses-library android:name="com.google.android.media.effects"
                 android:required="false" />
 
-        <activity android:name="com.android.gallery3d.app.GallerySettings"
-                android:theme="@style/Theme.Settings"
+        <activity android:name="com.android.gallery3d.settings.GallerySettings"
+                android:theme="@style/Theme.Gallery"
                 android:configChanges="orientation|keyboardHidden|screenSize" />
 
         <activity android:name="com.android.gallery3d.util.ViewGifImage"
@@ -395,19 +389,10 @@
             </intent-filter>
         </receiver>
 
-        <!-- Receiver to keep the storage path for the camera in sync -->
-        <receiver android:name="com.android.gallery3d.app.StorageChangeReceiver"
-            android:permission="com.android.gallery3d.permission.STORAGE_CHANGE" >
-            <intent-filter>
-                <action android:name="com.android.gallery3d.STORAGE_CHANGE" />
-            </intent-filter>
-        </receiver>
-
         <service android:name="com.android.camera.MediaSaveService" />
 
         <activity android:name="org.codeaurora.gallery3d.video.SettingsActivity"
                 android:configChanges="keyboardHidden|orientation|screenSize"
-                android:theme="@style/Theme.Settings"
                 android:label="@string/streaming_settings" >
             <intent-filter>
                 <action android:name="org.codeaurora.settings.streaming" />
@@ -426,14 +411,13 @@
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:icon="@drawable/ic_menu_display_bookmark"
                 android:label="@string/bookmark_list"
-                android:theme="@style/Theme.Gallery" >
+                android:theme="@android:style/Theme.Holo" >
             <intent-filter>
                 <action android:name="org.codeaurora.bookmark.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="org.codeaurora.gallery3d.video.VideoSettingsActivity"
-                android:theme="@style/Theme.Settings"
                 android:label="@string/movie_view_label"
                 android:configChanges="orientation|keyboardHidden|screenSize|mnc|mcc">
         </activity>

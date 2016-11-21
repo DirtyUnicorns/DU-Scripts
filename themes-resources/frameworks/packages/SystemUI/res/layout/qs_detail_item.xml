@@ -20,6 +20,7 @@
     android:minHeight="@dimen/qs_detail_item_height"
     android:background="@drawable/btn_borderless_rect"
     android:clickable="true"
+    android:focusable="true"
     android:gravity="center_vertical"
     android:orientation="horizontal" >
 
@@ -27,7 +28,7 @@
         android:id="@android:id/icon"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginEnd="20dp" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -57,6 +58,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:clickable="true"
+        android:focusable="true"
         android:scaleType="center"
         android:contentDescription="@*android:string/media_route_controller_disconnect"
         android:src="@drawable/ic_qs_cancel" />

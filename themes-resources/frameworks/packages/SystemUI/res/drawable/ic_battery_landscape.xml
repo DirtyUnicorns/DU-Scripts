@@ -18,11 +18,11 @@
 
     <item
         android:id="@+id/battery_frame"
-        android:drawable="@drawable/ic_battery_landscape_frame"/>
+        android:drawable="@drawable/ic_battery_landscape_frame" />
 
     <item
         android:id="@+id/battery_fill"
-        android:drawable="@drawable/ic_battery_landscape_avd"/>
+        android:drawable="@drawable/ic_battery_landscape_avd" />
 
     <item
         android:id="@+id/battery_charge_indicator">
@@ -31,7 +31,7 @@
             android:pivotY="50%"
             android:fromDegrees="90"
             android:toDegrees="90"
-            android:drawable="@drawable/ic_battery_bolt"/>
+            android:drawable="@drawable/ic_battery_bolt" />
     </item>
 
 </layer-list>

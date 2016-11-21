@@ -16,9 +16,10 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.contacts"
-    android:sharedUserId="android.uid.shared">
+    android:versionCode="10417"
+    android:versionName="1.4.17">
 
-    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="24" />
     <original-package android:name="com.android.contacts" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -26,8 +27,10 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.WRITE_PROFILE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -45,11 +48,13 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="com.android.voicemail.permission.READ_VOICEMAIL" />
+    <!-- Following used for Contact metadata syncing -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
 
     <application
         android:name="com.android.contacts.ContactsApplication"
         android:label="@string/applicationLabel"
-        android:icon="@mipmap/ic_contacts_clr_48cv_44dp"
+        android:icon="@mipmap/ic_contacts_launcher"
         android:taskAffinity="android.task.contacts"
         android:hardwareAccelerated="true"
         android:supportsRtl="true"
@@ -62,6 +67,7 @@
             android:theme="@style/PeopleTheme"
             android:clearTaskOnLaunch="true"
             android:launchMode="singleTop"
+            android:resizeableActivity="true"
         >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -198,10 +204,15 @@
 
         <!-- Used to set options -->
         <activity
-            android:name=".preference.ContactsPreferenceActivity"
+            android:name=".common.preference.ContactsPreferenceActivity"
             android:label="@string/activity_title_settings"
             android:theme="@style/ContactsPreferencesTheme"
             android:exported="false"/>
+
+        <activity android:name=".common.activity.LicenseActivity"
+            android:label="@string/activity_title_licenses"
+            android:theme="@style/ContactsPreferencesTheme"
+            android:exported="false" />
 
         <!-- Used to filter contacts list by account -->
         <activity
@@ -217,6 +228,12 @@
 
         <activity
             android:name=".common.activity.RequestPermissionsActivity"
+            android:label="@string/launcherActivityLabel"
+            android:theme="@style/PeopleTheme"
+            android:exported="false"/>
+
+        <activity
+            android:name=".common.activity.RequestDesiredPermissionsActivity"
             android:label="@string/launcherActivityLabel"
             android:theme="@style/PeopleTheme"
             android:exported="false"/>
@@ -253,7 +270,7 @@
 
         <activity
             android:name=".quickcontact.QuickContactActivity"
-            android:label="@string/launcherActivityLabel"
+            android:label="@string/quickContactActivityLabel"
             android:theme="@style/Theme.QuickContact"
             android:launchMode="singleTop"
             android:excludeFromRecents="true"
@@ -296,8 +313,7 @@
         <activity-alias android:name="alias.DialShortcut"
             android:targetActivity=".activities.ContactSelectionActivity"
             android:label="@string/shortcutDialContact"
-            android:icon="@drawable/logo_quick_contacts_dialer_color_44in48dp"
-            android:enabled="@*android:bool/config_voice_capable">
+            android:icon="@drawable/logo_quick_contacts_dialer_color_44in48dp">
 
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
@@ -310,8 +326,7 @@
         <activity-alias android:name="alias.MessageShortcut"
             android:targetActivity=".activities.ContactSelectionActivity"
             android:label="@string/shortcutMessageContact"
-            android:icon="@drawable/logo_quick_contacts_mail_color_44in48dp"
-            android:enabled="@*android:bool/config_voice_capable">
+            android:icon="@drawable/logo_quick_contacts_mail_color_44in48dp">
 
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
@@ -338,7 +353,7 @@
         <!-- Edit or create a contact with only the most important fields displayed initially. -->
         <activity
             android:name=".activities.CompactContactEditorActivity"
-            android:label="@string/launcherActivityLabel"
+            android:label="@string/editContactActivityLabel"
             android:theme="@style/EditorActivityTheme"
             android:windowSoftInputMode="stateHidden|adjustResize">
 
@@ -361,7 +376,7 @@
         <!-- Edit or create a contact with all fields displayed. -->
         <activity
             android:name=".activities.ContactEditorActivity"
-            android:label="@string/launcherActivityLabel"
+            android:label="@string/editContactActivityLabel"
             android:theme="@style/EditorActivityTheme"
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false">
@@ -448,6 +463,10 @@
             android:label="@string/launcherActivityLabel"
             android:theme="@style/BackgroundOnlyTheme" />
 
+        <activity android:name=".common.vcard.ShareVCardActivity"
+                  android:label="@string/launcherActivityLabel"
+                  android:theme="@style/BackgroundOnlyTheme" />
+
         <service
             android:name=".common.vcard.VCardService"
             android:exported="false" />
@@ -515,7 +534,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.android.contacts.files"
+            android:authorities="@string/contacts_file_provider_authority"
             android:grantUriPermissions="true"
             android:exported="false">
             <meta-data

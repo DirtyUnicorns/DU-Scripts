@@ -16,36 +16,54 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Sets whether IME switcher on statusbar should be shown or not. -->
-    <bool name="config_show_IMESwitcher">true</bool>
-
     <!-- If this is true, key chords can be used to take a screen record on the device. -->
     <bool name="config_enableScreenrecordChord">true</bool>
 
-    <!-- Package name providing alternate WebView implementation.
-         Fall back to config_webViewPackageName if not available. -->
-    <string name="config_alternateWebViewPackageName" translatable="false">com.google.android.webview</string>
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">false</bool>
 
-    <!-- Slim recents -->
-    <!-- The duration (in milliseconds) of recent app screen animation. -->
-    <integer name="config_recentDefaultDur">300</integer>
-    <!-- The duration (in milliseconds) of recent app screen exit animation. -->
-    <integer name="config_recentExitDur">450</integer>
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">false</bool>
 
-    <!-- Hardware keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-            32 - Camera
-            64 - Volume rocker
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">64</integer>
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
+    <!-- Vibrator pattern to be used as for notifications while alerts
+         are disabled (e.g. during phone calls) if enabled by the user.
+     -->
+    <integer-array name="config_notificationNoAlertsVibePattern">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>50</item>
+    </integer-array>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">false</bool>
+
+    <!-- Default value for led color when battery is really fully charged -->
+    <integer name="config_notificationsBatteryReallyFullARGB">0xFF00FF00</integer>
+
+    <!-- Path to the library that contains a device specific key handler -->
+    <string name="config_deviceKeyHandlerLib" translatable="false"></string>
+
+    <!-- Name of that key handler class -->
+    <string name="config_deviceKeyHandlerClass" translatable="false"></string>
+
+    <!-- Default value for proximity check on screen wake
+         NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)
+    -->
+    <bool name="config_proximityCheckOnWake">false</bool>
+    <integer name="config_proximityCheckTimeout">250</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- True if the gesture service should be started at system start -->
+    <bool name="config_enableGestureService">false</bool>
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
     <bool name="config_samsung_stk">false</bool>
+
 </resources>

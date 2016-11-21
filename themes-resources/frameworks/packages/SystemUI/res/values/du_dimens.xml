@@ -16,77 +16,21 @@
 -->
 <resources>
 
-    <dimen name="weather_text_size">12sp</dimen>
-    <dimen name="detail_radio_group_padding_left">16dp</dimen>
-    <dimen name="detail_radio_group_padding">8dp</dimen>
-
-    <!-- Themes: radius of the corners of the notification dropshadow
-         See also: notification_material_rounded_rect_radius
-    -->
-    <dimen name="notification_material_shadow_rounded_rect_radius">0dp</dimen>
-
-    <dimen name="zen_mode_panel_radius">@dimen/notification_material_rounded_rect_radius</dimen>
-
-    <dimen name="status_bar_expanded_header_elevation">4dp</dimen>
-
-    <dimen name="volume_panel_z">4dp</dimen>
-
-    <!-- Side padding for the status bar header -->
-    <dimen name="notification_header_side_padding">@dimen/notification_side_padding</dimen>
-
-    <!-- Side padding for the Quick Settings panel -->
-    <dimen name="qs_panel_side_padding">@dimen/notification_side_padding</dimen>
-
     <!-- Network traffic monitor single-line text size -->
     <dimen name="net_traffic_single_text_size">10dp</dimen>
 
     <!-- Network traffic monitor multi-line text size -->
     <dimen name="net_traffic_multi_text_size">7dp</dimen>
 
-    <!-- lockscreen shortcuts -->
+    <!-- Custom Carrier Label -->
+    <dimen name="status_bar_carrier_height">14dp</dimen>
+
+    <!-- Lockscreen shortcuts -->
     <dimen name="lockscreen_icon_side_padding">10dp</dimen>
     <dimen name="lockscreen_icon_size">35dp</dimen>
     <dimen name="phone_side_padding">10dp</dimen>
     <dimen name="phone_bottom_padding">40dp</dimen>
     <dimen name="phone_width">320dp</dimen>
     <dimen name="phone_height">420dp</dimen>
-
-    <!-- Floating action button -->
-    <dimen name="floating_action_button_height">56dp</dimen>
-    <dimen name="floating_action_button_width">56dp</dimen>
-    <dimen name="floating_action_button_translation_z">6dp</dimen>
-    <dimen name="floating_action_button_margin_side">36dp</dimen>
-    <dimen name="floating_action_button_margin_bottom">72dp</dimen>
-    <dimen name="floating_action_button_margin_top">24dp</dimen>
-
-    <!-- App circle sidebar -->
-    <dimen name="app_sidebar_trigger_width">12dip</dimen>
-    <dimen name="app_sidebar_listview_width">160dp</dimen>
-    <dimen name="app_sidebar_icon_width">72dp</dimen>
-    <dimen name="app_sidebar_icon_height">72dp</dimen>
-
-    <!-- The task item height in task list. -->
-    <dimen name="task_manager_item_height">40dip</dimen>
-
-    <dimen name="qs_detail_item_height_twoline">72dp</dimen>
-
-    <!-- Slim recent -->
-    <dimen name="recent_width">230dp</dimen>
-    <dimen name="slim_recents_elevation">20dp</dimen>
-    <dimen name="recent_app_icon_size">48dp</dimen>
-    <dimen name="recent_favorite_icon_size">18dp</dimen>
-    <dimen name="recent_thumbnail_width">198dp</dimen>
-    <dimen name="recent_thumbnail_height">140dp</dimen>
-    <dimen name="recent_header_width">120dp</dimen>
-    <dimen name="recent_text_size">20dp</dimen>
-    <dimen name="recent_thumbnail_bottom_padding">3dp</dimen>
-
-    <!-- Screenshot Crop & Share -->
-    <dimen name="crop_buttons">48dp</dimen>
-    <dimen name="crop_buttons_inlet">32dp</dimen>
-
-    <!-- QS location sensors mode -->
-    <dimen name="detail_radio_group_padding_left">16dp</dimen>
-    <dimen name="detail_radio_group_padding">8dp</dimen>
 
 </resources>

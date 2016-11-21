@@ -17,7 +17,7 @@
 
 <com.android.contacts.editor.CompactRawContactsEditorView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/editors"
+        android:id="@+id/raw_contacts_editor_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background_primary"
@@ -43,7 +43,9 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+            <include layout="@layout/editor_all_rawcontacts_accounts_selector" />
             <include layout="@layout/compact_account_info" />
+            <include layout="@layout/editor_account_selector" />
 
             <include layout="@layout/compact_contact_editor_fields"/>
 

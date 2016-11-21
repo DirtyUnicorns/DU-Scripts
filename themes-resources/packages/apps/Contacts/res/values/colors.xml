@@ -56,10 +56,6 @@
     <color name="call_arrow_green">#2aad6f</color>
     <color name="call_arrow_red">#ff2e58</color>
 
-    <color name="contact_all_list_background_color">#FFFFFF</color>
-    <color name="contact_favorites_list_background_color">#FFFFFF</color>
-    <color name="group_list_background_color">#FFFFFF</color>
-
     <!-- Background color of pinned header items. -->
     <color name="list_item_pinned_header_color">@color/background_primary</color>
 
@@ -69,6 +65,15 @@
     <!-- Color of disabled text and unfocused hint text inside the contact editor. 25% black. -->
     <color name="editor_disabled_text_color">#40000000</color>
 
-    <color name="list_item_name_text_color">#ff000000</color>
-    <color name="editor_account_header_bg">#ffeeeeee</color>
+    <!-- Color of button background in compact photo picker. -->
+    <color name="google_grey_600">#757575</color>
+
+    <!-- Color of button text in compact photo picker, 85% white. -->
+    <color name="photo_action_button_color">#D9FFFFFF</color>
+
+    <!-- Color of text on disabled link contacts button, 25% black. -->
+    <color name="disabled_button_text">#40000000</color>
+
+    <!-- Color of background of disabled link contacts button, 15% black. -->
+    <color name="disabled_button_background">#26000000</color>
 </resources>

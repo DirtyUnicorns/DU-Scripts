@@ -26,6 +26,6 @@
         android:strokeColor="#000000"
         android:strokeLineJoin="round"
         android:strokeWidth="3"
-        android:pathData="@string/battery_circle_path"/>
+        android:pathData="@string/battery_circle_path" />
 
 </vector>

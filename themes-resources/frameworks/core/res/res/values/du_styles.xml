@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* //device/apps/common/assets/res/any/strings.xml
-**
-** Copyright 2006, The Android Open Source Project
+/*
+** Copyright (C) 2014-2016 The Dirty Unicorns Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,35 +17,18 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <style name="PowerMenuBottomAnimation">
+
+    <style name="GlobalActionsAnimation">
         <item name="windowEnterAnimation">@anim/slide_in_up</item>
         <item name="windowExitAnimation">@anim/slide_out_down</item>
     </style>
-    <style name="PowerMenuTopAnimation">
+    <style name="GlobalActionsAnimationTop">
         <item name="windowEnterAnimation">@anim/slide_in_down</item>
         <item name="windowExitAnimation">@anim/slide_out_up</item>
     </style>
-
-    <!-- Slim recent app screen animation -->
-    <style name="Animation.RecentScreen">
-        <item name="windowEnterAnimation">@anim/recent_screen_enter</item>
-        <item name="windowExitAnimation">@anim/recent_screen_exit</item>
-    </style>
-    <style name="Animation.RecentScreen.Left">
-        <item name="windowEnterAnimation">@anim/recent_screen_enter_left</item>
-        <item name="windowExitAnimation">@anim/recent_screen_exit_left</item>
+    <style name="GlobalActionsAnimationEnter">
+        <item name="windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="windowExitAnimation">@anim/dialog_exit</item>
     </style>
 
-    <!-- Exposed styles for framework activities -->
-    <style name="Theme.Material.Light.Dialog.HeavyWeightSwitcherActivity" />
-    <style name="Theme.Material.Light.Dialog.ChooseAccountActivity" />
-    <style name="Theme.Material.Light.Dialog.ChooseTypeAndAccountActivity" />
-    <style name="Theme.Material.Light.Dialog.ChooseAccountTypeActivity" />
-    <style name="Theme.Material.Light.Dialog.NoActionBar.CantAddAccountActivity" />
-    <style name="Theme.Material.Light.DialogWhenLarge.GrantCredentialsPermissionActivity" />
-    <style name="Theme.Material.Light.Dialog.SyncActivityTooManyDeletes" />
-    <style name="Theme.Material.Light.Dialog.Alert.NetInitiatedActivity" />
-
-    <!-- Exposed Java styles for power menu  -->
-    <style name="Theme.Power.Dialog" parent="@style/Theme.DeviceDefault.Light.DarkActionBar" />
 </resources>

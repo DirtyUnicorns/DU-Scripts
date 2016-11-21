@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:background="@drawable/transparent_button_background"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_video_play_light"
+            android:src="@drawable/ic_play_circle_filled_white_24px"
             android:contentDescription="@string/video_thumbnail_view_play_button_content_description"/>
     </FrameLayout>
 

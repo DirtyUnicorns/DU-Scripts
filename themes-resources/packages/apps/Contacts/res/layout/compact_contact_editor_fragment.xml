@@ -24,7 +24,7 @@
         android:fillViewport="true">
 
     <com.android.contacts.editor.CompactRawContactsEditorView
-            android:id="@+id/editors"
+            android:id="@+id/raw_contacts_editor_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -32,14 +32,16 @@
 
         <include layout="@layout/compact_photo_editor_view" />
 
-        <include layout="@layout/compact_account_info" />
-
         <!-- Dummy view so the first input field is not initially focused. b/21644158 -->
         <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"/>
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <include layout="@layout/editor_all_rawcontacts_accounts_selector" />
+        <include layout="@layout/compact_account_info" />
+        <include layout="@layout/editor_account_selector" />
 
         <include layout="@layout/compact_contact_editor_fields" />
 

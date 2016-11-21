@@ -30,12 +30,15 @@
         android:label="@string/app_name"
         android:clearTaskOnLaunch="true"
         android:process="com.android.phone"
-        android:taskAffinity="android.task.stk">
+        android:taskAffinity="android.task.stk"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
 
         <activity android:name="StkMain"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="@string/app_name"
             android:enabled="false"
+            android:exported="true"
             android:taskAffinity="android.task.stk.StkLauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +49,7 @@
         <activity android:name="StkLauncherActivity"
             android:theme="@android:style/Theme.NoTitleBar"
             android:label="@string/app_name"
+            android:exported="false"
             android:taskAffinity="android.task.stk.StkLauncherActivity">
             <intent-filter>
                  <action android:name="android.intent.action.VIEW" />
@@ -59,6 +63,7 @@
             android:icon="@drawable/ic_launcher_sim_toolkit"
             android:label="@string/app_name"
             android:configChanges="orientation|locale|screenSize|keyboardHidden|mnc|mcc"
+            android:exported="false"
             android:taskAffinity="android.task.stk.StkLauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -72,6 +77,7 @@
             android:icon="@drawable/ic_launcher_sim_toolkit"
             android:theme="@android:style/Theme.Holo"
             android:configChanges="orientation|locale|screenSize|keyboardHidden"
+            android:exported="false"
             android:taskAffinity="android.task.stk.StkLauncherActivity">
                 <intent-filter>
                         <action android:name="android.intent.action.VIEW" />
@@ -82,22 +88,13 @@
         <activity android:name="StkDialogActivity"
             android:configChanges="orientation|locale|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.Dialog"
+            android:exported="false"
             android:taskAffinity="android.task.stk.StkLauncherActivity">
         </activity>
 
         <activity android:name="ToneDialog"
+            android:exported="false"
             android:theme="@android:style/Theme.Dialog">
-        </activity>
-
-        <!-- SIM Toolkit settings activity -->
-        <activity android:name="StkSettings"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <action android:name="android.intent.action.MAIN" />
-                <category
-                    android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
-            </intent-filter>
         </activity>
 
         <receiver android:name="com.android.stk.StkCmdReceiver">

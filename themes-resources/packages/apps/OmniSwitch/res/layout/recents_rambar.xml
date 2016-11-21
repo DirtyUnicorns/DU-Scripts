@@ -19,8 +19,7 @@
     android:id="@+id/ram_usage_bar_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:elevation="@dimen/rambar_elevation" >
+    android:orientation="vertical" >
     <view
         android:id="@+id/ram_usage_bar"
         android:layout_width="match_parent"

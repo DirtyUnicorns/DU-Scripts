@@ -15,32 +15,24 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/category"
+    android:id="@+id/category"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dashboard_category_height"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:background="@color/card_background"
+    android:importantForAccessibility="noHideDescendants"
+    android:elevation="@dimen/dashboard_category_elevation" >
+
+    <TextView android:id="@android:id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="@dimen/dashboard_category_padding_start"
-        android:paddingEnd="@dimen/dashboard_category_padding_end"
-        android:orientation="vertical"
-        android:background="@color/dashboard_category_background_color"
-        android:layout_marginBottom="@dimen/dashboard_category_margin_bottom"
-        android:elevation="@dimen/dashboard_category_elevation">
-
-    <TextView android:id="@+id/category_title"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dashboard_category_title_height"
-            android:paddingStart="@dimen/dashboard_category_title_margin_start"
-            android:singleLine="true"
-            android:ellipsize="marquee"
-            android:gravity="center_vertical"
-            android:textAppearance="@style/TextAppearance.CategoryTitle"
-            android:textAlignment="viewStart"
-            android:background="@color/dashboard_category_title_bg_color"
-            />
-
-    <com.android.settings.dashboard.DashboardContainerView
-            android:id="@+id/category_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dashboard_category_title_margin_start"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.CategoryTitle"
+        android:textAlignment="viewStart"
+        />
 
 </LinearLayout>

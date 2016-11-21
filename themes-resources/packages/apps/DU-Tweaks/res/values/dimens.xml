@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2015 The Dirty Unicorns Project
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,18 +20,15 @@
     <dimen name="header_icon_width">28dp</dimen>
     <dimen name="fab_line_width">2dp</dimen>
 
-    <!-- Gesture Anywhere -->
-    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
-    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
-    <dimen name="shortcut_picker_left_padding">70dip</dimen>
-
     <!-- navbar height -->
     <integer name="navigation_bar_height_min_percent">65</integer>
-	<integer name="navigation_bar_height_max_percent">120</integer>
-	<integer name="navigation_bar_width_min_percent">65</integer>
-	<integer name="navigation_bar_width_max_percent">120</integer>
+    <integer name="navigation_bar_height_max_percent">135</integer>
+    <integer name="navigation_bar_width_min_percent">65</integer>
+    <integer name="navigation_bar_width_max_percent">135</integer>
 
     <!-- Icon pack picker -->
     <dimen name="alert_dialog_padding_material">20dp</dimen>
 
+    <!-- Shortcut picker -->
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
 </resources>

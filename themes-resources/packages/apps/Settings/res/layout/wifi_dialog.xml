@@ -15,9 +15,10 @@
 -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:fadeScrollbars="false">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollIndicators="top|bottom">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -71,7 +72,7 @@
                 <Spinner android:id="@+id/security"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/wifi_item_content"
+                        style="@style/wifi_item_spinner"
                         android:prompt="@string/wifi_security"
                         android:entries="@array/wifi_security" />
             </LinearLayout>
@@ -103,11 +104,11 @@
                     <Spinner android:id="@+id/method"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            style="@style/wifi_item_content"
+                            style="@style/wifi_item_spinner"
                             android:prompt="@string/wifi_eap_method"
                             android:entries="@array/wifi_eap_method" />
                 </LinearLayout>
-                
+
                 <LinearLayout android:id="@+id/l_phase2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -122,7 +123,7 @@
                     <Spinner android:id="@+id/phase2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            style="@style/wifi_item_content"
+                            style="@style/wifi_item_spinner"
                             android:prompt="@string/please_select_phase2"
                             android:entries="@array/wifi_phase2_entries" />
                 </LinearLayout>
@@ -141,8 +142,50 @@
                     <Spinner android:id="@+id/ca_cert"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            style="@style/wifi_item_content"
+                            style="@style/wifi_item_spinner"
                             android:prompt="@string/wifi_eap_ca_cert" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/no_ca_cert_warning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        style="@style/wifi_item" >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_warning"
+                            android:text="@string/wifi_do_not_validate_eap_server_warning" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/l_domain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/wifi_item" >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_label"
+                            android:text="@string/wifi_eap_domain" />
+
+                    <EditText android:id="@+id/domain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_edit_content"
+                            android:singleLine="true"
+                            android:inputType="textNoSuggestions" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/no_domain_warning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        style="@style/wifi_item" >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_warning"
+                            android:text="@string/wifi_no_domain_warning" />
                 </LinearLayout>
 
                 <LinearLayout android:id="@+id/l_user_cert"
@@ -159,7 +202,7 @@
                     <Spinner android:id="@+id/user_cert"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            style="@style/wifi_item_content"
+                            style="@style/wifi_item_spinner"
                             android:prompt="@string/wifi_eap_user_cert" />
                 </LinearLayout>
 
@@ -243,6 +286,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/wifi_item"
+                android:paddingBottom="4dp"
                 android:visibility="gone">
             <CheckBox android:id="@+id/wifi_advanced_togglebox"
                     android:layout_width="match_parent"
@@ -272,7 +316,7 @@
                 <Spinner android:id="@+id/proxy_settings"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/wifi_item_content"
+                        style="@style/wifi_item_spinner"
                         android:prompt="@string/proxy_settings_title"
                         android:entries="@array/wifi_proxy_settings" />
 
@@ -301,7 +345,7 @@
                     android:layout_height="wrap_content"
                     style="@style/wifi_section"
                     android:visibility="gone">
-                <LinearLayout 
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/wifi_item">
@@ -397,7 +441,7 @@
                 <Spinner android:id="@+id/ip_settings"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/wifi_item_content"
+                        style="@style/wifi_item_spinner"
                         android:prompt="@string/wifi_ip_settings"
                         android:entries="@array/wifi_ip_settings" />
 
@@ -500,6 +544,24 @@
                             android:singleLine="true"
                             android:hint="@string/wifi_dns2_hint"
                             android:inputType="textNoSuggestions" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/wifi_section">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/wifi_item" >
+                    <CheckBox android:id="@+id/shared"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_content"
+                            android:textSize="14sp"
+                            android:text="@string/wifi_shared"
+                            android:checked="true" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

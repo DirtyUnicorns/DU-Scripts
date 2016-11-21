@@ -17,9 +17,12 @@
 -->
 <resources>
     <color name="text_shadow">#000000</color>
-    <color name="bg_flat_color">#fff5f5f5</color>
+    <color name="bg_flat_color">#ffe0e0e0</color>
+    <color name="bg_flat_color_gradient">#fff5f5f5</color>
     <color name="bg_flat_color_dark">#ff424242</color>
-    <color name="button_bg_flat_color">#ff263238</color>
+    <color name="bg_flat_color_dark_gradient">#ff757575</color>
+    <color name="button_bg_flat_color">#ff303030</color>
+    <color name="button_bg_flat_color_gradient">#ff424242</color>
     <color name="ripple_material_light">#40000000</color>
     <color name="ripple_material_dark">#40ffffff</color>
     <color name="fake_window_shade_color">#40424242</color>

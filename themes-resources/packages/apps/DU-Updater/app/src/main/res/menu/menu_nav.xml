@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/official"
+            android:title="Official builds"
+            android:icon="@drawable/official"/>
+        <item
+            android:id="@+id/weeklies"
+            android:title="Weekly builds"
+            android:icon="@drawable/weekly"/>
+        <item
+            android:id="@+id/test"
+            android:title="Test builds"
+            android:icon="@drawable/test"/>
+    </group>
+
+    <group
+        android:id="@+id/gapps_category"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/gappsbanks"
+            android:title="Banks Gapps"
+            android:icon="@drawable/gapps"/>
+        <item
+            android:id="@+id/gappstbo"
+            android:title="TBO Gapps"
+            android:icon="@drawable/gapps"/>
+    </group>
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_0" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_1" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_2" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_3" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_4" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_5" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_6" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_7" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_8" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_9" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_10" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_11" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_12" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_13" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_14" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_15" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_16" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_17" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_18" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_19" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_20" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_19" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_18" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_17" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_16" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_15" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_14" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_13" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_12" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_11" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_10" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_9" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_8" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_7" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_6" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_5" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_4" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_3" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_2" />
+    <item android:duration="80" android:drawable="@drawable/stat_notify_missed_call_1" />
+    <item android:duration="1000" android:drawable="@drawable/stat_notify_missed_call_0" />
+</animation-list>

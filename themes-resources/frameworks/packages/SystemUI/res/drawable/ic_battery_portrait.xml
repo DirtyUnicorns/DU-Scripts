@@ -18,14 +18,14 @@
 
     <item
         android:id="@+id/battery_frame"
-        android:drawable="@drawable/ic_battery_portrait_frame"/>
+        android:drawable="@drawable/ic_battery_portrait_frame" />
 
     <item
         android:id="@+id/battery_fill"
-        android:drawable="@drawable/ic_battery_portrait_avd"/>
+        android:drawable="@drawable/ic_battery_portrait_avd" />
 
     <item
         android:id="@+id/battery_charge_indicator"
-        android:drawable="@drawable/ic_battery_bolt"/>
+        android:drawable="@drawable/ic_battery_bolt" />
 
 </layer-list>

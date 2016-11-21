@@ -33,9 +33,12 @@
         android:layout_height="wrap_content"
         android:minHeight="@dimen/editor_min_line_item_height"
         android:textSize="@dimen/editor_form_text_size"
+        android:textAlignment="viewStart"
+        android:singleLine="true"
+        android:ellipsize="end"
         android:focusable="true"
         android:layout_marginEnd="@dimen/editor_delete_button_size"
         android:layout_marginBottom="@dimen/editor_padding_between_editor_views"
-        android:paddingRight="@dimen/editor_spinner_right_padding_workaround"/>
+        android:paddingRight="@dimen/editor_spinner_right_padding"/>
 
 </com.android.contacts.editor.GroupMembershipView>

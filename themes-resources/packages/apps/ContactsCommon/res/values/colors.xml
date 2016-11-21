@@ -71,39 +71,39 @@
         These colors are also used by MaterialColorMapUtils to generate primary activity colors.
     -->
     <array name="letter_tile_colors">
-        <item>@color/letter_tile_red_color</item>
-        <item>@color/letter_tile_pink_color</item>
-        <item>@color/letter_tile_purple_color</item>
-        <item>@color/letter_tile_deep_purple_color</item>
-        <item>@color/letter_tile_indigo_color</item>
-        <item>@color/letter_tile_blue_color</item>
-        <item>@color/letter_tile_light_blue_color</item>
-        <item>@color/letter_tile_cyan_color</item>
-        <item>@color/letter_tile_teal_color</item>
-        <item>@color/letter_tile_green_color</item>
-        <item>@color/letter_tile_light_green_color</item>
-        <item>@color/letter_tile_orange_color</item>
-        <item>@color/letter_tile_deep_orange_color</item>
-        <item>@color/letter_tile_grey_color</item>
+        <item>#DB4437</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#4285F4</item>
+        <item>#039BE5</item>
+        <item>#0097A7</item>
+        <item>#009688</item>
+        <item>#0F9D58</item>
+        <item>#689F38</item>
+        <item>#EF6C00</item>
+        <item>#FF5722</item>
+        <item>#757575</item>
     </array>
 
     <!-- Darker versions of letter_tile_colors, two shades darker. These colors are used
         for settings secondary activity colors. -->
     <array name="letter_tile_colors_dark">
-        <item>@color/letter_tile_red_color_dark</item>
-        <item>@color/letter_tile_pink_color_dark</item>
-        <item>@color/letter_tile_purple_color_dark</item>
-        <item>@color/letter_tile_deep_purple_color_dark</item>
-        <item>@color/letter_tile_indigo_color_dark</item>
-        <item>@color/letter_tile_blue_color_dark</item>
-        <item>@color/letter_tile_light_blue_color_dark</item>
-        <item>@color/letter_tile_cyan_color_dark</item>
-        <item>@color/letter_tile_teal_color_dark</item>
-        <item>@color/letter_tile_green_color_dark</item>
-        <item>@color/letter_tile_light_green_color_dark</item>
-        <item>@color/letter_tile_orange_color_dark</item>
-        <item>@color/letter_tile_deep_orange_color_dark</item>
-        <item>@color/letter_tile_grey_color_dark</item>
+        <item>#C53929</item>
+        <item>#C2185B</item>
+        <item>#7B1FA2</item>
+        <item>#512DA8</item>
+        <item>#303F9F</item>
+        <item>#3367D6</item>
+        <item>#0277BD</item>
+        <item>#006064</item>
+        <item>#00796B</item>
+        <item>#0B8043</item>
+        <item>#33691E</item>
+        <item>#E65100</item>
+        <item>#E64A19</item>
+        <item>#424242</item>
     </array>
 
     <!-- The default color used for tinting photos when no color can be extracted via Palette,
@@ -129,6 +129,7 @@
     <color name="tab_ripple_color">@color/tab_accent_color</color>
     <color name="tab_accent_color">#ffffff</color>
     <color name="tab_selected_underline_color">@color/tab_accent_color</color>
+    <color name="tab_unread_count_background_color">#700f4b70</color>
 
     <!-- Color of the title to the Frequently Contacted section -->
     <color name="frequently_contacted_title_color">@color/actionbar_background_color</color>
@@ -155,10 +156,10 @@
     <!-- Text color used for character counter when the max limit has been exceeded -->
     <color name="call_subject_limit_exceeded">#d1041c</color>
 
-    <!-- Tint color for the call subhect history icon. -->
+    <!-- Tint color for the call subject history icon. -->
     <color name="call_subject_history_icon">#000000</color>
 
-    <!-- Divider line on the call subhect dialog. -->
+    <!-- Divider line on the call subject dialog. -->
     <color name="call_subject_divider">#d8d8d8</color>
 
     <!-- Text color for the SEND & CALL button on the call subject dialog. -->
@@ -166,4 +167,5 @@
 
     <!-- Background color for the call subject history view. -->
     <color name="call_subject_history_background">#ffffff</color>
+    <color name="search_video_call_icon_tint">@color/searchbox_hint_text_color</color>
 </resources>

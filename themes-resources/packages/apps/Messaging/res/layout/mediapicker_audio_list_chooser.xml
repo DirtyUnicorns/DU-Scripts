@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2015 The Android Open Source Project
+    Copyright (C) 2016 The Android Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -18,27 +18,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <!--
-    <com.android.messaging.ui.mediapicker.GalleryGridView
-        android:id="@+id/gallery_grid_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="6dp"
-        android:columnWidth="@dimen/gallery_image_cell_size"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="6dp"
-        android:horizontalSpacing="6dp"
-        android:stretchMode="columnWidth"
-        android:gravity="center"
-        android:clipToPadding="false"
-        android:background="@android:color/white" />
-    -->
+
     <com.android.messaging.ui.mediapicker.AudioListView
         android:id="@+id/audio_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="6dp"
-        android:background="@color/audio_list_view_background_color" />
+        android:background="@android:color/white" />
 
     <!-- This view will hide all other views if the required permission is not granted -->
     <TextView
@@ -47,7 +33,7 @@
         android:layout_height="match_parent"
         android:text="@string/enable_permission_procedure"
         android:contentDescription="@string/enable_permission_procedure_description"
-        android:background="@color/missing_permission_view_background_color"
+        android:background="@android:color/white"
         android:gravity="center"
         android:visibility="gone" />
 </FrameLayout>

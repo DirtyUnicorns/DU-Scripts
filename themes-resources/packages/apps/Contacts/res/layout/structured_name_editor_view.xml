@@ -27,27 +27,27 @@
     <include
         android:id="@+id/spinner"
         layout="@layout/edit_spinner"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/kind_icon"
         android:src="@drawable/ic_person_black_24dp"
         android:contentDescription="@string/header_name_entry"
-        style="@style/EditKindIconStyle" />
+        style="@style/EditKindIconStyle"/>
 
     <include
-        layout="@layout/edit_field_list_with_anchor_view" />
+        layout="@layout/edit_field_list_with_anchor_view"/>
 
     <include
         android:id="@+id/expansion_view_container"
         layout="@layout/name_edit_expansion_view"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <!-- This isn't used in StructuredNameEditorView. It is only included so that
         StructuredNameEditorView's base classes don't need extra null checks. -->
     <include
         android:id="@+id/delete_button_container"
         layout="@layout/edit_delete_button"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
 </com.android.contacts.editor.StructuredNameEditorView>

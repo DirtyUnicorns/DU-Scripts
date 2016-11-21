@@ -18,7 +18,7 @@
     package="com.android.messaging"
     android:installLocation="internalOnly">
 
-    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="23" />
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="24" />
 
     <!-- Application holds CPU wakelock while working in background -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -39,8 +39,6 @@
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!-- Auto enable mobile data -->
-    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -49,9 +47,6 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-    <uses-permission android:name="android.permission.READ_PHONE_BLACKLIST" />
-    <uses-permission android:name="android.permission.CHANGE_PHONE_BLACKLIST" />
 
     <!--  Optional features -->
     <uses-feature android:name="android.hardware.camera" android:required="false" />
@@ -524,25 +519,6 @@
         </activity>
 
         <service android:name="android.support.v7.mms.MmsService"/>
-
-        <!-- QuickMessage support -->
-        <!-- This is the "QuickMessage" panel, which has special
-             launch behaviour.  We clear its task affinity, so it will not
-             be associated with the main messaging task and if launched
-             from a notification will not bring the rest of the messaging app
-             to the foreground.We exclude from recent apps since this is accessible
-             through a notification when appropriate. -->
-         <activity
-            android:name="com.cyanogenmod.messaging.quickmessage.QuickMessagePopup"
-            android:theme="@style/BugleTheme.QMPopUp"
-            android:configChanges="orientation|screenSize"
-            android:launchMode="singleTop"
-            android:taskAffinity=""
-            android:excludeFromRecents="true"
-            android:exported="true" />
-
-        <receiver android:name="com.cyanogenmod.messaging.quickmessage.ClearAllReceiver" />
-
     </application>
 
 </manifest>

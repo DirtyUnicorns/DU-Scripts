@@ -21,16 +21,25 @@
         android:id="@+id/account_container"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:minHeight="@dimen/editor_min_line_item_height"
+        android:orientation="horizontal"
         android:background="?android:attr/selectableItemBackground"
-        android:paddingStart="16dp"
+        android:layout_marginBottom="@dimen/compact_editor_name_top_margin"
+        android:visibility="gone"
         >
+
+
+    <ImageView
+            android:id="@+id/account_type_icon"
+            style="@style/EditSelectorIconStyle"/>
 
     <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:paddingBottom="24dp"
-            android:paddingTop="24dp"
+            android:layout_marginTop="@dimen/compact_editor_account_header_top_margin"
+            android:layout_marginStart="@dimen/compact_editor_account_left_margin"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical"
             >
 
@@ -42,6 +51,7 @@
                 android:singleLine="true"
                 android:textColor="@color/primary_text_color"
                 android:ellipsize="end"
+                android:textAlignment="viewStart"
                 />
 
         <TextView
@@ -52,6 +62,7 @@
                 android:singleLine="true"
                 android:textColor="@color/secondary_text_color"
                 android:ellipsize="end"
+                android:textAlignment="viewStart"
                 />
 
     </LinearLayout>

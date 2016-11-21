@@ -24,4 +24,5 @@
     android:layout_height="@dimen/editor_min_line_item_height"
     android:layout_weight="1"
     android:textSize="@dimen/editor_form_text_size"
-    android:paddingRight="@dimen/editor_spinner_right_padding_workaround" />
+    android:textAlignment="viewStart"
+    android:paddingRight="@dimen/editor_spinner_right_padding" />

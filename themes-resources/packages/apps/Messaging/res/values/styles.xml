@@ -42,7 +42,6 @@
 
     <style name="BugleTheme.ConversationActivity"
         parent="@style/BugleTheme.ConversationActivityBase">
-        <item name="android:colorEdgeEffect">@color/conversation_edge_effect</item>
     </style>
 
     <style name="BugleTheme.ConversationActivityBase" parent="BugleTheme">
@@ -53,8 +52,6 @@
     </style>
 
     <style name="BugleTheme.DialogActivity" parent="@style/Theme.AppCompat.Light.Dialog">
-        <item name="android:windowNoTitle">false</item>
-        <item name="android:background">@android:color/white</item>
     </style>
 
     <style name="BugleTheme.ConversationListActivity" parent="BugleTheme">
@@ -100,7 +97,7 @@
     </style>
 
     <style name="ConversationActionBarTitleTextStyle" parent="BugleActionBarTitleTextStyle">
-      <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+      <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
     <style name="BuglePhotoViewTheme" parent="PhotoViewTheme.Translucent">
@@ -165,11 +162,11 @@
     </style>
 
     <style name="ContactListItemDetailType" parent="ContactListItemDetail">
-        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
     </style>
 
     <style name="ContactListItemDrawableIndicator">
-        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
     <style name="RecipientEditTextView">
@@ -215,18 +212,18 @@
     </style>
 
     <style name="AudioAttachmentViewStyle">
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
     </style>
 
     <style name="VcardAttachmentSingleStyle">
-        <item name="android:paddingStart">@dimen/message_text_left_right_padding</item>
-        <item name="android:paddingEnd">@dimen/message_text_left_right_padding</item>
+        <item name="android:paddingRight">@dimen/message_text_left_right_padding</item>
+        <item name="android:paddingLeft">@dimen/message_text_left_right_padding</item>
     </style>
 
     <style name="MessageVcardAttachmentStyle">
-        <item name="android:paddingStart">@dimen/message_text_left_right_padding</item>
-        <item name="android:paddingEnd">@dimen/message_text_left_right_padding</item>
+        <item name="android:paddingRight">@dimen/message_text_left_right_padding</item>
+        <item name="android:paddingLeft">@dimen/message_text_left_right_padding</item>
     </style>
 
     <style name="NotificationSenderText">
@@ -251,7 +248,7 @@
     </style>
 
     <style name="CameraChooserFrameStyle">
-        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
     </style>
 
     <style name="ComposeMessageViewAttachMediaButtonStyle">
@@ -299,7 +296,7 @@
     </style>
 
     <style name="GalleryGridItemViewCheckBoxStyle">
-        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingRight">22dp</item>
     </style>
 
     <style name="AttachmentPreviewAttachmentStyle">
@@ -333,13 +330,13 @@
     </style>
 
     <style name="AddContactConfirmationTextStyle" parent="ParticipantListItem">
-        <item name="android:paddingStart">12dp</item>
-        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">24dp</item>
     </style>
 
     <style name="CopyContactDialogTextStyle" parent="ParticipantListItem">
-        <item name="android:paddingStart">@dimen/copy_contact_dialog_left_padding</item>
-        <item name="android:paddingEnd">@dimen/copy_contact_dialog_right_padding</item>
+        <item name="android:paddingLeft">@dimen/copy_contact_dialog_left_padding</item>
+        <item name="android:paddingRight">@dimen/copy_contact_dialog_right_padding</item>
     </style>
 
     <style name="ParticipantListItemDetail">
@@ -349,12 +346,12 @@
     </style>
 
     <style name="PeopleListItemViewStyle">
-        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
     </style>
 
     <style name="PeopleAndOptionsItemStyle">
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
     </style>
 
     <style name="PeopleAndOptionsSectionHeader">
@@ -363,7 +360,7 @@
         <item name="android:background">@null</item>
     </style>
 
-    <style name="DropDownListViewStyle">
+    <style name="DropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
       <item name="android:dividerHeight">0dp</item>
     </style>
 
@@ -473,8 +470,8 @@
     </style>
 
     <style name="ApnPreferenceLayoutStyle">
-        <item name="android:paddingStart">?android:attr/listPreferredItemPaddingStart</item>
-        <item name="android:paddingEnd">?android:attr/listPreferredItemPaddingEnd</item>
+        <item name="android:paddingLeft">?android:attr/listPreferredItemPaddingStart</item>
+        <item name="android:paddingRight">?android:attr/listPreferredItemPaddingEnd</item>
     </style>
 
     <style name="SettingsListItem">
@@ -501,8 +498,8 @@
     </style>
 
     <style name="DebugMmsConfigItemStyle">
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
     </style>
 
     <style name="WidgetTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
@@ -608,12 +605,11 @@
     </style>
 
     <style name="WidgetConversationListItemStyle">
-        <item name="android:background">@drawable/widget_item_background</item>
-        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_height">80dp</item>
     </style>
 
     <style name="AttachmentGridItemViewCheckBoxStyle">
-        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingRight">4dp</item>
     </style>
 
     <style name="PromoScreenTextStyle">
@@ -635,47 +631,14 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
     </style>
-
-    <style name="BugleTheme.QMPopUp">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowBackground">@null</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowElevation">@dimen/qm_window_elevation</item>
-        <item name="android:buttonBarStyle">@android:style/Widget.Material.ButtonBar.AlertDialog</item>
-    </style>
-
-    <style name="BugleTheme.QMButtonStyle" parent="android:Widget.Material.Button.Borderless">
-        <item name="android:textColor">@color/qm_dialog_text_color</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="QMConversationComposeSendText">
-        <item name="android:textColor">@color/qm_compose_send_text_color</item>
-        <item name="android:singleLine">false</item>
-        <item name="android:textSize">@dimen/conversation_compose_send_text_size</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:paddingLeft">@dimen/compose_message_text_box_padding_side</item>
-        <item name="android:paddingRight">@dimen/compose_message_text_box_padding_side</item>
-        <item name="android:minHeight">@dimen/conversation_message_contact_icon_size</item>
-        <item name="android:maxLines">4</item>
-        <item name="android:background">@drawable/msg_bubble_input</item>
-        <item name="android:backgroundTint">@color/outgoing_message_bg</item>
-        <item name="android:scrollHorizontally">false</item>
-        <item name="android:textCursorDrawable">@null</item>
-        <item name="android:inputType">textShortMessage|textAutoCorrect|textCapSentences|textMultiLine</item>
-    </style>
-
-    <style name="QMConversationMessage" parent="ConversationMessage">
-        <item name="android:paddingLeft">@dimen/qm_conversation_bubble_padding</item>
-        <item name="android:paddingRight">@dimen/qm_conversation_bubble_padding</item>
-        <item name="android:scrollbars">vertical</item>
-        <item name="android:scrollHorizontally">false</item>
-        <item name="android:scrollbarStyle">outsideOverlay</item>
+    <style name="DirectoryHeaderStyle">
+        <item name="android:paddingLeft">@dimen/directory_header_padding_start</item>
+        <item name="android:paddingStart">@dimen/directory_header_padding_start</item>
+        <item name="android:paddingRight">@dimen/directory_header_padding_end</item>
+        <item name="android:paddingEnd">@dimen/directory_header_padding_end</item>
+        <item name="android:paddingTop">@dimen/directory_header_padding_top</item>
+        <item name="android:paddingBottom">@dimen/directory_header_padding_bottom</item>
+        <item name="android:textSize">@dimen/directory_header_text_size</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

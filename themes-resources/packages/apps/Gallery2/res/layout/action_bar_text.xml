@@ -24,5 +24,6 @@
     android:singleLine="true"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     style="@style/ActionBarMenuItem"
+    android:textColor="@color/textColor"
     android:background="?android:attr/selectableItemBackground"
 />
