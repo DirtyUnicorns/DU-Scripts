@@ -15,8 +15,8 @@ Copyright (C) 2014 The Android Open Source Project
         android:height="24dp"
         android:viewportWidth="24"
         android:viewportHeight="24"
-        android:tint="?android:attr/colorControlNormal">
+        android:tint="?android:attr/colorAccent">
     <path
         android:pathData="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
-        android:fillColor="@color/white"/>
+        android:fillColor="#FFFFFFFF"/>
 </vector>

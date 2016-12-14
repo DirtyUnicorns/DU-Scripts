@@ -38,7 +38,8 @@
                 android:numColumns="auto_fit"
                 android:smoothScrollbar="true"
                 android:stretchMode="spacingWidthUniform"
-                android:listSelector="@android:color/transparent"  />
+                android:listSelector="@android:color/transparent"
+                android:gravity="center_horizontal"/>
 
             <org.omnirom.omniswitch.ui.FavoriteViewHorizontal
                 android:id="@+id/favorite"

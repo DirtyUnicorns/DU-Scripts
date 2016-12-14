@@ -19,6 +19,6 @@
         package="com.android.contacts.common">
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="24" />
+        android:targetSdkVersion="25" />
 </manifest>
 

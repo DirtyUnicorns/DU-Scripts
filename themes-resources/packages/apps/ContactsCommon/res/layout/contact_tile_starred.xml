@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="7dp"
-            android:textColor="#202020"
+            android:textColor="@color/contact_tile_text_color"
             android:textSize="@dimen/contact_browser_list_item_text_size"
             android:singleLine="true"
             android:fadingEdge="horizontal"

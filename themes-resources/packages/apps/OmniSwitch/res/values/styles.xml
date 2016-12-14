@@ -36,8 +36,8 @@
     <style name="TextAppearancePopupMenuCondensed" parent="@android:style/TextAppearance.Material.Menu" >
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
-    <style name="LauncherTheme" parent="@android:style/Theme.Material.NoActionBar.TranslucentDecor">
-    <!--<style name="LauncherTheme" parent="@android:style/Theme.Material">-->
+    <!--<style name="LauncherTheme" parent="@android:style/Theme.Material.NoActionBar.TranslucentDecor">-->
+    <style name="LauncherTheme" parent="@android:style/Theme.Material.NoActionBar">
         <!-- NoTitle -->
         <item name="android:windowNoTitle">true</item>
         <!-- wallpaper -->
@@ -46,7 +46,7 @@
         <item name="android:windowShowWallpaper">true</item>
         <!-- misc -->
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/launcher_navigaton_bar</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
 
         <item name="android:colorAccent">@color/colorAccent</item>

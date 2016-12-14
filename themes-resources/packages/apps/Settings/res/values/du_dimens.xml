@@ -14,8 +14,14 @@
      limitations under the License.
 -->
 <resources>
+
     <dimen name="alert_dialog_padding_material">20dp</dimen>
     <dimen name="oval_notification_size">26dp</dimen>
     <dimen name="drag_grip_ridge_size">6dp</dimen>
     <dimen name="drag_grip_ridge_gap">4dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
 </resources>

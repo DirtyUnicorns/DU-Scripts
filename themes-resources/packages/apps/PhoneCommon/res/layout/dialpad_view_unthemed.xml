@@ -56,7 +56,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#e3e3e3" />
+            android:background="@color/dialpad_separator_color" />
 
     </LinearLayout>
 
@@ -131,7 +131,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#e3e3e3" />
+        android:background="@color/dialpad_separator_color" />
 
     <Space
         android:layout_width="match_parent"

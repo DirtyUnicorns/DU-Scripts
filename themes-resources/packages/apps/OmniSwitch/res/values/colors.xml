@@ -46,4 +46,5 @@
     <color name="cling_scrim_background">#80000000</color>
     <color name="launcher_shortcut_color">#C0FFFFFF</color>
     <color name="launcher_shortcut_color_pressed">#80FFFFFF</color>
+    <color name="launcher_navigaton_bar">#66000000</color>
 </resources>

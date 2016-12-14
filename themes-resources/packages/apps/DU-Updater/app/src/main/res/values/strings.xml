@@ -1,7 +1,35 @@
 <resources>
+
+    <!-- General strings -->
     <string name="app_name">DU Updater</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="action_settings">Settings</string>
     <string name="action_download">Download</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Snackbar messages -->
+    <string name="no_internet_snackbar">You must be connected to the internet to use the updater</string>
+    <string name="no_files_to_show">No files to show</string>
+
+    <!-- Dialogs & Downloads -->
+    <string name="dialog_message">Would you like to download it?</string>
+    <string name="dialog_title">DU Update Available</string>
+    <string name="dialog_download">Download</string>
+    <string name="major_version_text">is available for download</string>
+    <string name="minor_version_text">An update</string>
+    <string name="build_date_text">A newer build of DU is available for download</string>
+    <string name="download_cancelled">Download Cancelled</string>
+    <string name="du_download">DU Download</string>
+    <string name="download_happy">Download finished, happy flashing!</string>
+    <string name="complete">Complete</string>
+    <string name="download_failed">Download Failed</string>
+
+    <!-- Nav drawer items -->
+    <string name="navdrawer_official">Official builds</string>
+    <string name="navdrawer_test">Test builds</string>
+    <string name="navdrawer_weeklies">Weekly builds</string>
+    <string name="navdrawer_dynamic_gapps">Dynamic gapps</string>
+    <string name="navdrawer_tbo_gapps">TBO gapps</string>
+
 </resources>

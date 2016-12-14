@@ -8,5 +8,5 @@
     android:src="@drawable/header_logo"
     android:adjustViewBounds="false"
     android:scaleType="fitXY"
-    android:paddingBottom="10dp"
-    android:baselineAlignBottom="false" />
+    android:baselineAlignBottom="false"
+    android:minHeight="200dp" />

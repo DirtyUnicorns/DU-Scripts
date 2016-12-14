@@ -3,28 +3,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/official"
-            android:title="Official builds"
+            android:title="@string/navdrawer_official"
             android:icon="@drawable/official"/>
         <item
             android:id="@+id/weeklies"
-            android:title="Weekly builds"
+            android:title="@string/navdrawer_weeklies"
             android:icon="@drawable/weekly"/>
         <item
             android:id="@+id/test"
-            android:title="Test builds"
+            android:title="@string/navdrawer_test"
             android:icon="@drawable/test"/>
     </group>
-
     <group
         android:id="@+id/gapps_category"
         android:checkableBehavior="single">
         <item
             android:id="@+id/gappsbanks"
-            android:title="Banks Gapps"
+            android:title="@string/navdrawer_dynamic_gapps"
             android:icon="@drawable/gapps"/>
         <item
             android:id="@+id/gappstbo"
-            android:title="TBO Gapps"
+            android:title="@string/navdrawer_tbo_gapps"
             android:icon="@drawable/gapps"/>
     </group>
 </menu>

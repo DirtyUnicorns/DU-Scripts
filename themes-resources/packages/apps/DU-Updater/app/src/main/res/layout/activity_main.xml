@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:animateLayoutChanges="false"
-        tools:context="com.dirtyunicorns.duupdater2.MainActivity">
+        tools:context="com.dirtyunicorns.duupdater.MainActivity">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
