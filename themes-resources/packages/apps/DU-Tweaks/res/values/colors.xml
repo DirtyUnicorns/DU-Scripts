@@ -16,7 +16,10 @@
  -->
 
 <resources>
+
     <!-- Expanded desktop -->
     <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
     <drawable name="expanded_item_bg">@android:color/background_light</drawable>
+    <color name="expanded_item_app_title">@android:color/black</color>
+
 </resources>
