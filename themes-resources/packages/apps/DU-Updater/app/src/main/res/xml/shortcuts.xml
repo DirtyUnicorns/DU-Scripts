@@ -1,0 +1,54 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcuts"
+        android:shortcutDisabledMessage="@string/shortcuts_weeklies"
+        android:shortcutId="shortcut1"
+        android:shortcutLongLabel="@string/shortcuts_weeklies"
+        android:shortcutShortLabel="@string/shortcuts_weeklies">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.Weeklies"
+            android:targetPackage="com.dirtyunicorns.duupdater" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcuts"
+        android:shortcutDisabledMessage="@string/shortcuts_rc"
+        android:shortcutId="shortcut2"
+        android:shortcutLongLabel="@string/shortcuts_rc"
+        android:shortcutShortLabel="@string/shortcuts_rc">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.Rc"
+            android:targetPackage="com.dirtyunicorns.duupdater" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcuts"
+        android:shortcutDisabledMessage="@string/shortcuts_dynamic_gapps"
+        android:shortcutId="shortcut3"
+        android:shortcutLongLabel="@string/shortcuts_dynamic_gapps"
+        android:shortcutShortLabel="@string/shortcuts_dynamic_gapps">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.DynamicGapps"
+            android:targetPackage="com.dirtyunicorns.duupdater" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcuts"
+        android:shortcutDisabledMessage="@string/shortcuts_tbo_gapps"
+        android:shortcutId="shortcut4"
+        android:shortcutLongLabel="@string/shortcuts_tbo_gapps"
+        android:shortcutShortLabel="@string/shortcuts_tbo_gapps">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.TboGapps"
+            android:targetPackage="com.dirtyunicorns.duupdater" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

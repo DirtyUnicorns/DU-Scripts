@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#a61919</color>
-    <color name="primaryDark">#911111</color>
-    <color name="accent">#ffffff</color>
+
+    <color name="primary">#313131</color>
+    <color name="primaryDark">#222222</color>
+    <color name="accent">#dc2121</color>
     <color name="window_background">#FFF5F5F5</color>
     <color name="light_bg">#fafafa</color>
     <color name="cardsbg">#ffffff</color>
     <color name="dark_grey">#4d4d4d</color>
     <color name="white">#ffffffff</color>
+    <color name="selector_color">#e8e8e8</color>
+    <color name="not_selected_color">#696969</color>
+
 </resources>

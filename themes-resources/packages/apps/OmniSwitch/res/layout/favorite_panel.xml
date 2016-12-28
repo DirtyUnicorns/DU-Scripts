@@ -41,10 +41,5 @@
                 android:listSelector="@android:color/transparent"
                 android:gravity="center_horizontal"/>
 
-            <org.omnirom.omniswitch.ui.FavoriteViewHorizontal
-                android:id="@+id/favorite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
     </LinearLayout>
 </LinearLayout>

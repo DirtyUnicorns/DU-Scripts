@@ -23,10 +23,11 @@
     <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
     <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="23"
+        android:targetSdkVersion="25" />
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -35,6 +36,11 @@
         <service
             android:name="org.omnirom.omniswitch.SwitchService"
             android:configChanges="orientation|screenSize" />
+        <receiver android:name="org.omnirom.omniswitch.SwitchService$RecentsReceiver" >
+            <intent-filter>
+                <action android:name="org.omnirom.omniswitch.ACTION_TOGGLE_OVERLAY" />
+            </intent-filter>
+        </receiver>
         <activity
             android:name="org.omnirom.omniswitch.SettingsActivity"
             android:launchMode="singleTop"

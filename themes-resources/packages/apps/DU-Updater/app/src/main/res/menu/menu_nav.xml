@@ -10,15 +10,15 @@
             android:title="@string/navdrawer_weeklies"
             android:icon="@drawable/weekly"/>
         <item
-            android:id="@+id/test"
-            android:title="@string/navdrawer_test"
-            android:icon="@drawable/test"/>
+            android:id="@+id/rc"
+            android:title="@string/navdrawer_rc"
+            android:icon="@drawable/rc"/>
     </group>
     <group
         android:id="@+id/gapps_category"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/gappsbanks"
+            android:id="@+id/gappsdynamic"
             android:title="@string/navdrawer_dynamic_gapps"
             android:icon="@drawable/gapps"/>
         <item

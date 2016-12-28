@@ -3279,5 +3279,33 @@
                 android:resource="@string/themes_dashboard_summary" />
         </activity>
 
+        <!-- Updater -->
+        <activity android:name="Settings$UpdaterActivity"
+                android:label="@string/updater_title"
+                android:icon="@drawable/ic_settings_updater"
+                android:taskAffinity="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.dirtytweaks" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.Updater" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/updater_dashboard_summary" />
+        </activity>
+
+        <!-- Hotspot idle -->
+        <service android:name=".wifi.HotspotService" >
+            <intent-filter>
+                <action android:name="com.android.settings.wifi.HotspotService" />
+            </intent-filter>
+        </service>
+
     </application>
 </manifest>
