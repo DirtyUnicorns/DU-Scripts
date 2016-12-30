@@ -61,7 +61,7 @@
                 style="?android:attr/colorButtonNormal"
                 android:layout_gravity="end"
                 android:background="@color/primary"
-                android:textColor="@color/white"
+                android:textColor="@color/card_view_download_text_color"
                 android:textAlignment="center" />
 
         </LinearLayout>
