@@ -13,5 +13,7 @@
     <color name="not_selected_color">#696969</color>
     <color name="card_view_download_text_color">#ffffffff</color>
     <color name="drawer_background_color">#ffffffff</color>
+    <color name="navigation_bar_color_tint_disabled">#000000</color>
+    <color name="navigation_bar_color_tint_enabled">#313131</color>
 
 </resources>

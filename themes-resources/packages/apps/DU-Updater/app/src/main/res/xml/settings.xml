@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/theme_options">
+
+        <CheckBoxPreference
+            android:key="NavigationTint"
+            android:title="@string/pref_navbar_tint_title"
+            android:summaryOn="@string/disable_navbar_tint_summary"
+            android:summaryOff="@string/enable_navbar_tint_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

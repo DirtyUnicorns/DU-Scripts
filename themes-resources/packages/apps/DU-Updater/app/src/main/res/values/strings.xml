@@ -8,6 +8,13 @@
     <string name="action_download">Download</string>
     <string name="cancel">Cancel</string>
     <string name="hide_app_icon">Hide app</string>
+    <string name="settings">Settings</string>
+
+    <!-- Theme strings -->
+    <string name="theme_options">Theme options</string>
+    <string name="pref_navbar_tint_title">Navigation bar tint</string>
+    <string name="enable_navbar_tint_summary">Enable navigation bar tint</string>
+    <string name="disable_navbar_tint_summary">Disable navigation bar tint</string>
 
     <!-- Shortcuts -->
     <string name="shortcuts_weeklies">Weekly builds</string>
@@ -37,5 +44,9 @@
     <string name="navdrawer_weeklies">Weekly builds</string>
     <string name="navdrawer_dynamic_gapps">Dynamic gapps</string>
     <string name="navdrawer_tbo_gapps">TBO gapps</string>
+
+    <!--Card String-->
+    <string name="card_file_size">File Size: %1$s</string>
+    <string name="card_file_md5">File MD5: %1$s</string>
 
 </resources>

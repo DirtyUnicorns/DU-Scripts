@@ -15,6 +15,7 @@
     limitations under the License.
 -->
 <resources>
+
     <!-- Dashboard category and tile background -->
     <color name="dashboard_category_title_background">@color/card_background</color>
     <color name="selectable_card_background">@color/card_background</color>
@@ -44,4 +45,8 @@
     <color name="linear_color_bar_left">@*android:color/material_deep_teal_500</color>
     <color name="linear_color_bar_middle">@*android:color/material_deep_teal_500</color>
     <color name="linear_color_bar_right">#ffced7db</color>
+
+    <!-- External Icon Tint -->
+    <color name="external_tile_icon_tint_color">?android:attr/colorAccent</color>
+
 </resources>

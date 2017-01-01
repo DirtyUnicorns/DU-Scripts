@@ -1,70 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    xmlns:card_view="http://schemas.android.com/tools">
+    android:layout_margin="16dp"
+    android:clickable="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:cardMaxElevation="4dp">
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
+        android:id="@+id/card_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="false"
-        android:id="@+id/cv"
-        card_view:cardElevation="2dp"
-        card_view:cardMaxElevation="4dp"
-        card_view:cardCornerRadius="2dp">
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/update_name"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/card_layout"
-            android:padding="16dp"
-            android:weightSum="1">
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:id="@+id/update_name"
-                android:textSize="15sp"
-                />
+        <TextView
+            android:id="@+id/update_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/update_size"
-                android:textSize="12sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/update_md5"
-                android:textSize="12sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/download_path"
-                android:visibility="invisible"
-                android:textSize="12sp"
-                />
+        <TextView
+            android:id="@+id/update_md5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:text="@string/action_download"
-                android:id="@+id/btnDownload"
-                android:elevation="6dp"
-                style="?android:attr/colorButtonNormal"
-                android:layout_gravity="end"
-                android:background="@color/primary"
-                android:textColor="@color/card_view_download_text_color"
-                android:textAlignment="center" />
+        <TextView
+            android:id="@+id/download_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:visibility="invisible" />
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnDownload"
+            style="?android:attr/colorButtonNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:background="@color/primary"
+            android:elevation="6dp"
+            android:text="@string/action_download"
+            android:textAlignment="center"
+            android:textColor="@color/card_view_download_text_color" />
 
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
