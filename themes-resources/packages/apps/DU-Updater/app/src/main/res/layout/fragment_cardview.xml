@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:clickable="false"
-    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/card_view_background_color"
     card_view:cardCornerRadius="2dp"
     card_view:cardElevation="2dp"
     card_view:cardMaxElevation="4dp">
@@ -24,26 +25,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:textColor="@color/card_view_name_text_color"
             android:textSize="15sp" />
 
         <TextView
             android:id="@+id/update_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/card_view_size_text_color"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/update_md5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/card_view_md5_text_color"
             android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/download_path"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:visibility="invisible" />
 
         <Button
             android:id="@+id/btnDownload"
@@ -51,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_gravity="end"
-            android:background="@color/primary"
+            android:background="@color/card_view_download_button_background_color"
             android:elevation="6dp"
             android:text="@string/action_download"
             android:textAlignment="center"

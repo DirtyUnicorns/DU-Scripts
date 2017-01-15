@@ -1,14 +1,22 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primaryDark</item>
-        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/collapsing_toolbar_layout_background_color</item>
+        <item name="colorPrimaryDark">@color/statusbar_color</item>
+        <item name="colorAccent">@color/accent_color</item>
         <item name="android:actionOverflowButtonStyle">@style/ActionBarOverflow</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
 
-    <style name="ActionBarOverflow" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+    <style name="PreferenceStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/settings_theme_options_category_title_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="ActionBarOverflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
         <item name="android:src">@drawable/ic_menu_overflow</item>
     </style>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:fitsSystemWindows="true"
     android:layout_height="match_parent"
-    android:background="@color/drawer_background_color">
+    android:background="@color/background_color">
 
     <android.support.design.widget.CoordinatorLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -52,6 +52,7 @@
         android:layout_height="match_parent"
         android:layout_width="320dp"
         android:layout_gravity="start"
+        android:background="@color/navdrawer_background_color"
         app:headerLayout="@layout/header_nav"
         app:itemBackground="@drawable/selector_background"
         app:itemTextColor="@drawable/selector_item"
