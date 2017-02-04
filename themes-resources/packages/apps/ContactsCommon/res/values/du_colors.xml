@@ -19,4 +19,5 @@
     <color name="frequent_contact_text_color">#ff000000</color>
     <color name="contact_tile_text_color">#ff202020</color>
     <color name="starred_quick_contact_name_text_color">#ffffffff</color>
+    <color name="back_arrow_icon_tint_color">@color/actionbar_background_color</color>
 </resources>

@@ -8,6 +8,7 @@
     <string name="cancel">Cancel</string>
     <string name="hide_app_icon">Hide app</string>
     <string name="settings">Settings</string>
+    <string name="qs_tile_name">Updater</string>
 
     <!-- Collapsing toolbar titles -->
     <string name="official">DU Updater - Official</string>

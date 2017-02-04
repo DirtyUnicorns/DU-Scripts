@@ -8,34 +8,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:focusable="false">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weeklies"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/official"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/warning_text"
-        android:id="@+id/textView"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/weeklies"
-        android:id="@+id/button"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/textView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/official"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="21dp"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/button2"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

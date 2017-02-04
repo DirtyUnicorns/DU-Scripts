@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24.000000dp"
+    android:height="24.000000dp"
+    android:viewportWidth="512.000000"
+    android:viewportHeight="512.000000"
+    android:tint="?android:attr/colorAccent">
+
+    <group
+        android:translateY="512.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M160 3760 l0 -350 345 0 345 0 0 350 0 350 -345 0 -345 0 0 -350z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1280 3760 l0 -350 1760 0 1760 0 0 350 0 350 -1760 0 -1760 0 0 -350z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M160 2650 l0 -360 345 0 345 0 0 360 0 360 -345 0 -345 0 0 -360z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1280 2650 l0 -360 688 1 687 0 45 54 c51 62 173 170 263 232 141 99 342 184 530
+225 147 31 427 31 574 0 249 -54 483 -169 661 -326 35 -31 65 -56 68 -56 2 0 4 133
+4 295 l0 295 -1760 0 -1760 0 0 -360z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M160 1555 l0 -355 345 0 345 0 0 355 0 355 -345 0 -345 0 0 -355z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1280 1555 l0 -355 528 0 527 0 1 183 c0 196 16 303 68 455 l25 72 -575 0 -574 0 0
+-355z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M3640 2634 c-36 -7 -108 -34 -159 -60 -181 -89 -321 -263 -371 -460 -17 -64 -20
+-111 -20 -276 l0 -198 -62 0 c-35 0 -80 -5 -102 -11 -50 -14 -118 -82 -134 -135 -9
+-30 -12 -180 -12 -566 0 -574 1 -581 58 -642 15 -16 45 -37 67 -47 38 -18 84 -19
+890 -19 801 0 852 1 890 19 51 23 101 79 114 128 15 54 15 1074 0 1128 -7 23 -28
+57 -53 81 -47 48 -93 64 -183 64 l-63 0 0 204 c0 189 -2 210 -26 292 -48 169 -148
+305 -294 399 -160 104 -354 139 -540 99z m229 -294 c144 -27 268 -137 311 -277 17
+-55 20 -93 20 -244 l0 -179 -405 0 -405 0 0 173 c0 94 5 192 11 217 34 147 154 269
+304 306 63 16 99 17 164 4z" />
+    </group>
+</vector>
