@@ -1,15 +1,22 @@
 #!/bin/bash
 
 #
-#
-# EZ Script V0.1 for Dirty Unicorns
+# EZ Script
 #
 # Created by Michael S Corigliano (Mike Criggs) (michael.s.corigliano@gmail.com)
-# for DirtyUnicorns (www.dirtyunicorns.com)
+# Adapted for Dirty Unicorns (DU) from a portion of the EZ AOSP tool
 #
-# Small portions of this script have been taken from the "Nicholas-Build-Script.sh"
-# created by Nicholas Chancellor (nathanchance) (natechancellor@gmail.com).
-# It can be found here: http://github.com/DirtyUnicorns/DU-Scripts/build-scripts/Nathan-Build-Script.git
+# DU GitHub: https://github.com/DirtyUnicorns
+# DU Website: http://dirtyunicorns.com
+# EZ AOSP GitHub: https://github.com/mikecriggs/ez-aosp
+# EZ AOSP build script: https://github.com/mikecriggs/ez-aosp/blob/master/build-rom.sh
+#
+# Usage: cd <DU-SOURCE>
+#        git clone git://github.com/DirtyUnicorns/DU-Scripts
+#        mv ez-script.sh ..
+#        rm -rf DU-Scripts (if you no longer wish to keep the directory)
+#        ./ez-script.sh <DEVICE>
+#
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,93 +30,124 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# USAGE: sudo ./ez-build.sh
-# TIP: You can stop the script at any time with the key combination 'CTRL+C'
-#
-
-NOW=$(date +"%Y-%m-%d-%S")
 
 # Colors for terminal output
 BLDRED="\033[1m""\033[31m"
 RST="\033[0m"
 
-# Let user know that they are using EZ Script
-	clear
-	echo -e ${BLDRED}"EZ Script V0.1 for Dirty Unicorns by Mike Criggs"${RST}
-	echo -e
+# Time tracking
+NOW=$(date +"%Y-%m-%d-%S")
+START=$(date +%s)
+END=$(date +%s)
 
-# Where is the source located?
-	read -p "Where is your source located? (e.g: /home/criggs/du-source) " -e SOURCEDIR
-	clear
-
-# Change directories to source directory
-	cd $SOURCEDIR
+# ROM being built
+$ROM=DirtyUnicorns
 
 # What device are we building for?
-	read -p "What device are we building for? (e.g: shamu) " -e DEVICE
-	clear
- 
-# Make 'build-logs' directory if it doesn't already exist
-  	echo -e ${BLDRED}"Making a 'logs/build-logs' for your convenience..."${RST}
-	echo -e ""
-	mkdir -p logs
-	mkdir -p logs/build-logs
+        DEVICE=$(whiptail --title "EZ Script" --inputbox "What device are we compiling $ROM for (e.g: shamu)?" 10 70 3>&1 1>&2 2>&3)
+        exitstatus=$?
+        if [ $exitstatus = 0 ]; then
+                whiptail --title "EZ Script" --msgbox "We will compile $ROM for $DEVICE" 20 70
+        else
+                whiptail --title "EZ Script" --msgbox "You did not tell us what device we are compiling $ROM for. Exiting EZ Script. Please rerun 'ez-script.sh'." 20 70
+                sleep
+                exit
+  fi
+  clear
+
+# Make 'logs/build' directory if it doesn't already exist
+    echo -e ${BLDRED}"Making a 'logs/build' for your convenience..."${RST}
+  echo -e ""
+  echo -e ""
+  sleep 3
+    mkdir -p logs
+    mkdir -p logs/build
+  clear
 
 
-# Make 'build-logs' directory if it doesn't already exist
-  	echo -e ${BLDRED}"Making a 'logs/sync-logs' for your convenience..."${RST}
-	echo -e ""
-	mkdir -p logs/sync-logs
+# Make 'logs/repo-sync' directory if it doesn't already exist
+    echo -e ${BLDRED}"Making a 'logs/repo-sync' for your convenience..."${RST}
+  echo -e ""
+  echo -e ""
+  sleep 3
+    mkdir -p logs
+    mkdir -p logs/repo-sync
+  clear
 
- 
-# Do we want to repo sync?
-	read -r -p "Would you like to sync the latest sources? [Y/N] " answer
-	if [[ $answer =~ ^([yY][eE][sS]|[yY])$ ]]
-	then
-		echo -e ${BLDRED}"Syncing latest sources from GitHub... "${RST} && repo sync 2>&1 | tee logs/sync-logs/du_$DEVICE-$NOW.log
-	else
-		echo -e ${BLDRED}"Not syncing latest sources from GitHub... "${RST}
-	fi
+# Do we want to sync the latest source code from our repositories?
+  if(whiptail --title "EZ Script" --yesno "Would you like to sync the latest source code from the $ROM repositories?" 10 70) then
+    echo -e ${BLDRED}"Syncing latest source code from $ROM repositories..."${RST}
+    sleep 3
+    repo sync 2>&1 | tee logs/repo-sync/$ROM-$NOW.log
+    sleep 3
+    clear
+  else
+    echo -e ${BLDRED}"Not syncing latest source code from $ROM repositories..."${RST}
+    sleep 3
+    clear
+  fi
+
+# Do we want to use NINJA wrapper?
+  if(whiptail --title "EZ Script" --yesno "Would you like to use the NINJA wrapper to compile the $ROM source code?" 10 70) then
+    echo -e ${BLDRED}"Compiling $ROM with NINJA..."${RST}
+    sleep 3
+  else
+    echo -e ${BLDRED}"Not compiling $ROM with NINJA..."${RST}
+    sleep 3
+    export USE_NINJA=false
+  fi
+
+# Do we need to use Jack Server workarounds?
+  if(whiptail --title "EZ Script" --yesno "If your machine has less than 16GB of RAM, we may need to use some Jack server workarounds. Would you like to use these?" 30 70) then
+    echo -e ${BLDRED}"Using Jack server workarounds..."${RST}
+    sleep 3
+    rm -rf ~/.jack*
+    ./prebuilts/sdk/tools/jack-admin kill-server
+    ulimit -n unlimited
+    export ANDROID_JACK_VM_ARGS="-Xmx4096g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
+    export SERVER_NB_COMPILE=2
+    export ANDROID_JACK_VM_ARGS=$JACK_SERVER_VM_ARGUMENT
+    ./prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.8.ALPHA.jar
+    ./prebuilts/sdk/tools/jack-admin start-server
+  else
+    echo -e ${BLDRED}"Not using Jack server workarounds..."${RST}
+    sleep 3
+  fi
 
 # Do we want to build clean?
-	read -r -p "Would you like to build clean? [Y/N] " answer
-	if [[ $answer =~ ^([yY][eE][sS]|[yY])$ ]]
- 	then
-   		echo -e ${BLDRED}"Building clean..."${RST} && make clean
-	else
-		echo -e ${BLDRED}"Not building clean..."${RST}
-	fi
- 
-# Invoke the environment setup script to start the building process
-	echo -e ${BLDRED}"Setting up build environment..."${RST}
-	echo -e ""
-	. build/envsetup.sh
- 
-# Grab device dependencies with roomservice and eat lunch
-	echo -e ${BLDRED}"Eating lunch..."${RST}
-	echo -e ""
-	lunch du_$DEVICE-userdebug
-	clear
+  if(whiptail --title "EZ Script" --yesno "Would you like to build clean? If you used Jack server workarounds, it is recommended to do so or your build may fail." 30 70) then
+    echo -e ${BLDRED}"Building clean..."${RST}
+    sleep 3
+    make clean
+    clear
+  else
+    echo -e ${BLDRED}"Not building clean..."${RST}
+    sleep 3
+  fi
+
+# Setup environment and grab device dependencies
+  echo -e ${BLDRED}"Getting ready and grabbing device dependencies..."${RST}
+  echo -e ""
+  echo -e ""
+  sleep 3
+  . build/envsetup.sh
+  lunch du_$DEVICE-userdebug
 
 # Start tracking build time
-	echo -e ${BLDRED}"Build starting at $(date +%D\ %r)..."${RST}
-	echo -e ""
-	START=$(date +%s)
+  echo -e ${BLDRED}"Build starting at $(date +%D\ %r)..."${RST}
+  echo -e ""
+  echo -e ""
+  sleep 3
 
-# Execute the build while sending a log to 'build-logs'
-	echo -e ${BLDRED}"Starting build..."${RST}
-	echo -e ""
-	make bacon 2>&1 | tee build-logs/du_$DEVICE-$NOW.log
+# Start the build while sending a log to 'build-logs'
+  make bacon 2>&1 | tee logs/build/du_$DEVICE-$NOW.log
 
 # Stop tracking build time
-	echo -e ${BLDRED}"EZ Script for Dirty Unicorns has ended at $(date +%D\ %r)"${RST}
-	echo -e ""
-	echo -e ${BLDRED}"Your build took $(echo $(($END-$START)) | awk '{print int($1/60)"mins "int($1%60)"secs"}') to complete"${RST}
-	echo -e ""
-	END=$(date +%s)
- 
-# Let the user know that the EZ Script has ended has finished
-printf "If your repo sync failed, check the 'logs/sync-logs' folder\nto figure out why. \n \nIf your build failed, please check the 'logs/build-logs' folder\nto figure out why.\n \nTIP: search your build log for the most common error signals\nwith CTRL+F\n \n'unfinished job(s)', 'finishing job(s)', etc\n \nBe sure to search Google and XDA (www.xda-developers.com)\nfor your errors. If you have exhausted all self-help and \nfeel that you need help, please turn to XDA. There are some\namazing people there who would love to help you! \n"
+  echo -e ${BLDRED}"ROM compilation has ended at $(date +%D\ %r)"${RST}
+  echo -e ""
+  echo -e ${BLDRED}"It took $(echo $(($END-$START)) | awk '{print int($1/60)"mins "int($1%60)"secs"}') to complete"${RST}
+  echo -e ""
+  sleep 3
 
-# End of EZ Script
-
+# Let the user know that the script has finished
+whiptail --title "EZ Script" --msgbox "The script has finished. If your repo sync failed, check the 'logs/repo-sync' folder\nto figure out why. \n \nIf your build failed, please check the 'logs/build' folder\nto figure out why.\n \nTIP: search your build logs for the most common error signals and save the actual errors from above or below the following text(s):\n \n'unfinished job(s)', 'finishing job(s)', etc\n \nBe sure to search Google, Devs-Base (www.devs-base.com), Stack Overflow (www.stackoverflow.com), and XDA Developers (www.xda-developers.com)\nfor your errors. If you have exhausted all self-help and \nfeel that you need outside help, please turn to Devs-Base, Stack Overflow, or XDA Developers. There are some\namazing people in these communities who would love to help you!\n" 30 70
