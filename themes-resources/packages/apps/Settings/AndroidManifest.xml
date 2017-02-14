@@ -3124,10 +3124,10 @@
                 android:value="true" />
         </activity>
 
-        <!-- SuperSU -->
-        <activity android:name="Settings$SuperSUActivity"
-                android:label="@string/supersu_title"
-                android:icon="@drawable/ic_settings_supersu"
+        <!-- Root management -->
+        <activity android:name="Settings$RootManagementActivity"
+                android:label="@string/rootmanagement_title"
+                android:icon="@drawable/ic_settings_rootmanagement"
                 android:taskAffinity="" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -3140,9 +3140,9 @@
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.system" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.SuperSU" />
+                android:value="com.android.settings.RootManagement" />
             <meta-data android:name="com.android.settings.summary"
-                android:resource="@string/supersu_dashboard_summary" />
+                android:resource="@string/rootmanagement_dashboard_summary" />
         </activity>
 
         <!-- Battery and notification lights -->
@@ -3298,6 +3298,34 @@
                 android:value="com.android.settings.Updater" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/updater_dashboard_summary" />
+        </activity>
+
+        <!-- Heads ups -->
+        <activity android:name="Settings$HeadsUpSettingsActivity"
+                android:label="@string/heads_up_notifications"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/heads_up_notifications" />
+        </activity>
+
+        <!-- Data Saver -->
+        <activity android:name="Settings$DataSaverSettingsActivity"
+                android:label="@string/data_saver_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.datausage.DataSaverSummary" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/data_saver_title" />
         </activity>
 
         <!-- Hotspot idle -->

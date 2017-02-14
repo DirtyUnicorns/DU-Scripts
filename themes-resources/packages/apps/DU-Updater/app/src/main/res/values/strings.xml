@@ -9,13 +9,14 @@
     <string name="hide_app_icon">Hide app</string>
     <string name="settings">Settings</string>
     <string name="qs_tile_name">Updater</string>
+    <string name="gapps_category">Gapps</string>
 
     <!-- Collapsing toolbar titles -->
     <string name="official">DU Updater - Official</string>
     <string name="weeklies">DU Updater - Weeklies</string>
     <string name="rc">DU Updater - Rc</string>
-    <string name="dynamic_gapps">DU Updater - Dynamic gapps</string>
-    <string name="tbo_gapps">DU Updater - TBO gapps</string>
+    <string name="dynamic_gapps">DU Updater - Dynamic</string>
+    <string name="tr_gapps">DU Updater - Theme ready</string>
     <string name="settings_alt">DU Updater - Settings</string>
 
     <!-- Theme strings -->
@@ -26,7 +27,7 @@
     <string name="shortcuts_weeklies">Weekly builds</string>
     <string name="shortcuts_rc">RC builds</string>
     <string name="shortcuts_dynamic_gapps">Dynamic gapps</string>
-    <string name="shortcuts_tbo_gapps">TBO gapps</string>
+    <string name="shortcuts_tr_gapps">Theme ready gapps</string>
 
     <!-- Snackbar messages -->
     <string name="no_internet_snackbar">You must be connected to the internet to use the updater</string>
@@ -48,8 +49,8 @@
     <string name="navdrawer_official">Official builds</string>
     <string name="navdrawer_rc">RC builds</string>
     <string name="navdrawer_weeklies">Weekly builds</string>
-    <string name="navdrawer_dynamic_gapps">Dynamic gapps</string>
-    <string name="navdrawer_tbo_gapps">TBO gapps</string>
+    <string name="navdrawer_dynamic_gapps">Dynamic</string>
+    <string name="navdrawer_tr_gapps">Theme ready</string>
 
     <!--Card String-->
     <string name="card_file_size">File Size: %1$s</string>

@@ -53,6 +53,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="9dp"
         android:layout_marginTop="9dp"
-        android:background="#F0B0B0B0" />
+        android:background="@color/action_mode_background_color" />
 
 </RelativeLayout>

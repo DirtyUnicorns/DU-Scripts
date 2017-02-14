@@ -83,22 +83,6 @@
         </activity>
 
         <!--
-        The settings activity. When extending keep the intent filter present
-        -->
-        <activity
-            android:name="com.android.launcher3.SettingsActivity"
-            android:label="@string/settings_button_text"
-            android:autoRemoveFromRecents="true"
-            android:theme="@style/Settings"
-            android:process=":settings_process"
-            android:parentActivityName="com.android.launcher3.Launcher" >
-            <intent-filter>
-                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <!--
         The settings provider contains Home's data, like the workspace favorites. The permissions
         should be changed to what is defined above. The authorities should also be changed to
         represent the package name.

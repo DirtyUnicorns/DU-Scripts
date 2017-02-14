@@ -41,13 +41,13 @@
     <shortcut
         android:enabled="true"
         android:icon="@drawable/shortcuts"
-        android:shortcutDisabledMessage="@string/shortcuts_tbo_gapps"
+        android:shortcutDisabledMessage="@string/shortcuts_tr_gapps"
         android:shortcutId="shortcut4"
-        android:shortcutLongLabel="@string/shortcuts_tbo_gapps"
-        android:shortcutShortLabel="@string/shortcuts_tbo_gapps">
+        android:shortcutLongLabel="@string/shortcuts_tr_gapps"
+        android:shortcutShortLabel="@string/shortcuts_tr_gapps">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.TboGapps"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.TrGapps"
             android:targetPackage="com.dirtyunicorns.duupdater" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>

@@ -15,7 +15,7 @@
 -->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#fafafa"
+    android:background="@color/event_info_background_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/event_info_padding">
@@ -226,7 +226,7 @@
                     android:layout_marginBottom="0dip"
                     android:textAllCaps="false"
                     android:textSize="16sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/event_info_email_attendees_button_color"
                     android:background="?android:attr/selectableItemBackground"
                     android:drawableLeft="@drawable/event_info_mail_button"
                     android:drawablePadding="8dp"
@@ -258,7 +258,7 @@
                     android:layout_marginBottom="0dip"
                     android:textAllCaps="false"
                     android:textSize="16sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/event_info_launch_custom_app_button_color"
                     android:background="?android:attr/selectableItemBackground"
                     android:drawablePadding="8dp"
                     style="@style/TextAppearance.EditEvent_LabelSmall" />
@@ -311,7 +311,7 @@
                 android:layout_marginBottom="0dip"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                android:textColor="#FF777777"
+                android:textColor="@color/event_info_reminder_add_color"
                 android:minHeight="20dip"
                 android:background="?android:attr/selectableItemBackground"
                 android:contentDescription="@string/accessibility_add_reminder"

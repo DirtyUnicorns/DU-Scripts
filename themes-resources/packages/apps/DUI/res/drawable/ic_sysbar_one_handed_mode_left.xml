@@ -1,0 +1,41 @@
+<!--
+     Copyright (C) 2017 Flash ROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+            http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <group
+        android:translateY="512"
+        android:scaleX="0.1"
+        android:scaleY="-0.1">
+        <path
+            android:fillColor="@color/icon_color_one_handed_mode"
+            android:strokeWidth="1"
+            android:pathData="M3910 4305 c-311 -311 -569 -564 -575 -562 -6 2 -11 159 -13 438 -2 239 -5 440 -7
+447 -4 10 -59 12 -252 10 l-248 -3 -3 -897 -2 -898 895 0 895 0 0 255 0 255 -445 0
+c-322 0 -445 3 -445 11 0 6 227 239 504 518 493 496 607 613 615 633 3 9 -337 358
+-349 358 -3 0 -259 -254 -570 -565z" />
+        <path
+            android:fillColor="@color/icon_color_one_handed_mode"
+            android:strokeWidth="1"
+            android:pathData="M500 2065 l0 -255 445 0 c245 0 445 -4 445 -9 0 -11 6 -5 -602 -618 -285 -287 -518
+-527 -518 -535 0 -7 79 -92 175 -188 l175 -175 569 569 c313 313 573 566 578 563 4
+-3 10 -203 11 -444 2 -241 7 -441 11 -446 4 -4 117 -6 252 -5 l244 3 3 898 2 897
+-895 0 -895 0 0 -255z" />
+    </group>
+</vector>

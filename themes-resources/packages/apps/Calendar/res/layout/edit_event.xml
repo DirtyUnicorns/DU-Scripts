@@ -52,7 +52,7 @@
                 android:layout_marginTop="1dip"
                 android:layout_marginBottom="1dip"
                 android:layout_gravity="center_horizontal|top"
-                android:background="#FFFFFFFF"/>
+                android:background="@color/edit_event_bg_color"/>
 
             <LinearLayout
                 android:id="@+id/two_pane"

@@ -14,18 +14,22 @@
             android:title="@string/navdrawer_rc"
             android:icon="@drawable/rc"/>
     </group>
-    <group
-        android:id="@+id/gapps_category"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/gappsdynamic"
-            android:title="@string/navdrawer_dynamic_gapps"
-            android:icon="@drawable/gapps"/>
-        <item
-            android:id="@+id/gappstbo"
-            android:title="@string/navdrawer_tbo_gapps"
-            android:icon="@drawable/gapps"/>
-    </group>
+    <item android:title="@string/gapps_category">
+        <menu>
+            <group
+                android:id="@+id/gapps_category"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/gappsdynamic"
+                    android:title="@string/navdrawer_dynamic_gapps"
+                    android:icon="@drawable/gapps"/>
+                <item
+                    android:id="@+id/gappstr"
+                    android:title="@string/navdrawer_tr_gapps"
+                    android:icon="@drawable/gapps"/>
+            </group>
+        </menu>
+    </item>
     <group
         android:id="@+id/settings_category"
         android:checkableBehavior="single">

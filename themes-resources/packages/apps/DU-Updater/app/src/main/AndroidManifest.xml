@@ -68,8 +68,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".shortcuts.TboGapps"
-            android:label="@string/tbo_gapps"
+            android:name=".shortcuts.TrGapps"
+            android:label="@string/tr_gapps"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -37,9 +37,9 @@
     <color name="material_grey_600">#ff757575</color>
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
-    <color name="colorAccent">#ff4caf50</color>
-    <color name="colorPrimary">#ff4caf50</color>
-    <color name="colorPrimaryDark">#ff388e3c</color>
+    <color name="colorAccent">#2ba2e3</color>
+    <color name="colorPrimary">#0288d1</color>
+    <color name="colorPrimaryDark">#0277bd</color>
     <color name="ic_setting_icon_color">#FFFFFFFF</color>
     <color name="ic_wallpaper_icon_color">#FFFFFFFF</color>
     <color name="ic_widget_icon_color">#FFFFFFFF</color>

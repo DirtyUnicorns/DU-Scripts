@@ -25,8 +25,8 @@
         android:layout_height="0dip"
         android:clickable="true"
         android:layout_weight="1"
-        android:listSelector="#00000000"
-        android:cacheColorHint="#00000000" />
+        android:listSelector="@color/select_calendars_list_selector_color"
+        android:cacheColorHint="@color/select_calendars_cache_color_hint_color" />
     <Button
         android:id="@+id/manage_sync_set"
         android:layout_width="wrap_content"
