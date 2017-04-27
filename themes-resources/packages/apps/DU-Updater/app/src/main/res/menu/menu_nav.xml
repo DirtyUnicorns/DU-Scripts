@@ -20,8 +20,8 @@
                 android:id="@+id/gapps_category"
                 android:checkableBehavior="single">
                 <item
-                    android:id="@+id/gappsdynamic"
-                    android:title="@string/navdrawer_dynamic_gapps"
+                    android:id="@+id/gappsbeans"
+                    android:title="@string/navdrawer_beans_gapps"
                     android:icon="@drawable/gapps"/>
                 <item
                     android:id="@+id/gappstr"

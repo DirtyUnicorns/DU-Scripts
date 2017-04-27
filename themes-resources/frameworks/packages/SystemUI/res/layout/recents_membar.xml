@@ -38,9 +38,14 @@
     <TextView android:id="@+id/recents_memory_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|left"
+        android:layout_gravity="top|start"
         android:layout_marginTop="1dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="17dp"
+        android:textColor="@color/recents_memory_text_color"
+        android:shadowColor="#99000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="5"
         />
 </LinearLayout>

@@ -47,4 +47,5 @@
     <color name="launcher_shortcut_color">#C0FFFFFF</color>
     <color name="launcher_shortcut_color_pressed">#80FFFFFF</color>
     <color name="launcher_navigaton_bar">#66000000</color>
+    <color name="docked_task_bg_color">#ff757575</color>
 </resources>

@@ -21,7 +21,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/display_background_color"
-    android:elevation="4dip">
+    android:elevation="@dimen/display_elevation">
 
     <com.android.calculator2.CalculatorEditText
         android:id="@+id/formula"

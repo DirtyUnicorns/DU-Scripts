@@ -172,6 +172,7 @@
         <item name="android:colorPrimary">@color/primary_color</item>
         <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
         <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColor">@color/calendars_to_display_list_text_color</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 

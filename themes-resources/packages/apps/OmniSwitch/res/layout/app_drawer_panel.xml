@@ -30,5 +30,6 @@
             android:smoothScrollbar="true"
             android:stretchMode="spacingWidthUniform"
             android:listSelector="@android:color/transparent"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:clipToPadding="false" />
 </LinearLayout>

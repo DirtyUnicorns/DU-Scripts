@@ -6,6 +6,9 @@
 
     <original-package android:name="com.android.settings" />
 
+    <protected-broadcast android:name="com.android.settings.CARRIER_PROVISIONING" />
+    <protected-broadcast android:name="com.android.settings.TRIGGER_CARRIER_PROVISIONING" />
+
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -47,6 +50,7 @@
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.RESET_BATTERY_STATS"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.MOVE_PACKAGE" />
@@ -207,7 +211,7 @@
 
         <activity android:name="AirplaneModeVoiceActivity"
                 android:label="@string/wireless_networks_settings_title"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Voice"
+                android:theme="@style/Theme.VoiceActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.settings.VOICE_CONTROL_AIRPLANE_MODE" />
@@ -377,7 +381,7 @@
                   android:exported="true"
                   android:permission="android.permission.CONNECTIVITY_INTERNAL"
                   android:taskAffinity=""
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter>
                 <action android:name="android.net.conn.PROMPT_UNVALIDATED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -562,7 +566,7 @@
 
         <activity android:name="DateTimeSettingsSetupWizard"
                   android:label="@string/date_and_time"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+                  android:theme="@style/Theme.DateTimeSettingsSetupWizard"
                   android:screenOrientation="behind">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -731,7 +735,7 @@
 
         <activity android:name=".inputmethod.UserDictionaryAddWordActivity"
                   android:label="@string/user_dict_settings_title"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+                  android:theme="@style/Theme.SettingsDialog"
                   android:windowSoftInputMode="stateVisible"
                   android:noHistory="true"
                   android:excludeFromRecents="true">
@@ -1129,7 +1133,7 @@
         <activity android:name=".fuelgauge.RequestIgnoreBatteryOptimizations"
                 android:label="@string/high_power_apps"
                 android:taskAffinity=""
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -1247,7 +1251,7 @@
         </activity>
 
         <activity android:name=".notification.ZenModeVoiceActivity"
-                android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+                android:theme="@style/Theme.SettingsDialog"
                 android:label="@string/zen_mode_settings_title">
             <intent-filter>
                 <action android:name="android.settings.VOICE_CONTROL_DO_NOT_DISTURB_MODE" />
@@ -1256,11 +1260,15 @@
             </intent-filter>
         </activity>
 
-        <!--
         <activity android:name="Settings$AppOpsSummaryActivity"
                 android:label="@string/app_ops_settings"
+                android:icon="@drawable/ic_settings_appops"
                 android:taskAffinity=""
-                android:enabled="false">
+                android:enabled="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.applications.AppOpsSummary" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APP_OPS_SETTINGS" />
@@ -1268,10 +1276,16 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
+            <intent-filter android:priority="9">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.system" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.applications.AppOpsSummary" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/app_ops_settings_summary" />
         </activity>
-        -->
 
         <activity android:name="Settings$BackgroundCheckSummaryActivity"
                 android:label="@string/background_check_title"
@@ -1933,6 +1947,7 @@
                 android:permission="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
         <activity android:name="Settings$ApnEditorActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/apn_edit">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -2017,7 +2032,7 @@
         </activity-alias>
 
         <activity android:name=".AppPicker" android:label="@string/select_application"
-                android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+                android:theme="@style/Theme.AppPicker" />
 
         <!-- Keep compatibility with old shortcuts. -->
         <activity-alias android:name="UsbSettings"
@@ -2034,7 +2049,7 @@
                   android:label="@string/bluetooth_pairing_request"
                   android:excludeFromRecents="true"
                   android:windowSoftInputMode="stateVisible|adjustResize"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2067,7 +2082,7 @@
                   android:label="@string/bluetooth_permission_request"
                   android:excludeFromRecents="true"
                   android:permission="android.permission.BLUETOOTH"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.bluetooth.adapter.action.REQUEST_DISCOVERABLE" />
                 <action android:name="android.bluetooth.adapter.action.REQUEST_ENABLE" />
@@ -2088,14 +2103,14 @@
                   android:excludeFromRecents="true"
                   android:exported="true"
                   android:permission="android.permission.MANAGE_USB"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+                  android:theme="@style/Theme.SettingsDialog">
         </activity>
 
         <activity android:name=".RemoteBugreportActivity"
                   android:excludeFromRecents="true"
                   android:exported="true"
                   android:permission="android.permission.DUMP"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+                  android:theme="@style/Theme.SettingsDialog">
             <intent-filter>
                 <action android:name="android.settings.SHOW_REMOTE_BUGREPORT_DIALOG" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2106,7 +2121,7 @@
                   android:label="@string/bluetooth_pairing_request"
                   android:excludeFromRecents="true"
                   android:permission="android.permission.BLUETOOTH"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
         </activity>
 
         <receiver android:name=".bluetooth.BluetoothPairingRequest">
@@ -2129,7 +2144,7 @@
                   android:label="@string/bluetooth_connection_permission_request"
                   android:excludeFromRecents="true"
                   android:permission="android.permission.BLUETOOTH_ADMIN"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST" />
                 <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL" />
@@ -2139,7 +2154,7 @@
 
         <activity android:name="ActivityPicker"
                 android:label="@string/activity_picker_label"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@style/Theme.SettingsAlertDialog"
                 android:finishOnCloseSystemDialogs="true">
             <intent-filter android:priority="1">
                 <action android:name="android.intent.action.PICK_ACTIVITY" />
@@ -2202,7 +2217,7 @@
 
         <!-- TODO: Is this needed? -->
         <activity android:name="BandMode"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                  android:theme="@style/Theme.SettingsAlertDialog"
                   android:process="com.android.phone">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2230,7 +2245,7 @@
         <!-- Standard picker for widgets -->
         <activity android:name="AppWidgetPickActivity"
                 android:label="@string/widget_picker_title"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@style/Theme.SettingsAlertDialog"
                 android:finishOnCloseSystemDialogs="true">
             <intent-filter android:priority="1">
                 <action android:name="android.appwidget.action.APPWIDGET_PICK" />
@@ -2239,7 +2254,7 @@
         </activity>
 
         <activity android:name="AllowBindAppWidgetActivity"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert"
+                android:theme="@style/Theme.SettingsAlertDialog"
                 android:finishOnCloseSystemDialogs="true"
                 android:excludeFromRecents="true">
             <intent-filter android:priority="1">
@@ -2309,7 +2324,7 @@
 
         <activity android:name=".fuelgauge.BatterySaverModeVoiceActivity"
                 android:label="@string/power_usage_summary_title"
-                android:theme="@*android:style/Theme.DeviceDefault.Light.Voice"
+                android:theme="@style/Theme.VoiceActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.settings.VOICE_CONTROL_BATTERY_SAVER_MODE" />
@@ -2528,7 +2543,7 @@
         <activity android:name=".nfc.PaymentDefaultDialog"
                   android:label="@string/nfc_payment_set_default_label"
                   android:excludeFromRecents="true"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.nfc.cardemulation.action.ACTION_CHANGE_DEFAULT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2546,7 +2561,7 @@
         <activity android:name=".SmsDefaultDialog"
                   android:label="@string/sms_application_title"
                   android:excludeFromRecents="true"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.provider.Telephony.ACTION_CHANGE_DEFAULT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2556,7 +2571,7 @@
         <activity android:name=".ActiveNetworkScorerDialog"
                   android:label="@string/wifi_assistant_title"
                   android:excludeFromRecents="true"
-                  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter android:priority="1">
                 <action android:name="android.net.scoring.CHANGE_ACTIVE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -2809,7 +2824,7 @@
         </activity>
 
         <activity android:name=".sim.SimPreferenceDialog"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:theme="@style/Theme.SettingsDialog"
             android:excludeFromRecents="true">
         </activity>
 
@@ -2827,7 +2842,7 @@
         </activity>
 
         <activity android:name=".sim.SimDialogActivity"
-                android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+                android:theme="@style/Theme.SettingsDialog"
                 android:label="@string/sim_settings_title"
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -2953,7 +2968,7 @@
         <activity android:name=".WebViewImplementation"
                   android:exported="true"
                   android:excludeFromRecents="true"
-                  android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+                  android:theme="@style/Theme.SettingsAlertDialog">
             <intent-filter>
                 <action android:name="android.settings.WEBVIEW_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -3146,8 +3161,8 @@
         </activity>
 
         <!-- Battery and notification lights -->
-        <activity android:name=".du.batterylight.NotificationLightSettings" />
-        <activity android:name=".du.batterylight.BatteryLightSettings" />
+        <activity android:name="com.dirtyunicorns.dutweaks.batterylight.NotificationLightSettings" />
+        <activity android:name="com.dirtyunicorns.dutweaks.batterylight.BatteryLightSettings" />
 
         <!-- Expanded desktop -->
         <activity android:name="Settings$ExpandedDesktopSettingsActivity"
@@ -3213,7 +3228,7 @@
 
         <!-- System action picker -->
         <activity android:name="com.dirtyunicorns.dutweaks.ActionPickerDialogActivity"
-                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+                android:theme="@style/Theme.SmartBar.Dialog"
                 android:label="@string/choose_action_title"
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -3223,7 +3238,7 @@
 
         <!-- Icon pack picker -->
         <activity android:name="com.dirtyunicorns.dutweaks.IconPickerActivity"
-                android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+                android:theme="@style/Theme.SmartBar.Dialog"
                 android:label="@string/icon_pack_picker_dialog_title"
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -3234,7 +3249,7 @@
 
         <!-- Icon picker proxy for gallery -->
         <activity android:name="com.dirtyunicorns.dutweaks.IconPickerGallery"
-            android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
+            android:theme="@style/Theme.SmartBar.Dialog"
             android:label="@string/icon_pack_picker_dialog_title"
             android:excludeFromRecents="true">
             <intent-filter>
@@ -3251,11 +3266,11 @@
         </activity>
 
         <!-- Changelog -->
-        <activity android:name="com.android.settings.du.changelog.ChangelogActivity"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.ChangelogActivity"
                   android:label="@string/duchangelog_title" />
-        <activity android:name="com.android.settings.du.changelog.Weeklies"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.Weeklies"
                   android:label="@string/duchangelog_weeklies" />
-        <activity android:name="com.android.settings.du.changelog.Official"
+        <activity android:name="com.dirtyunicorns.dutweaks.changelog.Official"
                   android:label="@string/duchangelog_official" />
 
         <!-- Themes -->
@@ -3312,6 +3327,20 @@
                 android:value="com.dirtyunicorns.dutweaks.fragments.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@string/heads_up_notifications" />
+        </activity>
+
+        <!-- Quick settings -->
+        <activity android:name="Settings$QuickSettingsSettingsActivity"
+                android:label="@string/quicksettings_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.QuickSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/quicksettings_category" />
         </activity>
 
         <!-- Data Saver -->

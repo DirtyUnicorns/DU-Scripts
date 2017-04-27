@@ -21,12 +21,13 @@
     <uses-permission android:name="android.permission.INJECT_EVENTS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS" />
+    <uses-permission android:name="android.permission.START_TASKS_FROM_RECENTS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="24"
         android:targetSdkVersion="25" />
     <application
         android:icon="@drawable/ic_launcher"
@@ -39,11 +40,12 @@
         <receiver android:name="org.omnirom.omniswitch.SwitchService$RecentsReceiver" >
             <intent-filter>
                 <action android:name="org.omnirom.omniswitch.ACTION_TOGGLE_OVERLAY" />
+                <action android:name="org.omnirom.omniswitch.ACTION_RESTORE_HOME_STACK" />
             </intent-filter>
         </receiver>
         <activity
             android:name="org.omnirom.omniswitch.SettingsActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleInstance"
             android:theme="@style/SettingsTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,6 +66,16 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.omnirom.omniswitch.PlaceholderActivity"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:theme="@style/PlaceholderTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

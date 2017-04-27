@@ -63,8 +63,8 @@
 
                 <ImageView
                     android:id="@+id/essentials_button"
-                    android:layout_height="56dp"
-                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:layout_width="52dp"
                     android:src="@drawable/ic_essentials"
                     android:scaleType="centerInside"
                     android:padding="10dp" />
@@ -76,8 +76,8 @@
 
                 <ImageView
                     android:id="@+id/edit_favorite_button"
-                    android:layout_height="56dp"
-                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:layout_width="52dp"
                     android:src="@drawable/ic_favorite_edit"
                     android:scaleType="centerInside"
                     android:padding="10dp"
@@ -92,8 +92,8 @@
 
                 <ImageView
                     android:id="@+id/favorite_button"
-                    android:layout_height="56dp"
-                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:layout_width="52dp"
                     android:src="@drawable/ic_favorite"
                     android:scaleType="centerInside"
                     android:padding="10dp" />
@@ -105,8 +105,8 @@
 
                 <ImageView
                     android:id="@+id/app_drawer_button"
-                    android:layout_height="56dp"
-                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:layout_width="52dp"
                     android:src="@drawable/ic_app_drawer"
                     android:scaleType="centerInside"
                     android:padding="10dp" />

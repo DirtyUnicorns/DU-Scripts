@@ -33,6 +33,8 @@
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
+    <style name="PlaceholderTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+    </style>
     <style name="TextAppearancePopupMenuCondensed" parent="@android:style/TextAppearance.Material.Menu" >
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>

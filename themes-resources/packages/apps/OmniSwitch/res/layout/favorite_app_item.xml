@@ -31,12 +31,12 @@
         android:paddingTop="12dp" />
     <ImageView
         android:id="@+id/app_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_vertical"
         android:layout_marginEnd="8dip"
         android:contentDescription="@null"
-        android:scaleType="center" />
+        android:scaleType="centerInside" />
     <TextView
         android:id="@+id/app_item"
         android:layout_width="0dip"

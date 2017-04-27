@@ -16,95 +16,95 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-	<LinearLayout
-		android:id="@+id/button_list_container_top"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical"
-		android:visibility="gone" >
+    <LinearLayout
+        android:id="@+id/button_list_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
 
-		<HorizontalScrollView
-			android:id="@+id/button_list_top"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal"
-			android:scrollbars="none" >
+        <HorizontalScrollView
+            android:id="@+id/button_list_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="none" >
 
-			<LinearLayout
-				android:id="@+id/button_list_items_top"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:gravity="center_vertical" >
-			</LinearLayout>
-		</HorizontalScrollView>
-	</LinearLayout>
+            <LinearLayout
+                android:id="@+id/button_list_items_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" />
+        </HorizontalScrollView>
+    </LinearLayout>
 
-	<include layout="@layout/recents_rambar" />
+    <include layout="@layout/recents_rambar" />
 
-	<LinearLayout
-	    android:id="@+id/recents_or_appdrawer"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/recents_or_appdrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-		<LinearLayout
-			android:id="@+id/recents"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:paddingBottom="4dip" >
+        <LinearLayout
+            android:id="@+id/recents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp" >
 
-			<org.omnirom.omniswitch.ui.HorizontalListView
-				android:id="@+id/recent_list_horizontal"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:layout_gravity="center_horizontal" />
+            <org.omnirom.omniswitch.ui.HorizontalListView
+                android:id="@+id/recent_list_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
 
-			<TextView
-				android:id="@+id/no_recent_apps"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:layout_gravity="center"
-				android:gravity="center_horizontal|center_vertical"
-				android:text="@string/no_recent_apps_title"
-				android:textSize="20sp"
-				android:visibility="gone" />
+            <TextView
+                android:id="@+id/no_recent_apps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/no_recent_apps_title"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
-			<ImageView
-				android:id="@+id/openFavorites"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:scaleType="centerInside" />
+            <ImageView
+                android:id="@+id/openFavorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside" />
 
-			<org.omnirom.omniswitch.ui.FavoriteViewHorizontal
-				android:id="@+id/favorite_list_horizontal"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:layout_gravity="center_horizontal" />
-		</LinearLayout>
+            <org.omnirom.omniswitch.ui.FavoriteViewHorizontal
+                android:id="@+id/favorite_list_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
 
-		<org.omnirom.omniswitch.ui.AppDrawerView
-			android:id="@+id/app_drawer"
-			android:layout_width="match_parent"
-			android:layout_height="300dp"
-			android:clipToPadding="false"
-			android:numColumns="auto_fit"
-			android:smoothScrollbar="true"
-			android:stretchMode="spacingWidthUniform"
-			android:visibility="gone" />
-	</LinearLayout>
+        <org.omnirom.omniswitch.ui.AppDrawerView
+            android:id="@+id/app_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:clipToPadding="false"
+            android:numColumns="auto_fit"
+            android:smoothScrollbar="true"
+            android:stretchMode="spacingWidthUniform"
+            android:visibility="gone"
+            android:paddingBottom="4dp" />
+    </LinearLayout>
 
-	<LinearLayout
-		android:id="@+id/button_list_container_bottom"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical"
-		android:visibility="gone" >
-	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/button_list_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
 
 </LinearLayout>

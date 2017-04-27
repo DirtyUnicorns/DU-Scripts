@@ -18,7 +18,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/calendars_to_display_background_color">
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
@@ -26,7 +27,8 @@
         android:clickable="true"
         android:layout_weight="1"
         android:listSelector="@color/select_calendars_list_selector_color"
-        android:cacheColorHint="@color/select_calendars_cache_color_hint_color" />
+        android:cacheColorHint="@color/select_calendars_cache_color_hint_color"
+        android:theme="@style/Sync" />
     <Button
         android:id="@+id/manage_sync_set"
         android:layout_width="wrap_content"
@@ -34,6 +36,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/calendars_to_display_button_text_color"
         android:onClick="handleSelectSyncedCalendarsClicked"
         android:text="@string/select_synced_calendars_button" />
 </LinearLayout>

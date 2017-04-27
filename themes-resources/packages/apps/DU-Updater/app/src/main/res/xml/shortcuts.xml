@@ -28,13 +28,13 @@
     <shortcut
         android:enabled="true"
         android:icon="@drawable/shortcuts"
-        android:shortcutDisabledMessage="@string/shortcuts_dynamic_gapps"
+        android:shortcutDisabledMessage="@string/shortcuts_beans_gapps"
         android:shortcutId="shortcut3"
-        android:shortcutLongLabel="@string/shortcuts_dynamic_gapps"
-        android:shortcutShortLabel="@string/shortcuts_dynamic_gapps">
+        android:shortcutLongLabel="@string/shortcuts_beans_gapps"
+        android:shortcutShortLabel="@string/shortcuts_beans_gapps">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.DynamicGapps"
+            android:targetClass="com.dirtyunicorns.duupdater.shortcuts.BeansGapps"
             android:targetPackage="com.dirtyunicorns.duupdater" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>

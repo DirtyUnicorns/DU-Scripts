@@ -206,4 +206,9 @@
     <color name="select_calendars_list_selector_color">#00000000</color>
     <color name="select_calendars_cache_color_hint_color">#00000000</color>
 
+    <color name="calendars_to_display_background_color">#fafafa</color>
+    <color name="calendars_to_display_button_color">#d6d7d7</color>
+    <color name="calendars_to_display_button_text_color">#000000</color>
+    <color name="calendars_to_display_list_text_color">#000000</color>
+
 </resources>
