@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Copyright (C) 2015 DirtyUnicorns
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/home/mazda/du711
+# The source directory; this is automatically two folder up because the script
+# is located in vendor/scripts. Other ROMs will need to change this. The logic is
+# as follows:
+# 1. Get the absolute path of the script with readlink in case there is a symlink
+#    This script may be symlinked by a manifest so we need to account for that
+# 2. Get the folder containing the script with dirname
+# 3. Move into the folder that is two folder above that one and print it
+WORKING_DIR=$( cd $( dirname $( readlink -f "${BASH_SOURCE[0]}" ) )/../.. && pwd )
 
 function delete_useless () {
   declare -a array=($@)
@@ -53,11 +60,11 @@ function copy_all () {
   for i in `seq 0 $(( ${#array[@]} - 1 ))`
   do
     cd $WORKING_DIR/packages/apps
-    cp -r ${array[i]} $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/
+    cp -r ${array[i]} $WORKING_DIR/vendor/scripts/themes-resources/packages/apps/
   done
 }
 
-declare -a root=('DU-Scripts' 'abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
+declare -a root=('abi' 'bionic' 'art' 'bootable' 'build' 'dalvik' 'development' 'device' 'external' 'frameworks' 'hardware' 'kernel' 'libcore' 'libnativehelper' 'manifest' 'ndk' 'out' 'packages' 'pdk' 'prebuilts'
                  'sdk' 'system' 'tools' 'vendor')
 
 declare -a frameworks=('api' 'cmds' 'data' 'docs' 'drm' 'graphics' 'include' 'keystore' 'libs' 'location' 'media' 'native' 'nfc-extras' 'obex' 'opengl' 'policy' 'rs' 'samples' 'sax' 'security-bridge' 'services' 'telecomm'
@@ -100,8 +107,6 @@ else
   echo "Repo Sync failure"
   exit 1
 fi
-echo "Cloning Theme Resources repo"
-git clone https://github.com/DirtyUnicorns/DU-Scripts.git
 echo "Removing unneeded files"
 cd frameworks/base
 delete_useless ${frameworks[@]}
@@ -140,7 +145,7 @@ cd res
 delete_useless ${res[@]}
 cd values
 delete_useless ${values[@]}
-rm -rf  $WORKING_DIR/DU-Scripts/themes-resources/frameworks
+rm -rf  $WORKING_DIR/vendor/scripts/themes-resources/frameworks
 cd $WORKING_DIR
 cd packages/apps/DU-Updater
 delete_useless ${common[@]}
@@ -151,30 +156,29 @@ delete_useless ${extra[@]}
 cd $WORKING_DIR
 process_all ${theme_packages[@]}
 echo "Cleaning target folders"
-rm -rf DU-Scripts/themes-resources/packages
-mkdir DU-Scripts/themes-resources/packages
-mkdir DU-Scripts/themes-resources/packages/apps
-mkdir DU-Scripts/themes-resources/frameworks
+rm -rf vendor/scripts/themes-resources/packages
+mkdir vendor/scripts/themes-resources/packages
+mkdir vendor/scripts/themes-resources/packages/apps
+mkdir vendor/scripts/themes-resources/frameworks
 echo "Copying all files to $WORKING_DIR/DU-Scripts/themes-resources"
-cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/
+cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/vendor/scripts/themes-resources/packages/apps/
 copy_all ${theme_packages[@]}
-cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/DU-Scripts/themes-resources/frameworks
-cd /home/mazda/du711/DU-Scripts/themes-resources
-cd $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/Dialer/InCallUI
+cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/vendor/scripts/themes-resources/frameworks
+cd $WORKING_DIR/vendor/scripts/themes-resources/packages/apps/Dialer/InCallUI
 delete_useless ${res[@]}
-cd $WORKING_DIR/DU-Scripts/themes-resources
+cd $WORKING_DIR/vendor/scripts/themes-resources
 sleep 2
 cd packages/apps/Dialer/InCallUI/res
 sleep 2
 rm -rf values-*
 sleep 2
-cd $WORKING_DIR/DU-Scripts/themes-resources
+cd $WORKING_DIR/vendor/scripts/themes-resources
 sleep 2
 cd packages/apps/Launcher3
 sleep 2
 rm -rf src_config
 sleep 2
-cd $WORKING_DIR/DU-Scripts/themes-resources
+cd $WORKING_DIR/vendor/scripts/themes-resources
 sleep 2
 rm -rf packages/apps/Camera2/proguard-project.txt
 sleep 2
