@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WORKING_DIR=/home/mazda/du
+WORKING_DIR=/home/mazda/du711
 
 function delete_useless () {
   declare -a array=($@)
@@ -82,7 +82,7 @@ declare -a values=('all_search_engines.xml' 'appmsg_colors.xml' 'arrays.xml' 'at
 declare -a core=('java' 'jni' 'tests' 'src')
 
 declare -a theme_packages=('Calculator' 'Calendar' 'CalendarWidget' 'Camera2' 'Contacts' 'ContactsCommon' 'DUI' 'DU-Tweaks' 'DeskClock' 'Dialer' 'Gallery2'
-                           'Launcher3' 'Messaging' 'OmniSwitch' 'PhoneCommon' 'Settings' 'Stk')
+                           'Launcher3' 'Messaging' 'MusicFX' 'OmniSwitch' 'PhoneCommon' 'Settings' 'Stk')
 
 declare -a extra=('java' '.idea' 'gradle' '.gitignore' 'build.gradle' 'gradlew' 'gradlew.bat' 'local.properties' 'proguard-rules.pro' 'proguard.flags')
 
@@ -159,7 +159,26 @@ echo "Copying all files to $WORKING_DIR/DU-Scripts/themes-resources"
 cp -r $WORKING_DIR/packages/apps/DU-Updater $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/
 copy_all ${theme_packages[@]}
 cp -r $WORKING_DIR/frameworks/base/core $WORKING_DIR/frameworks/base/packages $WORKING_DIR/DU-Scripts/themes-resources/frameworks
-cd /home/mazda/du/DU-Scripts/themes-resources
+cd /home/mazda/du711/DU-Scripts/themes-resources
 cd $WORKING_DIR/DU-Scripts/themes-resources/packages/apps/Dialer/InCallUI
 delete_useless ${res[@]}
 cd $WORKING_DIR/DU-Scripts/themes-resources
+sleep 2
+cd packages/apps/Dialer/InCallUI/res
+sleep 2
+rm -rf values-*
+sleep 2
+cd $WORKING_DIR/DU-Scripts/themes-resources
+sleep 2
+cd packages/apps/Launcher3
+sleep 2
+rm -rf src_config
+sleep 2
+cd $WORKING_DIR/DU-Scripts/themes-resources
+sleep 2
+rm -rf packages/apps/Camera2/proguard-project.txt
+sleep 2
+rm -rf packages/apps/DU-Updater/app/src/main/Android.mk
+sleep 2
+rm -rf packages/apps/DU-Updater/app/src/main/res/values/strings.xml
+sleep 2
