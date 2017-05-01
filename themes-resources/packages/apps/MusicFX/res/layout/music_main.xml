@@ -89,6 +89,7 @@
                     layout="@layout/music_eq"
                     android:layout_width="wrap_content"
                     android:layout_height="0dip"
+                    android:layout_gravity="center_horizontal"
                     android:layout_weight="1" />
 
                 <com.android.musicfx.widget.Gallery
@@ -167,8 +168,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
                     android:layout_gravity="bottom"
                     android:orientation="horizontal"
                     android:background="@color/spinner_txt_area_color" >
@@ -176,9 +175,10 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:paddingStart="50dp"
                         android:layout_weight="1"
                         android:text="@string/pr_title"
+                        android:gravity="right"
+                        android:paddingEnd="5dp"
                         android:textColor="@color/textColor" />
 
                     <Spinner
