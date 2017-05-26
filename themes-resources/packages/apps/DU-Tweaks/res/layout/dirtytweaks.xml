@@ -26,6 +26,7 @@
     <com.dirtyunicorns.dutweaks.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
+        android:background="@color/dt_tab_background_color"
         android:layout_height="48dp" />
 
     <android.support.v4.view.ViewPager

@@ -46,11 +46,11 @@
         <include layout="@layout/content_main"/>
 
     </android.support.design.widget.CoordinatorLayout>
-        <!-- The navigation drawer -->
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_height="match_parent"
-        android:layout_width="320dp"
+        android:layout_width="300dp"
         android:layout_gravity="start"
         android:background="@color/navdrawer_background_color"
         app:headerLayout="@layout/header_nav"

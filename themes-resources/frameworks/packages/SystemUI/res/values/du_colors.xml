@@ -20,10 +20,6 @@
     <!-- Custom Carrier Label -->
     <color name="status_bar_carrier_color">#FFFFFFFF</color>
 
-    <!-- Status bar battery colors -->
-    <color name="status_bar_battery_level_text_color">#ffffff</color>
-    <color name="batterymeter_frame_color_darkintensity">@color/dark_mode_icon_color_dual_tone_background</color>
-
     <color name="system_primary_color">@*android:color/material_blue_grey_900</color>
 
     <!-- Navigation button ripple color -->
@@ -48,7 +44,7 @@
     <color name="qs_battery_accent">@*android:color/accent_device_default_light</color>
 
     <!-- Clear-All recents FAB -->
-    <color name="fab_color">@*android:color/material_deep_teal_500</color>
+    <color name="fab_color">@*android:color/accent_device_default_light</color>
     <color name="floating_action_button_icon_color">#FFFFFFFF</color>
 
     <!-- External QS tile tint color -->
@@ -66,5 +62,7 @@
 
     <!-- Recents Memory bar -->
     <color name="recents_memory_text_color">@android:color/white</color>
+    <color name="recents_memmory_progress_overall">@*android:color/resize_shadow_start_color</color>
+    <color name="recents_memmory_progress_free">@*android:color/accent_device_default_light</color>
 
 </resources>

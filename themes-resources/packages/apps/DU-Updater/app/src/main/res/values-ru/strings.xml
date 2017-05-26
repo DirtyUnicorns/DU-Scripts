@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- General strings -->
+    <string name="app_name">Обновление DU</string>
+    <string name="drawer_open">Открыть</string>
+    <string name="drawer_close">Закрыть</string>
+    <string name="action_download">Скачать</string>
+    <string name="cancel">Отменить</string>
+    <string name="hide_app_icon">Скрыть приложение</string>
+    <string name="settings">Настройки</string>
+    <string name="qs_tile_name">Обновление</string>
+    <string name="gapps_category">GAPPS</string>
+
+    <!-- Collapsing toolbar titles -->
+    <string name="official">Официальные</string>
+    <string name="weeklies">Еженедельные</string>
+    <string name="rc">RC</string>
+    <string name="beans_gapps">Beans GAPPS</string>
+    <string name="tr_gapps">Theme Ready GAPPS</string>
+    <string name="settings_alt">Настройки</string>
+
+    <!-- Theme strings -->
+    <string name="theme_options">Настройки интерфейса</string>
+    <string name="pref_navbar_tint_title">Цветная панель навигации</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcuts_weeklies">Еженедельные сборки</string>
+    <string name="shortcuts_rc">RC сборки</string>
+    <string name="shortcuts_beans_gapps">Beans GAPPS</string>
+    <string name="shortcuts_tr_gapps">Theme Ready GAPPS</string>
+
+    <!-- Snackbar messages -->
+    <string name="no_internet_snackbar">Вы должны быть подключены к интернету чтобы проверить доступные обновления</string>
+    <string name="no_files_to_show">Нет доступных обновлений</string>
+
+    <!-- Dialogs & Downloads -->
+    <string name="dialog_title">Новая версия DU доступна</string>
+    <string name="dialog_download">Скачать</string>
+    <string name="major_version_text">доступно для скачивания</string>
+    <string name="minor_version_text">Обновление</string>
+    <string name="build_date_text">Новая сборка DU доступна для скачивания</string>
+    <string name="download_cancelled">Загрузка отменена</string>
+    <string name="du_download">Загрузка DU</string>
+    <string name="download_happy">Загрузка завершена, удачной прошивки!</string>
+    <string name="complete">Завершено</string>
+    <string name="download_failed">Ошибка загрузки</string>
+
+    <!-- Nav drawer items -->
+    <string name="navdrawer_official">Официальные сборки</string>
+    <string name="navdrawer_rc">RC сборки</string>
+    <string name="navdrawer_weeklies">Еженедельные сборки</string>
+    <string name="navdrawer_beans_gapps">Beans GAPPS</string>
+    <string name="navdrawer_tr_gapps">Theme Ready GAPPS</string>
+
+    <!--Card String-->
+    <string name="card_file_size">Размер файла: %1$s</string>
+    <string name="card_file_md5">MD5: %1$s</string>
+
+</resources>

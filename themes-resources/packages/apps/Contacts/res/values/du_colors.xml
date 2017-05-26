@@ -16,6 +16,7 @@
 -->
 
 <resources>
+    <color name="list_item_name_text_color">#ff000000</color>
     <color name="photo_text_bar_bg">#7F000000</color>
     <color name="text_color_white">@android:color/white</color>
     <color name="editor_account_header_bg">#EEEEEE</color>
@@ -26,4 +27,7 @@
     <color name="section_divider_background_color">#7e7e87</color>
     <color name="edit_kind_text_appearance_text_color">#363636</color>
     <color name="account_type_name_text_color">#363636</color>
+    <color name="contact_all_list_background_color">#FFFFFF</color>
+    <color name="contact_favorites_list_background_color">#FFFFFF</color>
+    <color name="group_list_background_color">@color/background_primary</color>
 </resources>

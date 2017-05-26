@@ -10,7 +10,6 @@
     tools:context="com.dirtyunicorns.duupdater.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <!-- The main content view -->
     <FrameLayout
         android:id="@+id/content_frame"
         android:elevation="-4dp"

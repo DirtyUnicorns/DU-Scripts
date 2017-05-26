@@ -5,7 +5,7 @@
         android:title="@string/theme_options"
         android:layout="@layout/settings_category_layout">
 
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="NavigationTint"
             android:title="@string/pref_navbar_tint_title"
             android:defaultValue="false" />

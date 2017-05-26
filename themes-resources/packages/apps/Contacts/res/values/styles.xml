@@ -15,15 +15,18 @@
 -->
 <resources>
 
-    <style name="DetailActivityTheme" parent="@android:style/Theme.Holo.Light">
+    <style name="DetailActivityTheme" parent="@android:style/Theme.Material.Light">
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
-        <item name="android:homeAsUpIndicator">@drawable/ic_menu_back</item>
-        <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflow</item>
-        <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
+        <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
+        <item name="android:actionBarItemBackground">@drawable/item_background_material_borderless_dark</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
         <item name="android:textColorPrimary">@color/primary_text_color</item>
         <item name="android:textColorSecondary">@color/secondary_text_color</item>
         <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:colorAccent">@color/primary_color</item>
     </style>
 
     <style name="EditorActivityTheme" parent="@style/PeopleTheme">
@@ -100,6 +103,7 @@
         <item name="list_item_header_text_color">@color/people_app_theme_color</item>
         <item name="list_item_header_text_size">14sp</item>
         <item name="list_item_header_height">30dip</item>
+        <item name="list_item_name_text_color">@color/list_item_name_text_color</item>
         <item name="list_item_data_width_weight">5</item>
         <item name="list_item_label_width_weight">3</item>
         <item name="list_item_header_text_indent">8dip</item>
@@ -122,6 +126,7 @@
     <style name="ContactsActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:background">@color/actionbar_background_color</item>
         <item name="android:titleTextStyle">@style/ContactsActionBarTitleText</item>
+        <item name="android:subtitleTextStyle">@style/ContactsActionBarSubTitleText</item>
         <item name="android:backgroundStacked">@color/actionbar_background_color</item>
         <!-- Empty icon -->
         <item name="android:icon">@android:color/transparent</item>
@@ -152,6 +157,11 @@
     <!-- Text in the action bar at the top of the screen -->
     <style name="ContactsActionBarTitleText"
            parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+
+    <style name="ContactsActionBarSubTitleText"
+           parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
         <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
 

@@ -25,10 +25,8 @@
     android:paddingTop="8dip"
     android:paddingBottom="8dip"
     android:gravity="center_vertical"
-    android:paddingLeft="@dimen/account_container_left_padding"
-    android:paddingRight="28dip"
     android:paddingStart="@dimen/account_container_left_padding"
-    android:paddingEnd="28dip">
+    android:paddingEnd="@dimen/account_container_left_padding">
 
     <LinearLayout
         android:id="@+id/account"

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">DU Updater</string>
+    <string name="drawer_open">Ouvrir</string>
+    <string name="drawer_close">Fermer</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_download">Télécharger</string>
+    <string name="cancel">Annuler</string>
+    <string name="hide_app_icon">Masquer l\'application</string>
+    <string name="settings">Paramètres</string>
+    <string name="gapps_category">GApps</string>
+
+    <!-- Collapsing toolbar titles -->
+    <string name="official">Officielles</string>
+    <string name="weeklies">Hebdomadaires</string>
+    <string name="rc">RC</string>
+    <string name="beans_gapps">Beans GApps</string>
+    <string name="tr_gapps">Theme Ready GApps</string>
+    <string name="settings_alt">Paramètres</string>
+    <string name="qs_tile_name">MAJ</string>
+
+    <!-- Theme strings -->
+    <string name="theme_options">Options du thème</string>
+    <string name="pref_navbar_tint_title">Barre de navigation teintée</string>
+    <string name="enable_navbar_tint_summary">Activer la barre de navigation teintée</string>
+    <string name="disable_navbar_tint_summary">Désactiver la barre de navigation teintée</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcuts_weeklies">Hebdomadaires</string>
+    <string name="shortcuts_rc">RC</string>
+    <string name="shortcuts_beans_gapps">Beans GApps</string>
+    <string name="shortcuts_tr_gapps">Theme Ready GApps</string>
+
+    <!-- Snackbar messages -->
+    <string name="no_internet_snackbar">Connexion à Internet nécessaire pour utiliser \"DU Updater\"</string>
+    <string name="no_files_to_show">Aucun fichier à afficher</string>
+
+    <!-- Dialogs & Downloads -->
+    <string name="dialog_message">Télécharger ce fichier ?</string>
+    <string name="dialog_title">Mise à jour disponible</string>
+    <string name="dialog_download">Télécharger</string>
+    <string name="major_version_text">disponible pour téléchargement</string>
+    <string name="minor_version_text">Une mise à jour</string>
+    <string name="build_date_text">Une nouvelle version de DU est disponible au téléchargement</string>
+    <string name="download_cancelled">Téléchargement annulé</string>
+    <string name="du_download">Téléchargement DU</string>
+    <string name="download_happy">Téléchargement terminé. Bonne installation !</string>
+    <string name="complete">Complet</string>
+    <string name="download_failed">Échec du téléchargement</string>
+
+    <!-- Nav drawer items -->
+    <string name="navdrawer_official">Officielles</string>
+    <string name="navdrawer_rc">RC</string>
+    <string name="navdrawer_weeklies">Hebdomadaires</string>
+    <string name="navdrawer_beans_gapps">Beans GApps</string>
+    <string name="navdrawer_tr_gapps">Theme Ready GApps</string>
+
+    <!--Card String-->
+    <string name="card_file_size">Taille du fichier : %1$s </string>
+    <string name="card_file_md5">Fichier MD5 : %1$s </string>
+</resources>

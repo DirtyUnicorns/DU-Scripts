@@ -24,33 +24,37 @@
         android:id="@+id/account_header"
         layout="@layout/editor_account_header"/>
 
-    <LinearLayout android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="8dip"
-        android:paddingRight="8dip"
-        android:paddingStart="8dip"
-        android:paddingEnd="8dip"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/group_editor_autocomplete_left_padding"
+        android:paddingStart="@dimen/group_editor_autocomplete_left_padding">
 
         <EditText
             android:id="@+id/group_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:inputType="textCapWords"
+            android:inputType="textCapWords|textNoSuggestions"
             android:imeOptions="flagNoExtractUi|flagNoFullscreen"
             android:hint="@string/group_name_hint"
             android:minHeight="48dip"
-            android:paddingLeft="8dip"
-            android:paddingStart="8dip"/>
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/contact_browser_list_item_text_size" />
 
-        <include
-            layout="@layout/group_editor_autocomplete_view"
-            android:id="@+id/add_member_field"/>
+        <AutoCompleteTextView
+            android:id="@+id/add_member_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/contact_browser_list_item_text_size"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+            android:hint="@string/enter_contact_name"
+            android:minHeight="48dip" />
 
-        <include
-            layout="@layout/group_editor_existing_member_list"
-            android:id="@android:id/list"/>
     </LinearLayout>
 
+    <include
+        layout="@layout/group_editor_existing_member_list"
+        android:id="@android:id/list"/>
 </LinearLayout>

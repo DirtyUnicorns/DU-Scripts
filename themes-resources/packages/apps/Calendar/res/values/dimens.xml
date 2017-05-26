@@ -68,4 +68,9 @@
     <dimen name="event_info_dialog_width">300dip</dimen>
     <dimen name="event_info_dialog_height">400dip</dimen>
 
+    <!-- Calendar Widget -->
+    <integer name="max_width_short_month_label_dp">240</integer>
+    <integer name="max_height_mini_view_dp">180</integer>
+    <integer name="max_height_mini_view_1_row_dp">120</integer>
+
 </resources>

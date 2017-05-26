@@ -3357,6 +3357,20 @@
                 android:resource="@string/data_saver_title" />
         </activity>
 
+        <!-- Buttons -->
+        <activity android:name="Settings$ButtonSettingsActivity"
+                android:label="@string/button_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.dirtyunicorns.dutweaks.fragments.ButtonSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@string/button_settings" />
+        </activity>
+
         <!-- Hotspot idle -->
         <service android:name=".wifi.HotspotService" >
             <intent-filter>

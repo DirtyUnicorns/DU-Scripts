@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- General strings -->
+    <string name="app_name">DU Frissítő</string>
+    <string name="drawer_open">Megnyitás</string>
+    <string name="drawer_close">Bezárás</string>
+    <string name="action_download">Letöltés</string>
+    <string name="cancel">Mégse</string>
+    <string name="hide_app_icon">Alkalmazás elrejtése</string>
+    <string name="settings">Beállítások</string>
+    <string name="qs_tile_name">Frissítő</string>
+    <string name="gapps_category">Gapps</string>
+
+    <!-- Collapsing toolbar titles -->
+    <string name="official">DU Frissítő - Hivatalos</string>
+    <string name="weeklies">DU Frissítő - Heti</string>
+    <string name="rc">DU Frissítő - Rc</string>
+    <string name="beans_gapps">DU Frissítő - Beans</string>
+    <string name="tr_gapps">DU Frissítő - Témára kész</string>
+    <string name="settings_alt">DU Frissítő - Beállítások</string>
+
+    <!-- Theme strings -->
+    <string name="theme_options">Téma beállítások</string>
+    <string name="pref_navbar_tint_title">Navigációs sáv árnyalata</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcuts_weeklies">Heti építés</string>
+    <string name="shortcuts_rc">RC építés</string>
+    <string name="shortcuts_beans_gapps">Beans gapps</string>
+    <string name="shortcuts_tr_gapps">Témára kész gapps</string>
+
+    <!-- Snackbar messages -->
+    <string name="no_internet_snackbar">Az internethez kell csatlakoznia, hogy használhassa a frissítőt</string>
+    <string name="no_files_to_show">Nincs megjeleníthető fájl</string>
+
+    <!-- Dialogs & Downloads -->
+    <string name="dialog_title">DU frissítés elérhető</string>
+    <string name="dialog_download">Letöltés</string>
+    <string name="major_version_text">elérhető letöltésre</string>
+    <string name="minor_version_text">Egy frissítés</string>
+    <string name="build_date_text">Egy újabb DU építés érhető el letöltésre</string>
+    <string name="download_cancelled">Letöltés megszakítva</string>
+    <string name="du_download">DU letöltés</string>
+    <string name="download_happy">Letöltés kész, vidám flashelést!</string>
+    <string name="complete">Kész</string>
+    <string name="download_failed">Letöltés sikertelen</string>
+
+    <!-- Nav drawer items -->
+    <string name="navdrawer_official">Hivatalos építés</string>
+    <string name="navdrawer_rc">RC építés</string>
+    <string name="navdrawer_weeklies">Heti építés</string>
+    <string name="navdrawer_beans_gapps">Beans</string>
+    <string name="navdrawer_tr_gapps">Témára kész</string>
+
+    <!--Card String-->
+    <string name="card_file_size">Fájl mérete: %1$s</string>
+    <string name="card_file_md5">Fájl MD5: %1$s</string>
+
+</resources>

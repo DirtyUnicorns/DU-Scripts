@@ -2,9 +2,9 @@
 <resources>
 
     <!-- General colors -->
-    <color name="collapsing_toolbar_layout_background_color">#313131</color>
-    <color name="statusbar_color">#222222</color>
-    <color name="accent_color">#dc2121</color>
+    <color name="collapsing_toolbar_layout_background_color">@*android:color/primary_device_default_dark</color>
+    <color name="statusbar_color">@*android:color/primary_dark_device_default_dark</color>
+    <color name="accent_color">@*android:color/accent_device_default_light</color>
     <color name="collapsing_toolbar_layout_collapsed_title_color">#ffffff</color>
     <color name="collapsing_toolbar_layout_expanded_title_color">#ffffff</color>
 
@@ -14,23 +14,23 @@
     <color name="card_view_name_text_color">#000000</color>
     <color name="card_view_size_text_color">#000000</color>
     <color name="card_view_md5_text_color">#000000</color>
-    <color name="card_view_download_button_background_color">#313131</color>
+    <color name="card_view_download_button_background_color">@*android:color/accent_device_default_light</color>
     <color name="card_view_download_text_color">#ffffff</color>
 
     <!-- Nav Drawer colors -->
     <color name="navdrawer_background_color">#ffffff</color>
     <color name="navdrawer_selector_fill_color">#f0efef</color>
-    <color name="navdrawer_selected_icon_color">#252525</color>
-    <color name="navdrawer_not_selected_icon_color">#626262</color>
-    <color name="navdrawer_selected_text_color">#212121</color>
+    <color name="navdrawer_selected_icon_color">@*android:color/accent_device_default_light</color>
+    <color name="navdrawer_not_selected_icon_color">@*android:color/accent_device_default_light</color>
+    <color name="navdrawer_selected_text_color">@*android:color/accent_device_default_light</color>
     <color name="navdrawer_not_selected_text_color">#505050</color>
 
     <!-- Navbar Tint colors -->
     <color name="navigation_bar_color_tint_disabled">#000000</color>
-    <color name="navigation_bar_color_tint_enabled">#dc2121</color>
+    <color name="navigation_bar_color_tint_enabled">@*android:color/accent_device_default_light</color>
 
     <!-- Settings colors -->
-    <color name="settings_theme_options_category_title_color">#dc2121</color>
-    <color name="settings_navbar_tint_title_color">#2f2f2f</color>
+    <color name="settings_theme_options_category_title_color">@*android:color/accent_device_default_light</color>
+    <color name="settings_navbar_tint_title_color">@*android:color/accent_device_default_light</color>
 
 </resources>

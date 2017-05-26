@@ -37,14 +37,21 @@
         android:id="@+id/account_header"
         layout="@layout/editor_account_header"/>
 
-    <TextView
-        android:id="@+id/group_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="?android:attr/textColorTertiary"
-        android:textStyle="bold"
-        android:padding="10dip"/>
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/group_editor_autocomplete_left_padding"
+        android:paddingStart="@dimen/group_editor_autocomplete_left_padding">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dip"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/contact_browser_list_item_text_size" />
+    </LinearLayout>
 
     <include
         layout="@layout/group_editor_existing_member_list"

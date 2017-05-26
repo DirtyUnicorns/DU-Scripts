@@ -30,16 +30,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="?attr/list_item_padding_left"
-    android:paddingStart="?attr/list_item_padding_left"
     android:minHeight="@dimen/detail_min_line_item_height" >
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dip"
-        android:layout_marginRight="?attr/list_item_padding_right"
-        android:layout_marginEnd="?attr/list_item_padding_right"
         android:background="@color/secondary_header_separator_color" />
 
     <include
@@ -51,9 +47,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dip"
-        android:paddingLeft="8dip"
-        android:paddingStart="8dip"
         android:paddingBottom="8dip"
+        android:paddingStart="?attr/list_item_padding_left"
+        android:paddingEnd="?attr/list_item_padding_right"
         android:orientation="vertical"
         android:duplicateParentState="true"
         android:background="@drawable/group_list_item_background">
@@ -62,18 +58,19 @@
             android:id="@+id/label"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:ellipsize="end"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/count"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="?android:attr/textColorSecondary"
             android:ellipsize="end"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="14sp" />
 
     </LinearLayout>
 </LinearLayout>

@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_header_extra_top_padding" />
 
-    <include layout="@layout/group_account_header_horizontal" />
-
+    <include
+        android:id="@+id/account_header"
+        layout="@layout/editor_account_header"/>
 </LinearLayout>
