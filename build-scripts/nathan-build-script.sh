@@ -180,18 +180,10 @@ function jack_workaround() {
 
 # Get proper make command
 function make_command() {
-    local MAKE_PARAMS
-
-    while [[ $# -ge 1 ]]; do
-        MAKE_PARAMS+="${1} "
-
-        shift
-    done
-
     if [[ $( command -v mka ) ]]; then
-        mka ${MAKE_PARAMS}
+        mka $@
     else
-        make -j$( nproc --all ) ${PARAMS}
+        make -j$( nproc --all ) $@
     fi
 }
 
